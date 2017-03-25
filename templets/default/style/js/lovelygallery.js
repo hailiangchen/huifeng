@@ -47,7 +47,7 @@ jQuery(document).ready(function(){
         texteffecteasing:"easeOutCubic",
         texteffect:"fade",
         navspacing:12,
-        playvideoimage:"../images/playvideo-64-64-0.png",
+        playvideoimage:"",
         ribbonimage:"../images/ribbon_topleft-0.png",
         navwidth:24,
         showribbon:false,

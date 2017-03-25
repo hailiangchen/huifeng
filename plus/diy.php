@@ -58,6 +58,14 @@ if($action == 'post')
 
         if(!empty($dede_fields))
         {
+            $validate = empty($validate) ? '' : strtolower(trim($validate));
+            $svali = strtolower(GetCkVdValue());
+            if(($validate=='' || $validate != $svali) && preg_match("/6/",$safe_gdopen)){
+                ResetVdValue();
+                //ShowMsg('验证码不正确!',$dede_add,0,1000);
+                echo json_encode(array("code"=>0,"mesg"=>"验证码不正确"));
+                exit;
+            }
 
             $fieldarr = explode(';', $dede_fields);
             if(is_array($fieldarr))
@@ -98,7 +106,8 @@ if($action == 'post')
                 $goto = !empty($cfg_cmspath) ? $cfg_cmspath : '/';
                 $bkmsg = '发布成功，请等待管理员处理...';
             }
-            showmsg($bkmsg, $goto);
+            //showmsg($bkmsg, $goto);
+            echo json_encode(array("code"=>1,"mesg"=>"提交成功"));
         }
     }
 }
