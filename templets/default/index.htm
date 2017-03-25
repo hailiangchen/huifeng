@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <title>{dede:global.cfg_webname/}</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bases.css">
+    <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/bootstrap.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/html5zoo.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/lovelygallery.js"></script>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+    <script src="{dede:global.cfg_templets_skin/}/style/js/aos.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/mixitup.min.js"></script>
+
+</head>
+<body>
+{dede:include filename="header.htm"/}
+
+<div class="row mt-50 bg-gray">
+    <div class="container">
+        <div class="col-md-12 col-xs-12 text-center mt-20 mb-30">
+            <p class="">
+                <span class="project">企业理念</span>
+            </p>
+            <p>
+                <span class="">————</span>
+                <span class="">COMPANY PHILOSOPHY</span>
+                <span class="">————</span>
+            </p>
+        </div>
+
+        <div class="col-md-6 col-xs-12 " aos="fade-right" aos-easing="ease" aos-delay="300">
+            {dede:sql sql='Select content,typename from dede_arctype where id=4'}
+
+
+            <h3 class="color-green font-bold">[field:typename/]</h3>
+
+            <span style="line-height: 33.6px;">&nbsp;[field:content function="cn_substr(html2text(@me),400)"/]</span>
+
+            {/dede:sql}
+            <br/>
+            <p class="mt-10">
+                {dede:type typeid='4'}
+                <a href="[field:typelink /]" class="btn btn-success">
+                查看更多
+                </a>
+                {/dede:type}
+            </p>
+
+        </div>
+        <div class="col-md-6 col-xs-12" aos="fade-left" aos-easing="ease" aos-delay="300">
+            <div class="img_over" style="overflow: hidden; border-color: transparent; border-width: 0px; width: 415px; height: 289px;">
+                <img  src="{dede:global.cfg_templets_skin/}/style/images/11.jpg" type="zoom" class="paragraph_image " style="width: auto; height: 289px; top: 0px; position: relative;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-100">
+    <div class="container">
+        <div class="col-md-12 col-sm-12 text-center">
+
+            <p class="">
+                <span class="project">工程案例</span>
+            </p>
+            <p>
+                <span class="">————</span>
+                <span class="">OUR PROJECTS</span>
+                <span class="">————</span>
+            </p>
+        </div>
+        <div class="col-md-12 col-sm-12 mt-20" aos="zoom-in-up">
+            {dede:arclist  flag='c,p' typeid='1' row='8' titlelen='20'  orderby='pubdate'}
+            <div class="col-md-3 col-sm-3  pad0 ">
+                <div>
+                    <img src="[field:litpic/]" class="imgclass" style="height: 276px;" alt="">
+                </div>
+                <div class="zhezhao">
+                    <h1 class="entry-title">
+                        <a href="[field:arcurl/]" class="featured-image" rel="bookmark">[field:title/]</a>
+                    </h1>
+                </div>
+            </div>
+            {/dede:arclist}
+
+        </div>
+        <div class="col-md-12 col-xs-12 mt-40">
+            <div class="linkanli">
+                {dede:type typeid="1"}
+                <a href="[field:typelink /]" class="">更多案例</a>
+                {/dede:type}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row mt-50">
+    <div class="container">
+        <div class="col-md-12 col-sm-12 text-center">
+            <p>
+                <span class="project">最新动态</span>
+            </p>
+            <p>
+                <span class="">————</span>
+                <span class="">NEWS INFORMATION​</span>
+                <span class="">————</span>
+            </p>
+        </div>
+
+        <div class="col-md-12 col-xs-12">
+
+            <div class="col-md-6 col-xs-12" aos="flip-left">
+                {dede:type typeid="2"}
+                <h4 class="h4line"><span>[field:typename/]</span></h4>
+                {/dede:type}
+                <div class="row">
+                    <ul class="classul">
+                        {dede:arclist  typeid='2' row='4' titlelen='50' infolen="160"  orderby='pubdate'}
+                        <li>
+                            <div class="col-md-2 col-xs-2  pad10 bd-r text-center height92 newsleft">
+                                <span class="newsday"> [field:pubdate function=strftime('%d',@me)/] </span>
+                                <span class="newsdate"> [field:pubdate function=strftime('%Y-%m',@me)/] </span>
+                            </div>
+                            <div class="col-md-10 col-xs-10 padl30">
+                                <h4><a class="newstitle" href="[field:arcurl/]">[field:title/]</a></h4>
+                                <p class="color-999">[field:info/]..... </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        {/dede:arclist}
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-md-6 col-xs-12" aos="flip-right">
+                {dede:type typeid="3"}
+                <h4 class="h4line"><span>[field:typename/]</span></h4>
+                {/dede:type}
+                <div class="row">
+                    <ul class="classul">
+                        {dede:arclist  typeid='3' row='4' titlelen='50' infolen="160"  orderby='pubdate'}
+                        <li>
+                            <div class="col-md-2 col-xs-2  pad10 bd-r text-center height92 newsleft">
+                                <span class="newsday"> [field:pubdate function=strftime('%d',@me)/] </span>
+                                <span class="newsdate"> [field:pubdate function=strftime('%Y-%m',@me)/] </span>
+                            </div>
+                            <div class="col-md-10 col-xs-10 padl30">
+                                <h4><a class="newstitle" href="[field:arcurl/]">[field:title/]</a></h4>
+                                <p class="color-999">[field:info/]..... </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        {/dede:arclist}
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{dede:include filename="footer.htm"/}

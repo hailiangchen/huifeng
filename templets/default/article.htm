@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bases.css">
+    <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/bootstrap.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/html5zoo.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/lovelygallery.js"></script>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+    <script src="{dede:global.cfg_templets_skin/}/style/js/aos.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/style/js/mixitup.min.js"></script>
+
+</head>
+<body>
+{dede:include filename="header.htm"/}
+<div class="row">
+    <div class="container" aos="zoom-in-up">
+        <div class="col-md-12 col-xs-12 " >
+            <div class="text-center">
+                <h1 class="font-bold font20">{dede:field.title/}</h1>
+                <p class="color-999">发布者：{dede:field.writer/}     浏览次数：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+                    次     发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</p>
+            </div>
+
+            <hr/>
+            <div class="infobody">
+                {dede:field.body/}
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 mt-50">
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12">
+                    {dede:prenext get='pre'/}
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    {dede:prenext get='next'/}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+{dede:include filename="footer.htm"/}

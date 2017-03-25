@@ -1,0 +1,89 @@
+﻿body{
+    
+}
+.color-emerald { color:#2ECC71;}
+.color-turquoise { color:#1ABC9C;}
+.color-river {color:#3498DB}
+.color-clouds {color:#ECF0F1;}
+.color-concrete {color:#95A5A6;}
+.color-alizarin {color:#E74C3C;}
+.font14{font-size:14px;}
+.font16 {font-size: 16px;}
+.font18 {font-size:18px;}
+.font20 {font-size:20px;}
+.font22 { font-size:22px;}
+.font48{font-size: 48px;}
+.font30{font-size: 30px;}
+.font28{font-size: 28px;}
+.font24{font-size: 24px;}
+.font-bold { font-weight:bold;}
+.mt-20 { margin-top:20px;}
+.mt-15 { margin-top:15px;}
+.mt-10 {margin-top:10px;}
+.mt-5 {margin-top:5px;}
+.mb-5 {margin-bottom:5px;}
+.mb-10 {margin-bottom:10px;}
+.mb-15 {margin-bottom:15px;}
+.mb-20 {margin-bottom:20px;}
+.mt-30{margin-top:30px;}
+.mt-40{margin-top:40px;}
+.mt-50{margin-top:50px;}
+.mt-100{margin-top:100px;}
+.pad0{padding: 0;}
+.pad5 { padding:5px;}
+.pad10 {padding:10px;}
+.pad15{ padding:15px;}
+.pad20{padding:20px;}
+.mar5{margin:5px;}
+.mar10{margin:10px;}
+.mar15{margin:15px;}
+.mar20{margin:20px;}
+.padtb5{padding: 5px 0;}
+.padtb10{padding: 10px 0;}
+.padtb15{padding: 15px 0;}
+.padtb20{padding: 20px 0;}
+.padlr5{padding: 0 5px;}
+.padlr10{padding: 0 10px;}
+.padlr15{padding: 0 15px;}
+.padlr20{padding: 0 20px;}
+.martb5{margin:5px 0;}
+.martb10{margin:10px 0;}
+.martb15{margin:15px 0;}
+.martb20{margin:20px 0;}
+.marlr5{padding: 0 5px;}
+.marlr10{padding: 0 10px;}
+.marlr15{padding: 0 15px;}
+.marlr20{padding: 0 20px;}
+.color-4d4d4d{color:#4d4d4d;}
+.color-dbdbdb{color:#dbdbdb;}
+.color-000{color:#000;}
+.color-888{color:#888;}
+.color-777{color:#777;}
+.color-666{color: #666;}
+.color-333{color: #333;}
+.color-2973c5{color:#2973c5;}
+.color-0a90e2{color: #0a90e2;}
+.color-3bb7f6{color: #3bb7f6;}
+.color-9a9a9a{color: #9a9a9a;}
+.color-b5b5b5{color: #b5b5b5;}
+.color-eb9a20{color: #eb9a20;}
+.color-e84147{color: #e84147;}
+.color-1378fb{color: #1378fb;}
+.color-3bb7f6{color: #3bb7f6;}
+.color-009933{color: #009933;}
+.color-ccc{color:#ccc;}
+.color-ff0000{color: #ff0000;}
+.color-green{color: rgb(137, 190, 46);}
+.border-radius-5{border-radius: 5px;}
+.bg-fcf7f3{background-color: #fcf7f3;}
+.bg-f9f9f9{background: #f9f9f9;}
+.bg-fff{background: #fff;}
+.bg-fdedd2{background: #fdedd2;}
+.bg-fafafa{background: #fafafa;}
+.bg-efefef{background: #efefef;}
+.bg-83c428{background: #83c428;}
+.bd-r{border-radius: 50%;}
+.padl30{padding-left: 30px;}
+.color-999{color:#999;}
+.bg-gray{background: rgb(248, 248, 248);}
+.mb-30{margin-bottom:30px; }

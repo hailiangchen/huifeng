@@ -1,0 +1,45 @@
+<div class="row mt-50">
+    <div class="col-md-12 col-xs-12"></div>
+</div>
+<div class="row bg-f9f9f9">
+    <div class="container">
+        <div class="col-md-12 col-sm-12">
+            <div class="artimg pad10">
+                <ul class="list-inline">
+                    <li>友情链接：</li>
+                    {dede:flink row="24"/}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row footer">
+    <div class="container">
+        <div class="col-md-12 col-xs-12">
+            <div class="mt-50">
+                <ul class="list-inline">
+                    <li><a class="color-dbdbdb footer_a" href="/">首页</a></li> <span class="color-dbdbdb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    {dede:channel type='top' row='8' currentstyle=""}
+                    <li><a class="color-dbdbdb footer_a"  href="[field:typeurl/]">[field:typename/]</a></li> <span class="color-dbdbdb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    {/dede:channel}
+
+                </ul>
+            </div>
+            <p class="color-4d4d4d">电话：{dede:global.cfg_mobile/} {dede:global.cfg_telephone/}   联系人：{dede:global.cfg_contact/}  邮箱：{dede:global.cfg_company_email/}   地址：{dede:global.cfg_company_address/}</p>
+            <p class="color-4d4d4d">{dede:global.cfg_powerby/}</p>
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+</script>
+</body>
+</html>
