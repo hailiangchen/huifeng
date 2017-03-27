@@ -2,7 +2,7 @@
 //数据库连接信息
 $cfg_dbtype = 'mysql';
 $cfg_dbhost = 'localhost';
-$cfg_dbname = 'dedecmsv57utf8sp2';
+$cfg_dbname = 'huifeng';
 $cfg_dbuser = 'root';
 $cfg_dbpwd = 'm123456';
 $cfg_dbprefix = 'dede_';

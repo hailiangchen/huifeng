@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2017-03-26 03:41:07
+-- Generation Time: 2017-03-27 07:20:28
 -- 服务器版本： 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -17,8 +17,33 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `dedecmsv57utf8sp2`
+-- Database: `huifeng`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `dede_addon17`
+--
+
+CREATE TABLE IF NOT EXISTS `dede_addon17` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `picklink` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `dede_addon17`
+--
+
+INSERT INTO `dede_addon17` (`aid`, `typeid`, `redirecturl`, `templet`, `userip`, `picklink`) VALUES
+(9, 11, '', '', '127.0.0.1', ''),
+(10, 11, '', '', '127.0.0.1', '');
 
 -- --------------------------------------------------------
 
@@ -206,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `dede_admin` (
 --
 
 INSERT INTO `dede_admin` (`id`, `usertype`, `userid`, `pwd`, `uname`, `tname`, `email`, `typeid`, `logintime`, `loginip`) VALUES
-(1, 10, 'admin', 'f297a57a5a743894a0e4', 'admin', '', '', '0', 1490367576, '127.0.0.1');
+(1, 10, 'admin', 'f297a57a5a743894a0e4', 'admin', '', '', '0', 1490582504, '127.0.0.1');
 
 -- --------------------------------------------------------
 
@@ -293,12 +318,10 @@ CREATE TABLE IF NOT EXISTS `dede_arccache` (
 --
 
 INSERT INTO `dede_arccache` (`md5hash`, `uptime`, `cachedata`) VALUES
-('e2acf857f4795603310f334c18a5cdf6', 1490459394, '1,2'),
-('45df4184c19034454b050be723475dda', 1490459401, '1'),
-('b3f477e9013a85216c7cfbab879eda10', 1490459401, '1'),
-('6f1ea848283f9c28f65ab1684f04acee', 1490459401, '2'),
-('34cacc0ba17848059c72967dbfab2455', 1490459401, '2'),
-('0fd9220a89e8fe4e14e6fc17d396e062', 1490459401, '0');
+('2313de92213f5d7266947dbd38b0e490', 1490584204, '0'),
+('1c580dbcbf3ec9e22d875bd36705d040', 1490584204, '9'),
+('744f3f54b43dd30d2c2fd37d24be6e8d', 1490584246, '0'),
+('b7af0a1d50e5e7e8d781d8ff35d08cf2', 1490584246, '9,10');
 
 -- --------------------------------------------------------
 
@@ -353,11 +376,13 @@ INSERT INTO `dede_archives` (`id`, `typeid`, `typeid2`, `sortrank`, `flag`, `ism
 (1, 8, '0', 1490433091, 'c,p', 1, 1, 0, 88, 0, '光亮跳泉一', '', '', 'admin', '未知', '/uploads/allimg/170325/1-1F3251FPCa-lp.jpg', 1490433091, 1490432892, 1, '光亮,跳泉,一,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 0),
 (2, 9, '0', 1490433076, 'c,p', 1, 1, 0, 200, 0, '波光喷泉', '', '', 'admin', '未知', '/uploads/allimg/170325/1-1F3251G05Q91-lp.jpg', 1490433076, 1490433063, 1, '波光,喷泉,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 1),
 (3, 2, '0', 1490435754, '', 1, 1, 0, 142, 0, ' 喷泉设备的技术性发展', '', '', 'admin', '未知', '', 1490435754, 1490435780, 1, '喷泉,设备,的,技术性,发展,目前,无论是,国内,', 0, 0, 0, 0, 0, 0, '目前无论是国内或国外的水景工程，用数控喷泉装里来提升水景工程的层次已成为一种新的理念和大的趋势。数控喷泉装工作为一项新生产品，由于大家对数控喷泉系统技术的理解还不', '', 1, 0, 0, 2),
-(4, 3, '0', 1490435799, '', 1, 1, 0, 155, 0, '怎么解决喷泉设备的水泵工作时带来的噪声及振', '', '', 'admin', '未知', '', 1490435799, 1490435810, 1, '怎么,解决,喷泉,设备,的,水泵,工作,时,带来,', 0, 0, 0, 0, 0, 0, '由于各种各样的原因，如工作中推进水流时产生的涡流，气蚀不可避免的会产生振动;水泵设备入口管、叶轮内、泵内有杂物而发生共振现象等，怎么解决喷泉设备的水泵工作时带来的噪', '', 1, 0, 0, 3),
+(4, 3, '0', 1490435799, '', 1, 1, 0, 156, 0, '怎么解决喷泉设备的水泵工作时带来的噪声及振', '', '', 'admin', '未知', '', 1490435799, 1490435810, 1, '怎么,解决,喷泉,设备,的,水泵,工作,时,带来,', 0, 0, 0, 0, 0, 0, '由于各种各样的原因，如工作中推进水流时产生的涡流，气蚀不可避免的会产生振动;水泵设备入口管、叶轮内、泵内有杂物而发生共振现象等，怎么解决喷泉设备的水泵工作时带来的噪', '', 1, 0, 0, 3),
 (5, 2, '0', 1490440951, '', 1, 1, 0, 67, 0, ' 喷泉设备的技术性发展1', '', '', 'admin', '未知', '', 1490440951, 1490440958, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 4),
 (6, 2, '0', 1490440960, '', 1, 1, 0, 176, 0, ' 喷泉设备的技术性发展2', '', '', 'admin', '未知', '', 1490440960, 1490440965, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 5),
-(7, 2, '0', 1490440967, '', 1, 1, 0, 89, 0, ' 喷泉设备的技术性发展3', '', '', 'admin', '未知', '', 1490440967, 1490440972, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 6),
-(8, 2, '0', 1490440973, '', 1, 1, 0, 172, 0, ' 喷泉设备的技术性发展4', '', '', 'admin', '未知', '', 1490440973, 1490440978, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 7);
+(7, 2, '0', 1490440967, '', 1, 1, 0, 92, 0, ' 喷泉设备的技术性发展3', '', '', 'admin', '未知', '', 1490440967, 1490440972, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 6),
+(8, 2, '0', 1490440973, '', 1, 1, 0, 172, 0, ' 喷泉设备的技术性发展4', '', '', 'admin', '未知', '', 1490440973, 1490440978, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 7),
+(9, 11, '0', 1490584121, 'p', 1, 17, 0, 200, 0, 'banner1', '', '', 'admin', '未知', '/uploads/allimg/170327/1-1F32G106370-L.jpg', 1490584121, 1490584036, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 8),
+(10, 11, '0', 1490584230, 'p', 1, 17, 0, 138, 0, 'banner2', '', '', 'admin', '未知', '/uploads/allimg/170327/1-1F32G110390-L.jpg', 1490584230, 1490584246, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 9);
 
 -- --------------------------------------------------------
 
@@ -435,7 +460,7 @@ CREATE TABLE IF NOT EXISTS `dede_arctiny` (
   PRIMARY KEY (`id`),
   KEY `sortrank` (`sortrank`),
   KEY `idx_typeid_arcrank_sortrank` (`typeid`,`arcrank`,`sortrank`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- 转存表中的数据 `dede_arctiny`
@@ -449,7 +474,9 @@ INSERT INTO `dede_arctiny` (`id`, `typeid`, `typeid2`, `arcrank`, `channel`, `se
 (5, 2, '0', 0, 1, 1490440958, 1490440951, 1),
 (6, 2, '0', 0, 1, 1490440965, 1490440960, 1),
 (7, 2, '0', 0, 1, 1490440972, 1490440967, 1),
-(8, 2, '0', 0, 1, 1490440978, 1490440973, 1);
+(8, 2, '0', 0, 1, 1490440978, 1490440973, 1),
+(9, 11, '0', 0, 17, 1490584036, 1490584121, 1),
+(10, 11, '0', 0, 17, 1490584246, 1490584230, 1);
 
 -- --------------------------------------------------------
 
@@ -491,7 +518,7 @@ CREATE TABLE IF NOT EXISTS `dede_arctype` (
   PRIMARY KEY (`id`),
   KEY `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
   KEY `sortrank` (`sortrank`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- 转存表中的数据 `dede_arctype`
@@ -507,7 +534,8 @@ INSERT INTO `dede_arctype` (`id`, `reid`, `topid`, `sortrank`, `typename`, `type
 (7, 0, 0, 60, '留言板', '{cmspath}/liuyanban', 1, 'index.html', 1, 1, -1, 1, 0, 'default/message.htm', '{style}/list_article.htm', '{style}/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/liuyanban', '', 0, 0, '', '&nbsp;', ''),
 (8, 1, 1, 50, '光亮跳泉', '{cmspath}/gongchenganli/guangliangtiaoquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '&nbsp;', ''),
 (9, 1, 1, 50, '波光喷泉', '{cmspath}/gongchenganli/boguangpenquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '', ''),
-(10, 0, 0, 50, '产品中心', '{cmspath}/chanpinzhongxin', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/product.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/chanpinzhongxin', '', 0, 0, '', '&nbsp;', '');
+(10, 0, 0, 50, '产品中心', '{cmspath}/chanpinzhongxin', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/product.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/chanpinzhongxin', '', 0, 0, '', '&nbsp;', ''),
+(11, 0, 0, 61, '轮播图', '{cmspath}/a/lunbotu', 1, 'index.html', 0, 17, -1, 0, 0, '{style}/index_ch17.htm', 'default/article.htm', 'default/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/a/lunbotu', '', 0, 0, '', '&nbsp;', '');
 
 -- --------------------------------------------------------
 
@@ -1058,7 +1086,8 @@ INSERT INTO `dede_channeltype` (`id`, `nid`, `typename`, `maintable`, `addtable`
 (3, 'soft', '软件', 'dede_archives', 'dede_addonsoft', 'soft_add.php', 'content_i_list.php', 'soft_edit.php', '', '', '', '<field:filetype islist="1" itemname="文件类型" type="text" isnull="true" default="" rename="" />	\n<field:language islist="1" itemname="语言" type="text" isnull="true" default="" rename="" />	\n<field:softtype islist="1" itemname="软件类型" type="text" isnull="true" default="" rename="" />	\n<field:accredit islist="1" itemname="授权方式" type="text" isnull="true" default="" rename="" />	\n<field:os islist="1" itemname="操作系统" type="text" isnull="true" default="" rename="" />	\n<field:softrank  islist="1" itemname="软件等级" type="int" isnull="true" default="3" rename="" function="GetRankStar(@me)" notsend="1"/>	\n<field:officialUrl  itemname="官方网址" type="text" isnull="true" default="" rename="" />	\n<field:officialDemo itemname="演示网址" type="text" isnull="true" default="" rename="" />	\n<field:softsize  itemname="软件大小" type="text" isnull="true" default="" rename="" />	\n<field:softlinks  itemname="软件地址" type="softlinks" isnull="true" default="" rename="" />	\n<field:introduce  itemname="详细介绍" type="htmltext" isnull="trnue" default="" rename="" />	\n<field:daccess islist="1" itemname="下载级别" type="int" isnull="true" default="0" rename="" function="" notsend="1"/>	\n<field:needmoney islist="1" itemname="需要金币" type="int" isnull="true" default="0" rename="" function="" notsend="1" />', 'filetype,language,softtype,os,accredit,softrank', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
 (-1, 'spec', '专题', 'dede_archives', 'dede_addonspec', 'spec_add.php', 'content_s_list.php', 'spec_edit.php', '', '', '', '<field:note type="specialtopic" isnull="true" default="" rename=""/>', '', '', 1, 1, 0, -1, '', 10, 0, 1, 1, '标题', 0, 0),
 (6, 'shop', '商品', 'dede_archives', 'dede_addonshop', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '<field:body itemname="详细介绍" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="" page="split">	\n</field:body>	\n<field:price itemname="市场价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:price>	\n<field:trueprice itemname="优惠价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:trueprice>	\n<field:brand itemname="品牌" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:brand>	\n<field:units itemname="计量单位" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:units>	\n\n	\n\n<field:vocation itemname="行业" autofield="1" notsend="0"type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:vocation>	\n\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:infotype>	\n\n<field:uptime itemname="上架时间" autofield="1" notsend="0" type="datetime" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:uptime>	\n', 'price,trueprice,brand,units', '', 0, 1, 1, -1, '', 10, 0, 1, 1, '商品名称', 0, 0),
-(-8, 'infos', '分类信息', 'dede_archives', 'dede_addoninfos', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', '<field:channel itemname="频道id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:channel>	\n<field:arcrank itemname="浏览权限" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="5" page=""></field:arcrank>	\n<field:mid itemname="会员id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:mid>	\n<field:click itemname="点击" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:click>	\n<field:title itemname="标题" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:title>	\n<field:senddate itemname="发布时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:senddate>	\n<field:flag itemname="推荐属性" autofield="0" notsend="0" type="checkbox" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:flag>	\n<field:litpic itemname="缩略图" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:litpic>	\n<field:userip itemname="会员IP" autofield="0" notsend="0" type="text" isnull="true" islist="0" default="0"  maxlength="15" page=""></field:userip>	\n<field:lastpost itemname="最后评论时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:lastpost>	\n<field:scores itemname="评论积分" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:scores>	\n<field:goodpost itemname="好评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:goodpost>	\n<field:badpost itemname="差评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:badpost>	\n<field:nativeplace itemname="地区" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:nativeplace>	\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:infotype>	\n<field:body itemname="信息内容" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:body>	\n<field:endtime itemname="截止日期" autofield="1" notsend="0" type="datetime" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:endtime>	\n<field:linkman itemname="联系人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:linkman>	\n<field:tel itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="50" page="">	\n</field:tel>	\n<field:email itemname="电子邮箱" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:email>	\n<field:address itemname="地址" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="100" page="">	\n</field:address>	\n', 'channel,arcrank,mid,click,title,senddate,flag,litpic,lastpost,scores,goodpost,badpost,nativeplace,infotype,endtime', '', -1, 1, 1, -1, '', 0, 0, 0, 1, '信息标题', 0, 0);
+(-8, 'infos', '分类信息', 'dede_archives', 'dede_addoninfos', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', '<field:channel itemname="频道id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:channel>	\n<field:arcrank itemname="浏览权限" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="5" page=""></field:arcrank>	\n<field:mid itemname="会员id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:mid>	\n<field:click itemname="点击" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:click>	\n<field:title itemname="标题" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:title>	\n<field:senddate itemname="发布时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:senddate>	\n<field:flag itemname="推荐属性" autofield="0" notsend="0" type="checkbox" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:flag>	\n<field:litpic itemname="缩略图" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:litpic>	\n<field:userip itemname="会员IP" autofield="0" notsend="0" type="text" isnull="true" islist="0" default="0"  maxlength="15" page=""></field:userip>	\n<field:lastpost itemname="最后评论时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:lastpost>	\n<field:scores itemname="评论积分" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:scores>	\n<field:goodpost itemname="好评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:goodpost>	\n<field:badpost itemname="差评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:badpost>	\n<field:nativeplace itemname="地区" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:nativeplace>	\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:infotype>	\n<field:body itemname="信息内容" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:body>	\n<field:endtime itemname="截止日期" autofield="1" notsend="0" type="datetime" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:endtime>	\n<field:linkman itemname="联系人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:linkman>	\n<field:tel itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="50" page="">	\n</field:tel>	\n<field:email itemname="电子邮箱" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:email>	\n<field:address itemname="地址" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="100" page="">	\n</field:address>	\n', 'channel,arcrank,mid,click,title,senddate,flag,litpic,lastpost,scores,goodpost,badpost,nativeplace,infotype,endtime', '', -1, 1, 1, -1, '', 0, 0, 0, 1, '信息标题', 0, 0),
+(17, 'ch17', '轮播图', 'dede_archives', 'dede_addon17', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '\r\n<field:picklink itemname="图片链接地址" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">\r\n</field:picklink>\r\n', 'picklink', NULL, 0, 1, 0, -1, '', 0, 0, 1, 1, '标题', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1424,7 +1453,7 @@ CREATE TABLE IF NOT EXISTS `dede_member` (
 --
 
 INSERT INTO `dede_member` (`mid`, `mtype`, `userid`, `pwd`, `uname`, `sex`, `rank`, `uptime`, `exptime`, `money`, `email`, `scores`, `matt`, `spacesta`, `face`, `safequestion`, `safeanswer`, `jointime`, `joinip`, `logintime`, `loginip`, `checkmail`) VALUES
-(1, '个人', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', '男', 100, 0, 0, 0, '', 10000, 10, 0, '', 0, '', 1490278628, '', 1490367576, '127.0.0.1', -1);
+(1, '个人', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', '男', 100, 0, 0, 0, '', 10000, 10, 0, '', 0, '', 1490278628, '', 1490582504, '127.0.0.1', -1);
 
 -- --------------------------------------------------------
 
@@ -1788,7 +1817,7 @@ CREATE TABLE IF NOT EXISTS `dede_member_tj` (
 --
 
 INSERT INTO `dede_member_tj` (`mid`, `article`, `album`, `archives`, `homecount`, `pagecount`, `feedback`, `friend`, `stow`, `soft`, `info`, `shop`) VALUES
-(1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0);
+(1, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2073,7 +2102,7 @@ CREATE TABLE IF NOT EXISTS `dede_plus_seoinfo` (
   `sogou_count` varchar(50) DEFAULT NULL,
   `haosou360_count` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `dede_plus_seoinfo`
@@ -2082,7 +2111,8 @@ CREATE TABLE IF NOT EXISTS `dede_plus_seoinfo` (
 INSERT INTO `dede_plus_seoinfo` (`id`, `create_time`, `alexa_num`, `alexa_area_num`, `baidu_count`, `sogou_count`, `haosou360_count`) VALUES
 (1, 1490278700, '7,527,262', '0', '0', '0', '0'),
 (2, 1490365951, '7,528,345', '0', '0', '0', '0'),
-(3, 1490460199, '7,535,011', '0', '0', '0', '0');
+(3, 1490460199, '7,535,011', '0', '0', '0', '0'),
+(4, 1490582485, '7,547,853', '0', '0', '0', '0');
 
 -- --------------------------------------------------------
 
@@ -6059,7 +6089,7 @@ CREATE TABLE IF NOT EXISTS `dede_uploads` (
   PRIMARY KEY (`aid`),
   KEY `memberid` (`mid`),
   KEY `arcid` (`arcid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- 转存表中的数据 `dede_uploads`
@@ -6067,7 +6097,11 @@ CREATE TABLE IF NOT EXISTS `dede_uploads` (
 
 INSERT INTO `dede_uploads` (`aid`, `arcid`, `title`, `url`, `mediatype`, `width`, `height`, `playtime`, `filesize`, `uptime`, `mid`) VALUES
 (1, 0, '170325/1-1F3251FPCa.jpg', '/uploads/allimg/170325/1-1F3251FPCa.jpg', 1, '474', '374', '0', 24436, 1490432886, 1),
-(2, 2, '波光喷泉', '/uploads/allimg/170325/1-1F3251G05Q91.jpg', 1, '536', '444', '0', 303598, 1490433058, 1);
+(2, 2, '波光喷泉', '/uploads/allimg/170325/1-1F3251G05Q91.jpg', 1, '536', '444', '0', 303598, 1490433058, 1),
+(3, 0, '1-1F32G106020-L.jpg', '/uploads/allimg/170327/1-1F32G106020-L.jpg', 1, '0', '0', '0', 479675, 1490583962, 1),
+(4, 0, '1-1F32G106370-L.jpg', '/uploads/allimg/170327/1-1F32G106370-L.jpg', 1, '0', '0', '0', 479675, 1490583997, 1),
+(5, 10, 'banner2', '/uploads/allimg/170327/1-1F32G110390-L.jpg', 1, '0', '0', '0', 453904, 1490584239, 1),
+(6, 0, '1-1F32G116100-L.jpg', '/uploads/allimg/170327/1-1F32G116100-L.jpg', 1, '0', '0', '0', 453904, 1490584570, 1);
 
 -- --------------------------------------------------------
 
