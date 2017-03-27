@@ -206,8 +206,8 @@ jQuery(document).ready(function(){
         },
         transition:"slide,crossfade,threedhorizontal,slice,fade,blocks,blinds,shuffle,threed"
     });
-    var h=$(window).width();
-    var h1=450*h/1900;
+    var w=$(window).width();
+    var h1=450*w/1900;
 
     $("#html5zoo-1").height(h1);
 });

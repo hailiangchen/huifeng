@@ -159,4 +159,5 @@ $cfg_contact = '安经理';
 $cfg_company_address = '河南省郑州市中州大道三全路交叉口';
 $cfg_telephone = '13303865533';
 $cfg_company_email = '';
+$cfg_contact_qq = '1078208887';
 ?>

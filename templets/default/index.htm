@@ -55,8 +55,11 @@
 
         </div>
         <div class="col-md-6 col-xs-12" aos="fade-left" aos-easing="ease" aos-delay="300">
-            <div class="img_over" style="overflow: hidden; border-color: transparent; border-width: 0px; width: 415px; height: 289px;">
-                <img  src="{dede:global.cfg_templets_skin/}/style/images/11.jpg" type="zoom" class="paragraph_image " style="width: auto; height: 289px; top: 0px; position: relative;">
+            <div class="img_over" style="overflow: hidden; border-color: transparent; border-width: 0px; ">
+
+                {dede:arclist   row='1' addfields='picklink'   channelid='17' typeid='12'}
+                [field:picklink/]
+                {/dede:arclist}
             </div>
         </div>
     </div>
