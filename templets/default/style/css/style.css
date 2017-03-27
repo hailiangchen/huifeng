@@ -869,7 +869,7 @@ kbd{
 .Q_pic:hover .Q_pic_hide,.Q_anser:hover .Q_anser_hide,.Q_sign:hover .Q_sign_hide,.Q_pic1:hover .Q_pic1_hide,.Q_sign1:hover .Q_sign1_hide{left:0px;}
 .Q_pic a, .Q_anser a,.Q_sign a,.Q_pic a:hover,.Q_anser a:hover,.Q_sign a:hover,.Q_pic1 a,.Q_pic1 a:hover,.Q_sign1 a,.Q_sign1 a:hover{color:white;}
 a.blank{width:100%;height:100%;display:block;}
-.QQ_S1{width:60px;height: 110px;position:fixed;right:10px;bottom:20%;}
+.QQ_S1{width:60px;height: 110px;position:fixed;right:10px;bottom:15%;}
 .Q_top1{width:100%;height:30px;background:#E6E6E6;line-height:30px;text-align:right;cursor:pointer;}
 .Q_botm1{width:56px;border:2px solid #E6E6E6;height: 72px;}
 .Q_pic1{border-bottom:2px solid #E6E6E6;width:100%;height:33px;background-position:-55px -465px;position:relative;overflow:hidden;color: white;text-align:center;line-height:33px;cursor:pointer;background-color:white;}
