@@ -1,5 +1,16 @@
 
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/bases.css">
+<script src="{dede:global.cfg_templets_skin/}/style/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+<script src="{dede:global.cfg_templets_skin/}/style/js/aos.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/js/mixitup.min.js"></script>
+
+</head>
+<body>
 <div class="row">
     <div class="header">
         <div class="container top">
@@ -29,7 +40,7 @@
                 咨询电话：
             </p>
             <span class="glyphicon glyphicon-phone-alt color-alizarin font22"></span>
-            <span class="font-22  color-alizarin font-bold">{dede:global.cfg_mobile/}
+            <span class="font-22  color-alizarin font-bold">{dede:global.cfg_telephone/}
             </span>
         </div>
     </div>
@@ -63,16 +74,44 @@
     </nav>
 </div>
 
-<div class="row" id="html5zoo-1" >
-    <div class="col-md-12 col-xs-12">
-        <ul class="html5zoo-slides" style="display:none;">
-            {dede:arclist   row='5'  channelid='17' typeid='11'}
-
-            <li><img alt="" src="[field:litpic/]" class="" /></li>
+<!--banner begin-->
+<div class="row">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            {dede:arclist   row='5'  channelid='17' typeid='11' name=autoindex runphp="yes"}
+            <li data-target='#carousel-example-generic' data-slide-to="[field:global.autoindex runphp='yes']@me[/field:global.autoindex]" [field:global.autoindex runphp='yes']if(@me==1){@me='class="active"';}else{@me="";}[/field:global.autoindex]></li>
             {/dede:arclist}
 
-        </ul>
-        <div class="clearfix"></div>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            {dede:arclist   row='5'  channelid='17' typeid='11' name=autoindex runphp="yes"}
+            <div  [field:global.autoindex runphp='yes']if(@me==1){@me='class="item active"';}else{@me='class="item"';}[/field:global.autoindex]>
+                <a href="#" target="_blank" ><img src="[field:litpic/]" alt="  " width="100%"></a>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            {/dede:arclist}
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
+
 </div>
+
+
+
+
+

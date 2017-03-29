@@ -5,7 +5,7 @@ $cfg_dbhost = 'localhost';
 $cfg_dbname = 'huifeng';
 $cfg_dbuser = 'root';
 $cfg_dbpwd = 'm123456';
-$cfg_dbprefix = 'dede_';
+$cfg_dbprefix = 'hf_';
 $cfg_db_language = 'utf8';
 
 

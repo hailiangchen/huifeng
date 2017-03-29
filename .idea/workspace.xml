@@ -1,44 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/templets/default/index.htm" line="38" />
+    <bookmark url="file://$PROJECT_DIR$/templets/default/index.htm" line="27" />
     <bookmark url="file://$PROJECT_DIR$/templets/default/footer.htm" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7db4487-3729-4506-a8a6-8e102e47000a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/defaultpic.gif" afterPath="$PROJECT_DIR$/images/defaultpic.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/style/images/index_04.jpg" afterPath="$PROJECT_DIR$/templets/default/style/images/index_04.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a/lunbotu/2017/0327/10.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changjianwenti/2017/0325/4.html" afterPath="$PROJECT_DIR$/changjianwenti/2017/0325/4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changjianwenti/index.html" afterPath="$PROJECT_DIR$/changjianwenti/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changjianwenti/list_3_1.html" afterPath="$PROJECT_DIR$/changjianwenti/list_3_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chanpinzhongxin/index.html" afterPath="$PROJECT_DIR$/chanpinzhongxin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chanpinzhongxin/list_10_1.html" afterPath="$PROJECT_DIR$/chanpinzhongxin/list_10_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sessions_15df050252/sess_hq57pmq06cdak9qf83ntn71ju3" afterPath="$PROJECT_DIR$/data/sessions_15df050252/sess_hq57pmq06cdak9qf83ntn71ju3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/boguangpenquan/2017/0325/2.html" afterPath="$PROJECT_DIR$/gongchenganli/boguangpenquan/2017/0325/2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/boguangpenquan/index.html" afterPath="$PROJECT_DIR$/gongchenganli/boguangpenquan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/boguangpenquan/list_9_1.html" afterPath="$PROJECT_DIR$/gongchenganli/boguangpenquan/list_9_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/2017/0325/1.html" afterPath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/2017/0325/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/index.html" afterPath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/list_8_1.html" afterPath="$PROJECT_DIR$/gongchenganli/guangliangtiaoquan/list_8_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/index.html" afterPath="$PROJECT_DIR$/gongchenganli/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gongchenganli/list_1_1.html" afterPath="$PROJECT_DIR$/gongchenganli/list_1_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guanyuwomen/index.html" afterPath="$PROJECT_DIR$/guanyuwomen/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lianxiwomen/index.html" afterPath="$PROJECT_DIR$/lianxiwomen/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/liuyanban/index.html" afterPath="$PROJECT_DIR$/liuyanban/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plus/diy.php" afterPath="$PROJECT_DIR$/plus/diy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a/lunbotu/2017/0327/9.html" afterPath="$PROJECT_DIR$/a/lunbotu/2017/0327/9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/common.inc.php" afterPath="$PROJECT_DIR$/data/common.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/huifeng.sql" afterPath="$PROJECT_DIR$/huifeng.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/about.htm" afterPath="$PROJECT_DIR$/templets/default/about.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/anli.htm" afterPath="$PROJECT_DIR$/templets/default/anli.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/anliinfo.htm" afterPath="$PROJECT_DIR$/templets/default/anliinfo.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/article.htm" afterPath="$PROJECT_DIR$/templets/default/article.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/contact.htm" afterPath="$PROJECT_DIR$/templets/default/contact.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/header.htm" afterPath="$PROJECT_DIR$/templets/default/header.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/index.htm" afterPath="$PROJECT_DIR$/templets/default/index.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/message.htm" afterPath="$PROJECT_DIR$/templets/default/message.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/style/js/lovelygallery.js" afterPath="$PROJECT_DIR$/templets/default/style/js/lovelygallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/2017/0325/3.html" afterPath="$PROJECT_DIR$/xinwendongtai/2017/0325/3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/2017/0325/5.html" afterPath="$PROJECT_DIR$/xinwendongtai/2017/0325/5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/2017/0325/6.html" afterPath="$PROJECT_DIR$/xinwendongtai/2017/0325/6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/2017/0325/7.html" afterPath="$PROJECT_DIR$/xinwendongtai/2017/0325/7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/2017/0325/8.html" afterPath="$PROJECT_DIR$/xinwendongtai/2017/0325/8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/index.html" afterPath="$PROJECT_DIR$/xinwendongtai/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xinwendongtai/list_2_1.html" afterPath="$PROJECT_DIR$/xinwendongtai/list_2_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhaoxiannashi/index.html" afterPath="$PROJECT_DIR$/zhaoxiannashi/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/news.htm" afterPath="$PROJECT_DIR$/templets/default/news.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/problems.htm" afterPath="$PROJECT_DIR$/templets/default/problems.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/product.htm" afterPath="$PROJECT_DIR$/templets/default/product.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templets/default/recruiting.htm" afterPath="$PROJECT_DIR$/templets/default/recruiting.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,15 +36,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="header.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templets/default/header.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-361">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,15 +50,42 @@
       <file leaf-file-name="footer.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templets/default/footer.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            <state relative-caret-position="665">
+              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article_article.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/default/article_article.htm">
+      <file leaf-file-name="contact.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/contact.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#1072#1078#0" expanded="true" />
+                <element signature="e#1078#1084#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templets/default/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_article.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/list_article.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -85,83 +94,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aos.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/default/style/js/aos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/default/style/js/bootstrap.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html5zoo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/default/style/js/html5zoo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templets/default/style/js/jquery.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lovelygallery.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templets/default/style/js/lovelygallery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="message.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templets/default/message.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="143" column="34" lean-forward="false" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#6;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plus/diy.php">
+      <file leaf-file-name="news.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/news.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="52" />
-              <folding>
-                <marker date="1490458485879" expanded="true" signature="1392:1439" ph="select * fro... ##@_" />
-                <marker date="1490458485879" expanded="true" signature="2939:3020" ph="INSERT INTO `${{$diy-&gt;table}}`... " />
-                <marker date="1490458485879" expanded="true" signature="3938:3984" ph="SELECT * FRO... ${{$diy-&gt;table}}" />
-                <marker date="1490458485879" expanded="true" signature="4014:4076" ph="SELECT * FRO... ${{$diy-&gt;table}}" />
-                <marker date="1490458485879" expanded="true" signature="4692:4734" ph="SELECT * FRO... $" />
-                <marker date="1490458485879" expanded="true" signature="4777:4833" ph="SELECT * FRO... $" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problems.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/problems.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/product.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recruiting.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templets/default/recruiting.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,20 +177,21 @@
         <option value="$PROJECT_DIR$/ditu.html" />
         <option value="$PROJECT_DIR$/templets/default/footer.htm" />
         <option value="$PROJECT_DIR$/include/dedesql.class.php" />
-        <option value="$PROJECT_DIR$/templets/default/recruiting.htm" />
-        <option value="$PROJECT_DIR$/templets/default/product.htm" />
-        <option value="$PROJECT_DIR$/templets/default/problems.htm" />
-        <option value="$PROJECT_DIR$/templets/default/news.htm" />
-        <option value="$PROJECT_DIR$/templets/default/index.htm" />
-        <option value="$PROJECT_DIR$/templets/default/contact.htm" />
+        <option value="$PROJECT_DIR$/plus/diy.php" />
+        <option value="$PROJECT_DIR$/templets/default/style/js/lovelygallery.js" />
+        <option value="$PROJECT_DIR$/data/common.inc.php" />
         <option value="$PROJECT_DIR$/templets/default/anli.htm" />
+        <option value="$PROJECT_DIR$/templets/default/anliinfo.htm" />
         <option value="$PROJECT_DIR$/templets/default/about.htm" />
         <option value="$PROJECT_DIR$/templets/default/article.htm" />
-        <option value="$PROJECT_DIR$/templets/default/anliinfo.htm" />
-        <option value="$PROJECT_DIR$/templets/default/header.htm" />
-        <option value="$PROJECT_DIR$/plus/diy.php" />
+        <option value="$PROJECT_DIR$/templets/default/contact.htm" />
         <option value="$PROJECT_DIR$/templets/default/message.htm" />
-        <option value="$PROJECT_DIR$/templets/default/style/js/lovelygallery.js" />
+        <option value="$PROJECT_DIR$/templets/default/news.htm" />
+        <option value="$PROJECT_DIR$/templets/default/problems.htm" />
+        <option value="$PROJECT_DIR$/templets/default/product.htm" />
+        <option value="$PROJECT_DIR$/templets/default/recruiting.htm" />
+        <option value="$PROJECT_DIR$/templets/default/header.htm" />
+        <option value="$PROJECT_DIR$/templets/default/index.htm" />
       </list>
     </option>
   </component>
@@ -266,6 +245,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huifeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huifeng" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -284,36 +277,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defaultbak" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="huifeng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="huifeng" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="defaultbak" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,6 +328,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -390,18 +367,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490367327520</updated>
-      <workItem from="1490367330177" duration="31780000" />
+      <workItem from="1490367330177" duration="32229000" />
+      <workItem from="1490789756472" duration="4529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31780000" />
+    <option name="totallyTimeSpent" value="36758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.150978" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15281174" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -410,12 +388,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -431,11 +409,77 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templets/defaultbak/header_m.htm">
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/aos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/html5zoo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/lovelygallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/message.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2717">
+          <caret line="143" column="34" lean-forward="false" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#6;n#form#0;n#div#0;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plus/diy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="52" />
+          <folding>
+            <marker date="1490458485879" expanded="true" signature="1392:1439" ph="select * fro... ##@_" />
+            <marker date="1490458485879" expanded="true" signature="2939:3020" ph="INSERT INTO `${{$diy-&gt;table}}`... " />
+            <marker date="1490458485879" expanded="true" signature="3938:3984" ph="SELECT * FRO... ${{$diy-&gt;table}}" />
+            <marker date="1490458485879" expanded="true" signature="4014:4076" ph="SELECT * FRO... ${{$diy-&gt;table}}" />
+            <marker date="1490458485879" expanded="true" signature="4692:4734" ph="SELECT * FRO... $" />
+            <marker date="1490458485879" expanded="true" signature="4777:4833" ph="SELECT * FRO... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/defaultbak/header_m.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -443,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -451,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="264" column="9" lean-forward="false" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -461,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-418">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -477,16 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="1243" column="6" lean-forward="false" selection-start-line="1243" selection-start-column="3" selection-end-line="1243" selection-end-column="6" />
-          <folding>
-            <marker date="1490441740068" expanded="true" signature="1425:1481" ph="SELECT chann... ##@__arctiny" />
-            <marker date="1490441740068" expanded="true" signature="1965:2245" ph="SELECT arc.*... ##@__archives" />
-            <marker date="1490441740068" expanded="true" signature="4173:4256" ph="SELECT * FRO... ${{$this-&gt;ChannelUnit-&gt;ChannelInfos['addtable']}}" />
-            <marker date="1490441740068" expanded="true" signature="16796:16858" ph="Update `##@__... " />
-            <marker date="1490441740068" expanded="true" signature="28771:28884" ph="Select id Fr... ##@__arctiny" />
-            <marker date="1490441740068" expanded="true" signature="28930:29042" ph="Select id Fr... ##@__arctiny" />
-            <marker date="1490441740068" expanded="true" signature="29245:29565" ph="Select arc.i... ##@__archives" />
-            <marker date="1490441740068" expanded="true" signature="42489:42550" ph="SELECT * FRO... ##@_" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -494,15 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
           <caret line="1176" column="36" lean-forward="false" selection-start-line="1176" selection-start-column="36" selection-end-line="1176" selection-end-column="36" />
-          <folding>
-            <marker date="1490441975794" expanded="true" signature="3018:3157" ph="SELECT id,to... ##@__arctype" />
-            <marker date="1490441975794" expanded="true" signature="3441:3551" ph="SELECT id,to... ##@__arctype" />
-            <marker date="1490441975794" expanded="true" signature="7069:7120" ph="SELECT COUNT... ##@__arctiny" />
-            <marker date="1490441975794" expanded="true" signature="26769:27110" ph="SELECT arc.*... ##@__archives" />
-            <marker date="1490441975794" expanded="true" signature="27274:27357" ph="SELECT id FR... ##@__arctiny" />
-            <marker date="1490441975794" expanded="true" signature="27733:28107" ph="SELECT arc.*... ##@__archives" />
-            <marker date="1490441975794" expanded="true" signature="35772:35792" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="162" column="55" lean-forward="true" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -548,9 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#300#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,95 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/list_article.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/anli.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/about.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/recruiting.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/product.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/problems.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/news.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/contact.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#1951#1957#0" expanded="true" />
-            <element signature="e#1957#1963#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/article.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,21 +584,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-285">
           <caret line="165" column="9" lean-forward="false" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/anliinfo.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plus/diy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
+        <state relative-caret-position="1216">
           <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="52" />
           <folding>
             <marker date="1490458485879" expanded="true" signature="1392:1439" ph="select * fro... ##@_" />
@@ -685,16 +598,6 @@
             <marker date="1490458485879" expanded="true" signature="4014:4076" ph="SELECT * FRO... ${{$diy-&gt;table}}" />
             <marker date="1490458485879" expanded="true" signature="4692:4734" ph="SELECT * FRO... $" />
             <marker date="1490458485879" expanded="true" signature="4777:4833" ph="SELECT * FRO... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/message.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="143" column="34" lean-forward="false" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#6;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,14 +627,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templets/default/style/css/bootstrap.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templets/default/style/css/bootstrap-theme.min.css">
@@ -750,20 +652,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/header.htm">
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/aos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/footer.htm">
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/html5zoo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/style/js/lovelygallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1309509375000" expanded="true" signature="647:678" ph="Select * Fro... ##@__homepageset" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/common.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/about.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/anli.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/anliinfo.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/article.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -776,45 +752,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/style/js/aos.js">
+    <entry file="file://$PROJECT_DIR$/templets/default/contact.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/style/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1072#1078#0" expanded="true" />
+            <element signature="e#1078#1084#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/style/js/html5zoo.js">
+    <entry file="file://$PROJECT_DIR$/templets/default/footer.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
+        <state relative-caret-position="665">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/list_article.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/style/js/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/templets/default/message.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templets/default/style/js/lovelygallery.js">
+    <entry file="file://$PROJECT_DIR$/templets/default/news.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/problems.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/product.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/recruiting.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/header.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templets/default/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

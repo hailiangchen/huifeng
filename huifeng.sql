@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.4
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: 2017-03-27 07:20:28
+-- Host: 127.0.0.1
+-- Generation Time: 2017-03-29 14:22:18
 -- 服务器版本： 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `huifeng`
@@ -23,68 +23,69 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addon17`
+-- 表的结构 `hf_addon17`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addon17` (
+CREATE TABLE `hf_addon17` (
   `aid` int(11) NOT NULL DEFAULT '0',
   `typeid` int(11) NOT NULL DEFAULT '0',
   `redirecturl` varchar(255) NOT NULL DEFAULT '',
   `templet` varchar(30) NOT NULL DEFAULT '',
   `userip` char(15) NOT NULL DEFAULT '',
-  `picklink` varchar(250) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `typeid` (`typeid`)
+  `picklink` varchar(250) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_addon17`
+-- 转存表中的数据 `hf_addon17`
 --
 
-INSERT INTO `dede_addon17` (`aid`, `typeid`, `redirecturl`, `templet`, `userip`, `picklink`) VALUES
-(9, 11, '', '', '127.0.0.1', ''),
-(10, 11, '', '', '127.0.0.1', '');
+INSERT INTO `hf_addon17` (`aid`, `typeid`, `redirecturl`, `templet`, `userip`, `picklink`) VALUES
+(9, 11, '', '', '171.11.74.38', ''),
+(10, 11, '', '', '171.11.74.38', ''),
+(11, 12, '', '', '171.11.74.38', 'http://player.youku.com/embed/XMjY2NzI1ODEwOA=='),
+(13, 11, '', '', '171.11.74.38', '');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addonarticle`
+-- 表的结构 `hf_addonarticle`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addonarticle` (
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_addonarticle` (
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `body` mediumtext,
   `redirecturl` varchar(255) NOT NULL DEFAULT '',
   `templet` varchar(30) NOT NULL DEFAULT '',
-  `userip` char(15) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `typeid` (`typeid`)
+  `userip` char(15) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_addonarticle`
+-- 转存表中的数据 `hf_addonarticle`
 --
 
-INSERT INTO `dede_addonarticle` (`aid`, `typeid`, `body`, `redirecturl`, `templet`, `userip`) VALUES
-(1, 8, '<img alt="" src="/uploads/allimg/170325/1-1F3251FPCa.jpg" style="width: 474px; height: 374px;" />', '', '', '127.0.0.1'),
-(2, 9, '<img alt="" src="/uploads/allimg/170325/1-1F3251G05Q91.jpg" style="width: 536px; height: 444px;" />', '', '', '127.0.0.1'),
+INSERT INTO `hf_addonarticle` (`aid`, `typeid`, `body`, `redirecturl`, `templet`, `userip`) VALUES
+(1, 8, '<img alt="" src="/uploads/indeximg/170329/1-1F329191H2F2.jpg" style="width: 800px; height: 600px;" />', '', '', '117.158.3.66'),
+(2, 9, '<img alt="" src="/uploads/indeximg/170329/1-1F329191913408.jpg" style="width: 800px; height: 534px;" />', '', '', '117.158.3.66'),
 (3, 2, '<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">目前无论是国内或国外的水景工程，用数控喷泉装里来提升水景工程的层次已成为一种新的理念和大的趋势。数控喷泉装工作为一项新生产品，由于大家对数控喷泉系统技术的理解还不是很透彻，在系统使用方面的诸多环节也不是十分清楚，这就给大家在工程设计与使用上造成许多不便。 随着社会经济的发展和科学技术的进步，水景喷泉设备的技术领域也发生了质的变化。</span><br style="border: 0px; margin: 0px; padding: 0px; list-style-type: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;" />\r\n<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">　　数控喷泉设备是一种专门用于对装里出水口的位置和运行速度作精确控制的特种喷泉设备。其最大特点是其&ldquo;数字性&rdquo;，即可通过控制脉冲频率，对装置转速、方向、角度、位置进行精确控制;也就是对于上位机发送的脉冲信号段或串，该喷泉设备都能在其驱动系统的驱动下，用不同的速度任意方向地连续或断续运转任意的圈数或一个固定角度，形成形态各异的各种水型组合。</span><br style="border: 0px; margin: 0px; padding: 0px; list-style-type: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;" />\r\n<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">　　数控喷泉设备具体结构主要由步进电机、控制驱动器、定位传感器、减速齿轮组、密封件、旋转喷射口、水室、水道、外壳、电控驱动、计算机控制系统等组成。</span>', '', '', '127.0.0.1'),
 (4, 3, '<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">由于各种各样的原因，如工作中推进水流时产生的涡流，气蚀不可避免的会产生振动;水泵设备入口管、叶轮内、泵内有杂物而发生共振现象等，怎么解决喷泉设备的水泵工作时带来的噪声及振动，有些因素是不能避免的，而有些却是可以避免的。</span><br style="border: 0px; margin: 0px; padding: 0px; list-style-type: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;" />\r\n<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">　　一、水泵设备工作了一段时间后，要对设备进行检修，对于一些老化的设备要及时地更换，这是因为由于使用时间较长，喷泉设备的水泵设备磨损老化：叶轮松动;轴承损坏或轴承间隙大，容易产生共振现象等。</span><br style="border: 0px; margin: 0px; padding: 0px; list-style-type: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;" />\r\n<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">　　二、选择水泵设备时一定要选择制造工艺好的，要是制造工艺不过关如转子不平衡、喷泉设备的水泵与电机轴不同心、转子与定子部分发生碰撞或磨擦等，这些都是产生共振现象的源泉，所以在制造工艺上面一定要严格把关，选择制造工艺过关的喷泉设备的水泵设备。</span><br style="border: 0px; margin: 0px; padding: 0px; list-style-type: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;" />\r\n<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体;">　　以上介绍的两种解决方法是从能够避免的一些因素出发的，但是，有很多产生共振的因素是无法避免的，这就要求我们除了对喷泉设备的水泵本身制造工艺进行加强，降低振动幅度外，还要积极地探究并找出更多的方法，这无疑又为更多的喷泉设备的爱好者提供了一研究课题。</span>', '', '', '127.0.0.1'),
 (5, 2, '&nbsp;喷泉设备的技术性发展', '', '', '127.0.0.1'),
 (6, 2, '&nbsp;喷泉设备的技术性发展', '', '', '127.0.0.1'),
 (7, 2, '&nbsp;喷泉设备的技术性发展', '', '', '127.0.0.1'),
-(8, 2, '&nbsp;喷泉设备的技术性发展', '', '', '127.0.0.1');
+(8, 2, '&nbsp;喷泉设备的技术性发展', '', '', '127.0.0.1'),
+(12, 12, '<iframe width="600" height="360" src=''http://player.youku.com/embed/XMjY0NDA1Mjc5Mg=='' allowfullscreen frameborder=0></iframe>', '', '', '171.11.74.38'),
+(14, 9, '<img alt="" src="/uploads/indeximg/170329/1-1F32919395bX.jpg" style="width: 793px; height: 394px;" />', '', '', '222.143.24.146'),
+(15, 9, '<img alt="" src="/uploads/indeximg/170329/1-1F32919395bX.jpg" style="width: 793px; height: 394px;" />', '', '', '117.158.3.66');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addonimages`
+-- 表的结构 `hf_addonimages`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addonimages` (
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_addonimages` (
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `pagestyle` smallint(6) NOT NULL DEFAULT '1',
   `maxwidth` smallint(6) NOT NULL DEFAULT '600',
   `imgurls` text,
@@ -96,55 +97,50 @@ CREATE TABLE IF NOT EXISTS `dede_addonimages` (
   `templet` varchar(30) NOT NULL DEFAULT '',
   `userip` char(15) NOT NULL DEFAULT '',
   `redirecturl` varchar(255) NOT NULL DEFAULT '',
-  `body` mediumtext,
-  PRIMARY KEY (`aid`),
-  KEY `imagesMain` (`typeid`)
+  `body` mediumtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addoninfos`
+-- 表的结构 `hf_addoninfos`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addoninfos` (
+CREATE TABLE `hf_addoninfos` (
   `aid` int(11) NOT NULL DEFAULT '0',
   `typeid` int(11) NOT NULL DEFAULT '0',
   `channel` smallint(6) NOT NULL DEFAULT '0',
   `arcrank` smallint(6) NOT NULL DEFAULT '0',
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `click` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `title` varchar(60) NOT NULL DEFAULT '',
   `litpic` varchar(60) NOT NULL DEFAULT '',
   `userip` varchar(15) NOT NULL DEFAULT ' ',
   `senddate` int(11) NOT NULL DEFAULT '0',
   `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
-  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `lastpost` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `scores` mediumint(8) NOT NULL DEFAULT '0',
-  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `nativeplace` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `nativeplace` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `infotype` char(20) NOT NULL DEFAULT '0',
   `body` mediumtext,
   `endtime` int(11) NOT NULL DEFAULT '0',
   `tel` varchar(50) NOT NULL DEFAULT '',
   `email` varchar(50) NOT NULL DEFAULT '',
   `address` varchar(100) NOT NULL DEFAULT '',
-  `linkman` varchar(50) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `typeid` (`typeid`,`nativeplace`,`infotype`),
-  KEY `channel` (`channel`,`arcrank`,`mid`,`click`,`title`,`litpic`,`senddate`,`flag`,`endtime`)
+  `linkman` varchar(50) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addonshop`
+-- 表的结构 `hf_addonshop`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addonshop` (
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_addonshop` (
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `body` mediumtext,
   `price` float NOT NULL DEFAULT '0',
   `trueprice` float NOT NULL DEFAULT '0',
@@ -155,26 +151,24 @@ CREATE TABLE IF NOT EXISTS `dede_addonshop` (
   `redirecturl` varchar(255) NOT NULL,
   `vocation` char(20) NOT NULL DEFAULT '0',
   `infotype` char(20) NOT NULL DEFAULT '0',
-  `uptime` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`aid`),
-  KEY `typeid` (`typeid`)
+  `uptime` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addonsoft`
+-- 表的结构 `hf_addonsoft`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addonsoft` (
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_addonsoft` (
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `filetype` varchar(10) NOT NULL DEFAULT '',
   `language` varchar(10) NOT NULL DEFAULT '',
   `softtype` varchar(10) NOT NULL DEFAULT '',
   `accredit` varchar(10) NOT NULL DEFAULT '',
   `os` varchar(30) NOT NULL DEFAULT '',
-  `softrank` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `softrank` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `officialUrl` varchar(30) NOT NULL DEFAULT '',
   `officialDemo` varchar(50) NOT NULL DEFAULT '',
   `softsize` varchar(10) NOT NULL DEFAULT '',
@@ -184,74 +178,68 @@ CREATE TABLE IF NOT EXISTS `dede_addonsoft` (
   `needmoney` smallint(5) NOT NULL DEFAULT '0',
   `templet` varchar(30) NOT NULL DEFAULT '',
   `userip` char(15) NOT NULL DEFAULT '',
-  `redirecturl` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `softMain` (`typeid`)
+  `redirecturl` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_addonspec`
+-- 表的结构 `hf_addonspec`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_addonspec` (
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_addonspec` (
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `note` text,
   `templet` varchar(30) NOT NULL DEFAULT '',
   `userip` char(15) NOT NULL DEFAULT '',
-  `redirecturl` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `typeid` (`typeid`)
+  `redirecturl` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_admin`
+-- 表的结构 `hf_admin`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_admin` (
-  `id` int(10) unsigned NOT NULL,
-  `usertype` float unsigned DEFAULT '0',
+CREATE TABLE `hf_admin` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `usertype` float UNSIGNED DEFAULT '0',
   `userid` char(30) NOT NULL DEFAULT '',
   `pwd` char(32) NOT NULL DEFAULT '',
   `uname` char(20) NOT NULL DEFAULT '',
   `tname` char(30) NOT NULL DEFAULT '',
   `email` char(30) NOT NULL DEFAULT '',
   `typeid` text,
-  `logintime` int(10) unsigned NOT NULL DEFAULT '0',
-  `loginip` varchar(20) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
+  `logintime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `loginip` varchar(20) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_admin`
+-- 转存表中的数据 `hf_admin`
 --
 
-INSERT INTO `dede_admin` (`id`, `usertype`, `userid`, `pwd`, `uname`, `tname`, `email`, `typeid`, `logintime`, `loginip`) VALUES
-(1, 10, 'admin', 'f297a57a5a743894a0e4', 'admin', '', '', '0', 1490582504, '127.0.0.1');
+INSERT INTO `hf_admin` (`id`, `usertype`, `userid`, `pwd`, `uname`, `tname`, `email`, `typeid`, `logintime`, `loginip`) VALUES
+(1, 10, 'admin', 'f297a57a5a743894a0e4', 'admin', '', '', '0', 1490789474, '123.149.72.193');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_admintype`
+-- 表的结构 `hf_admintype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_admintype` (
+CREATE TABLE `hf_admintype` (
   `rank` float NOT NULL DEFAULT '1',
   `typename` varchar(30) NOT NULL DEFAULT '',
   `system` smallint(6) NOT NULL DEFAULT '0',
-  `purviews` text,
-  PRIMARY KEY (`rank`)
+  `purviews` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_admintype`
+-- 转存表中的数据 `hf_admintype`
 --
 
-INSERT INTO `dede_admintype` (`rank`, `typename`, `system`, `purviews`) VALUES
+INSERT INTO `hf_admintype` (`rank`, `typename`, `system`, `purviews`) VALUES
 (1, '信息发布员', 1, 't_AccList a_AccNew a_AccList a_MyList a_MyEdit a_MyDel sys_MdPwd sys_Feedback sys_MyUpload plus_留言簿模块 '),
 (5, '频道管理员', 1, 't_AccList t_AccNew t_AccEdit t_AccDel a_AccNew a_AccList a_AccEdit a_AccDel a_AccCheck a_MyList a_MyEdit a_MyDel a_MyCheck co_AddNote co_EditNote co_PlayNote co_ListNote co_ViewNote spec_New spec_List spec_Edit sys_MdPwd sys_Log sys_ArcTj sys_Source sys_Writer sys_Keyword sys_MakeHtml sys_Feedback sys_Upload sys_MyUpload member_List member_Edit plus_站内新闻发布 plus_友情链接模块 plus_留言簿模块 plus_投票模块 plus_广告管理 '),
 (10, '超级管理员', 1, 'admin_AllowAll ');
@@ -259,38 +247,36 @@ INSERT INTO `dede_admintype` (`rank`, `typename`, `system`, `purviews`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_advancedsearch`
+-- 表的结构 `hf_advancedsearch`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_advancedsearch` (
+CREATE TABLE `hf_advancedsearch` (
   `mid` int(11) NOT NULL,
   `maintable` varchar(256) NOT NULL DEFAULT '',
   `mainfields` text,
   `addontable` varchar(256) DEFAULT NULL,
   `addonfields` text,
   `forms` text,
-  `template` varchar(256) NOT NULL DEFAULT '',
-  UNIQUE KEY `mid` (`mid`)
+  `template` varchar(256) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arcatt`
+-- 表的结构 `hf_arcatt`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arcatt` (
+CREATE TABLE `hf_arcatt` (
   `sortid` smallint(6) NOT NULL DEFAULT '0',
   `att` char(10) NOT NULL DEFAULT '',
-  `attname` char(30) NOT NULL DEFAULT '',
-  PRIMARY KEY (`att`)
+  `attname` char(30) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arcatt`
+-- 转存表中的数据 `hf_arcatt`
 --
 
-INSERT INTO `dede_arcatt` (`sortid`, `att`, `attname`) VALUES
+INSERT INTO `hf_arcatt` (`sortid`, `att`, `attname`) VALUES
 (5, 's', '滚动'),
 (1, 'h', '头条'),
 (3, 'f', '幻灯'),
@@ -303,42 +289,38 @@ INSERT INTO `dede_arcatt` (`sortid`, `att`, `attname`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arccache`
+-- 表的结构 `hf_arccache`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arccache` (
+CREATE TABLE `hf_arccache` (
   `md5hash` char(32) NOT NULL DEFAULT '',
   `uptime` int(11) NOT NULL DEFAULT '0',
-  `cachedata` mediumtext,
-  PRIMARY KEY (`md5hash`)
+  `cachedata` mediumtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arccache`
+-- 转存表中的数据 `hf_arccache`
 --
 
-INSERT INTO `dede_arccache` (`md5hash`, `uptime`, `cachedata`) VALUES
-('2313de92213f5d7266947dbd38b0e490', 1490584204, '0'),
-('1c580dbcbf3ec9e22d875bd36705d040', 1490584204, '9'),
-('744f3f54b43dd30d2c2fd37d24be6e8d', 1490584246, '0'),
-('b7af0a1d50e5e7e8d781d8ff35d08cf2', 1490584246, '9,10');
+INSERT INTO `hf_arccache` (`md5hash`, `uptime`, `cachedata`) VALUES
+('352934c181c6f33bfb94b821df920aa5', 1490787880, '13,10,9');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_archives`
+-- 表的结构 `hf_archives`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_archives` (
-  `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_archives` (
+  `id` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `typeid2` varchar(90) NOT NULL DEFAULT '0',
-  `sortrank` int(10) unsigned NOT NULL DEFAULT '0',
+  `sortrank` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
   `ismake` smallint(6) NOT NULL DEFAULT '0',
   `channel` smallint(6) NOT NULL DEFAULT '1',
   `arcrank` smallint(6) NOT NULL DEFAULT '0',
-  `click` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `money` smallint(6) NOT NULL DEFAULT '0',
   `title` char(60) NOT NULL DEFAULT '',
   `shorttitle` char(36) NOT NULL DEFAULT '',
@@ -346,52 +328,53 @@ CREATE TABLE IF NOT EXISTS `dede_archives` (
   `writer` char(20) NOT NULL DEFAULT '',
   `source` char(30) NOT NULL DEFAULT '',
   `litpic` char(100) NOT NULL DEFAULT '',
-  `pubdate` int(10) unsigned NOT NULL DEFAULT '0',
-  `senddate` int(10) unsigned NOT NULL DEFAULT '0',
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `pubdate` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `senddate` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `keywords` char(30) NOT NULL DEFAULT '',
-  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `lastpost` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `scores` mediumint(8) NOT NULL DEFAULT '0',
-  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `voteid` mediumint(8) NOT NULL,
-  `notpost` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `notpost` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `description` varchar(255) NOT NULL DEFAULT '',
   `filename` varchar(40) NOT NULL DEFAULT '',
-  `dutyadmin` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `dutyadmin` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `tackid` int(10) NOT NULL DEFAULT '0',
-  `mtype` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `weight` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `sortrank` (`sortrank`),
-  KEY `mainindex` (`arcrank`,`typeid`,`channel`,`flag`,`mid`),
-  KEY `lastpost` (`lastpost`,`scores`,`goodpost`,`badpost`,`notpost`)
+  `mtype` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `weight` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_archives`
+-- 转存表中的数据 `hf_archives`
 --
 
-INSERT INTO `dede_archives` (`id`, `typeid`, `typeid2`, `sortrank`, `flag`, `ismake`, `channel`, `arcrank`, `click`, `money`, `title`, `shorttitle`, `color`, `writer`, `source`, `litpic`, `pubdate`, `senddate`, `mid`, `keywords`, `lastpost`, `scores`, `goodpost`, `badpost`, `voteid`, `notpost`, `description`, `filename`, `dutyadmin`, `tackid`, `mtype`, `weight`) VALUES
-(1, 8, '0', 1490433091, 'c,p', 1, 1, 0, 88, 0, '光亮跳泉一', '', '', 'admin', '未知', '/uploads/allimg/170325/1-1F3251FPCa-lp.jpg', 1490433091, 1490432892, 1, '光亮,跳泉,一,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 0),
-(2, 9, '0', 1490433076, 'c,p', 1, 1, 0, 200, 0, '波光喷泉', '', '', 'admin', '未知', '/uploads/allimg/170325/1-1F3251G05Q91-lp.jpg', 1490433076, 1490433063, 1, '波光,喷泉,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 1),
+INSERT INTO `hf_archives` (`id`, `typeid`, `typeid2`, `sortrank`, `flag`, `ismake`, `channel`, `arcrank`, `click`, `money`, `title`, `shorttitle`, `color`, `writer`, `source`, `litpic`, `pubdate`, `senddate`, `mid`, `keywords`, `lastpost`, `scores`, `goodpost`, `badpost`, `voteid`, `notpost`, `description`, `filename`, `dutyadmin`, `tackid`, `mtype`, `weight`) VALUES
+(1, 8, '0', 1490787285, 'c,p', 1, 1, 0, 88, 0, '程控喷泉', '', '', 'admin', '未知', '/uploads/indeximg/170329/1-1F329191H2F2-lp.jpg', 1490787285, 1490432892, 1, '光亮,跳泉,一,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 0),
+(2, 9, '0', 1490787184, 'c,p', 1, 1, 0, 200, 0, '音乐喷泉', '', '', 'admin', '未知', '/uploads/indeximg/170329/1-1F329191913408-lp.jpg', 1490787184, 1490433063, 1, '波光,喷泉,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 1),
 (3, 2, '0', 1490435754, '', 1, 1, 0, 142, 0, ' 喷泉设备的技术性发展', '', '', 'admin', '未知', '', 1490435754, 1490435780, 1, '喷泉,设备,的,技术性,发展,目前,无论是,国内,', 0, 0, 0, 0, 0, 0, '目前无论是国内或国外的水景工程，用数控喷泉装里来提升水景工程的层次已成为一种新的理念和大的趋势。数控喷泉装工作为一项新生产品，由于大家对数控喷泉系统技术的理解还不', '', 1, 0, 0, 2),
-(4, 3, '0', 1490435799, '', 1, 1, 0, 156, 0, '怎么解决喷泉设备的水泵工作时带来的噪声及振', '', '', 'admin', '未知', '', 1490435799, 1490435810, 1, '怎么,解决,喷泉,设备,的,水泵,工作,时,带来,', 0, 0, 0, 0, 0, 0, '由于各种各样的原因，如工作中推进水流时产生的涡流，气蚀不可避免的会产生振动;水泵设备入口管、叶轮内、泵内有杂物而发生共振现象等，怎么解决喷泉设备的水泵工作时带来的噪', '', 1, 0, 0, 3),
-(5, 2, '0', 1490440951, '', 1, 1, 0, 67, 0, ' 喷泉设备的技术性发展1', '', '', 'admin', '未知', '', 1490440951, 1490440958, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 4),
-(6, 2, '0', 1490440960, '', 1, 1, 0, 176, 0, ' 喷泉设备的技术性发展2', '', '', 'admin', '未知', '', 1490440960, 1490440965, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 5),
-(7, 2, '0', 1490440967, '', 1, 1, 0, 92, 0, ' 喷泉设备的技术性发展3', '', '', 'admin', '未知', '', 1490440967, 1490440972, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 6),
-(8, 2, '0', 1490440973, '', 1, 1, 0, 172, 0, ' 喷泉设备的技术性发展4', '', '', 'admin', '未知', '', 1490440973, 1490440978, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 7),
-(9, 11, '0', 1490584121, 'p', 1, 17, 0, 200, 0, 'banner1', '', '', 'admin', '未知', '/uploads/allimg/170327/1-1F32G106370-L.jpg', 1490584121, 1490584036, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 8),
-(10, 11, '0', 1490584230, 'p', 1, 17, 0, 138, 0, 'banner2', '', '', 'admin', '未知', '/uploads/allimg/170327/1-1F32G110390-L.jpg', 1490584230, 1490584246, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 9);
+(4, 3, '0', 1490435799, '', 1, 1, 0, 163, 0, '怎么解决喷泉设备的水泵工作时带来的噪声及振', '', '', 'admin', '未知', '', 1490435799, 1490435810, 1, '怎么,解决,喷泉,设备,的,水泵,工作,时,带来,', 0, 0, 0, 0, 0, 0, '由于各种各样的原因，如工作中推进水流时产生的涡流，气蚀不可避免的会产生振动;水泵设备入口管、叶轮内、泵内有杂物而发生共振现象等，怎么解决喷泉设备的水泵工作时带来的噪', '', 1, 0, 0, 3),
+(5, 2, '0', 1490440951, '', 1, 1, 0, 68, 0, ' 喷泉设备的技术性发展1', '', '', 'admin', '未知', '', 1490440951, 1490440958, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 4),
+(6, 2, '0', 1490440960, '', 1, 1, 0, 180, 0, ' 喷泉设备的技术性发展2', '', '', 'admin', '未知', '', 1490440960, 1490440965, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 5),
+(7, 2, '0', 1490440967, '', 1, 1, 0, 93, 0, ' 喷泉设备的技术性发展3', '', '', 'admin', '未知', '', 1490440967, 1490440972, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 6),
+(8, 2, '0', 1490440973, '', 1, 1, 0, 173, 0, ' 喷泉设备的技术性发展4', '', '', 'admin', '未知', '', 1490440973, 1490440978, 1, '喷泉,设备,的,技术性,发展,喷泉,设备,的,', 0, 0, 0, 0, 0, 0, '喷泉设备的技术性发展', '', 1, 0, 0, 7),
+(9, 11, '0', 1490605465, 'p', 1, 17, 0, 200, 0, 'banner1', '', '', 'admin', '未知', '/uploads/170327/1-1F32GF4541H.png', 1490605465, 1490584036, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 8),
+(10, 11, '0', 1490605561, 'p', 1, 17, 0, 138, 0, 'banner2', '', '', 'admin', '未知', '/uploads/170327/1-1F32GFG2a1.png', 1490605561, 1490584246, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 9),
+(11, 12, '0', 1490606795, '', 1, 17, 0, 79, 0, '首页视频文件', '', '', 'admin', '未知', '', 1490606795, 1490604616, 1, '', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 10),
+(12, 12, '0', 1490604828, '', 1, 1, -2, 174, 0, '首页视频文件', '', '', 'admin', '未知', '', 1490604828, 1490604838, 1, '首页,视频,文件,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 11),
+(13, 11, '0', 1490605775, 'p', 1, 17, 0, 89, 0, 'banner3', '', '', 'admin', '未知', '/uploads/allimg/170327/1-1F32GF9440-L.png', 1490605775, 1490605789, 1, 'banner3,banner3,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 12),
+(14, 9, '0', 1490787630, 'c,p', 1, 1, -2, 98, 0, '音乐喷泉2', '', '', 'admin', '未知', '/uploads/indeximg/170329/1-1F32919395bX-lp.jpg', 1490787630, 1490787622, 1, '音乐,喷泉,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 13),
+(15, 9, '0', 1490787822, 'c,p', 1, 1, 0, 104, 0, '音乐喷泉3', '', '', 'admin', '未知', '/uploads/indeximg/170329/1-1F32919395bX-lp.jpg', 1490787822, 1490787880, 1, '音乐,喷泉,', 0, 0, 0, 0, 0, 0, '', '', 1, 0, 0, 14);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arcmulti`
+-- 表的结构 `hf_arcmulti`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arcmulti` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_arcmulti` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
   `tagid` char(60) NOT NULL DEFAULT '',
   `uptime` int(11) NOT NULL DEFAULT '0',
   `innertext` varchar(255) NOT NULL DEFAULT '',
@@ -400,39 +383,37 @@ CREATE TABLE IF NOT EXISTS `dede_arcmulti` (
   `ordersql` varchar(255) DEFAULT NULL,
   `addfieldsSql` varchar(255) DEFAULT NULL,
   `addfieldsSqlJoin` varchar(255) DEFAULT NULL,
-  `attstr` text,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `attstr` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arcmulti`
+-- 转存表中的数据 `hf_arcmulti`
 --
 
-INSERT INTO `dede_arcmulti` (`id`, `tagid`, `uptime`, `innertext`, `pagesize`, `arcids`, `ordersql`, `addfieldsSql`, `addfieldsSqlJoin`, `attstr`) VALUES
+INSERT INTO `hf_arcmulti` (`id`, `tagid`, `uptime`, `innertext`, `pagesize`, `arcids`, `ordersql`, `addfieldsSql`, `addfieldsSqlJoin`, `attstr`) VALUES
 (1, 'dedecms', 1490366862, '<li class=''dotline''><a href="[field:arcurl/]">[field:title/]</a></li>', 8, '', ' ORDER BY arc.sortrank desc', '', '', 'a:16:{s:3:"row";s:2:"16";s:8:"titlelen";s:2:"42";s:7:"infolen";i:160;s:8:"imgwidth";i:120;s:9:"imgheight";i:120;s:8:"listtype";s:3:"all";s:5:"arcid";i:0;s:9:"channelid";i:0;s:7:"orderby";s:7:"default";s:8:"orderWay";s:4:"desc";s:6:"subday";i:0;s:8:"pagesize";s:1:"8";s:7:"keyword";s:0:"";s:10:"tablewidth";s:4:"100%";s:3:"col";i:1;s:8:"colWidth";s:4:"100%";}');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arcrank`
+-- 表的结构 `hf_arcrank`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arcrank` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_arcrank` (
+  `id` smallint(5) UNSIGNED NOT NULL,
   `rank` smallint(6) NOT NULL DEFAULT '0',
   `membername` char(20) NOT NULL DEFAULT '',
   `adminrank` smallint(6) NOT NULL DEFAULT '0',
-  `money` smallint(8) unsigned NOT NULL DEFAULT '500',
+  `money` smallint(8) UNSIGNED NOT NULL DEFAULT '500',
   `scores` mediumint(8) NOT NULL DEFAULT '0',
-  `purviews` mediumtext,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+  `purviews` mediumtext
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arcrank`
+-- 转存表中的数据 `hf_arcrank`
 --
 
-INSERT INTO `dede_arcrank` (`id`, `rank`, `membername`, `adminrank`, `money`, `scores`, `purviews`) VALUES
+INSERT INTO `hf_arcrank` (`id`, `rank`, `membername`, `adminrank`, `money`, `scores`, `purviews`) VALUES
 (1, 0, '开放浏览', 5, 0, 0, ''),
 (2, -1, '待审核稿件', 0, 0, 0, ''),
 (3, 10, '注册会员', 5, 0, 100, ''),
@@ -445,50 +426,52 @@ INSERT INTO `dede_arcrank` (`id`, `rank`, `membername`, `adminrank`, `money`, `s
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arctiny`
+-- 表的结构 `hf_arctiny`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arctiny` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_arctiny` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `typeid2` varchar(90) NOT NULL DEFAULT '0',
   `arcrank` smallint(6) NOT NULL DEFAULT '0',
   `channel` smallint(5) NOT NULL DEFAULT '1',
-  `senddate` int(10) unsigned NOT NULL DEFAULT '0',
-  `sortrank` int(10) unsigned NOT NULL DEFAULT '0',
-  `mid` mediumint(8) unsigned NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `sortrank` (`sortrank`),
-  KEY `idx_typeid_arcrank_sortrank` (`typeid`,`arcrank`,`sortrank`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+  `senddate` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `sortrank` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `mid` mediumint(8) UNSIGNED NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arctiny`
+-- 转存表中的数据 `hf_arctiny`
 --
 
-INSERT INTO `dede_arctiny` (`id`, `typeid`, `typeid2`, `arcrank`, `channel`, `senddate`, `sortrank`, `mid`) VALUES
-(1, 8, '0', 0, 1, 1490432892, 1490433091, 1),
-(2, 9, '0', 0, 1, 1490433063, 1490433076, 1),
+INSERT INTO `hf_arctiny` (`id`, `typeid`, `typeid2`, `arcrank`, `channel`, `senddate`, `sortrank`, `mid`) VALUES
+(1, 8, '0', 0, 1, 1490432892, 1490787285, 1),
+(2, 9, '0', 0, 1, 1490433063, 1490787184, 1),
 (3, 2, '0', 0, 1, 1490435780, 1490435754, 1),
 (4, 3, '0', 0, 1, 1490435810, 1490435799, 1),
 (5, 2, '0', 0, 1, 1490440958, 1490440951, 1),
 (6, 2, '0', 0, 1, 1490440965, 1490440960, 1),
 (7, 2, '0', 0, 1, 1490440972, 1490440967, 1),
 (8, 2, '0', 0, 1, 1490440978, 1490440973, 1),
-(9, 11, '0', 0, 17, 1490584036, 1490584121, 1),
-(10, 11, '0', 0, 17, 1490584246, 1490584230, 1);
+(9, 11, '0', 0, 17, 1490584036, 1490605465, 1),
+(10, 11, '0', 0, 17, 1490584246, 1490605561, 1),
+(11, 12, '0', 0, 17, 1490604616, 1490606795, 1),
+(12, 12, '0', -2, 1, 1490604838, 1490604828, 1),
+(13, 11, '0', 0, 17, 1490605789, 1490605775, 1),
+(14, 9, '0', -2, 1, 1490787622, 1490787630, 1),
+(15, 9, '0', 0, 1, 1490787880, 1490787822, 1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_arctype`
+-- 表的结构 `hf_arctype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_arctype` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
-  `reid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `topid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `sortrank` smallint(5) unsigned NOT NULL DEFAULT '50',
+CREATE TABLE `hf_arctype` (
+  `id` smallint(5) UNSIGNED NOT NULL,
+  `reid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `topid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `sortrank` smallint(5) UNSIGNED NOT NULL DEFAULT '50',
   `typename` char(30) NOT NULL DEFAULT '',
   `typedir` char(60) NOT NULL DEFAULT '',
   `isdefault` smallint(6) NOT NULL DEFAULT '0',
@@ -507,24 +490,21 @@ CREATE TABLE IF NOT EXISTS `dede_arctype` (
   `description` char(150) NOT NULL DEFAULT '',
   `keywords` varchar(60) NOT NULL DEFAULT '',
   `seotitle` varchar(80) NOT NULL DEFAULT '',
-  `moresite` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `moresite` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `sitepath` char(60) NOT NULL DEFAULT '',
   `siteurl` char(50) NOT NULL DEFAULT '',
   `ishidden` smallint(6) NOT NULL DEFAULT '0',
   `cross` tinyint(1) NOT NULL DEFAULT '0',
   `crossid` text,
   `content` text,
-  `smalltypes` text,
-  PRIMARY KEY (`id`),
-  KEY `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
-  KEY `sortrank` (`sortrank`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+  `smalltypes` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_arctype`
+-- 转存表中的数据 `hf_arctype`
 --
 
-INSERT INTO `dede_arctype` (`id`, `reid`, `topid`, `sortrank`, `typename`, `typedir`, `isdefault`, `defaultname`, `issend`, `channeltype`, `maxpage`, `ispart`, `corank`, `tempindex`, `templist`, `temparticle`, `namerule`, `namerule2`, `modname`, `description`, `keywords`, `seotitle`, `moresite`, `sitepath`, `siteurl`, `ishidden`, `cross`, `crossid`, `content`, `smalltypes`) VALUES
+INSERT INTO `hf_arctype` (`id`, `reid`, `topid`, `sortrank`, `typename`, `typedir`, `isdefault`, `defaultname`, `issend`, `channeltype`, `maxpage`, `ispart`, `corank`, `tempindex`, `templist`, `temparticle`, `namerule`, `namerule2`, `modname`, `description`, `keywords`, `seotitle`, `moresite`, `sitepath`, `siteurl`, `ishidden`, `cross`, `crossid`, `content`, `smalltypes`) VALUES
 (1, 0, 0, 50, '工程案例', '{cmspath}/gongchenganli', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/anli.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '&nbsp;', ''),
 (2, 0, 0, 50, '新闻动态', '{cmspath}/xinwendongtai', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/news.htm', 'default/article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/xinwendongtai', '', 0, 0, '', '&nbsp;', ''),
 (3, 0, 0, 50, '常见问题', '{cmspath}/changjianwenti', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/problems.htm', 'default/article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/changjianwenti', '', 0, 0, '', '&nbsp;', ''),
@@ -532,30 +512,30 @@ INSERT INTO `dede_arctype` (`id`, `reid`, `topid`, `sortrank`, `typename`, `type
 (5, 0, 0, 57, '招贤纳士', '{cmspath}/zhaoxiannashi', 1, 'index.html', 1, 1, -1, 1, 0, 'default/recruiting.htm', '{style}/list_article.htm', '{style}/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/zhaoxiannashi', '', 0, 0, '', '&nbsp;\r\n<div>\r\n	&nbsp;</div>\r\n<div>\r\n	<p style="margin: 0px; line-height: 43px; font-size: 26px; color: rgb(147, 147, 147); font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体;">\r\n		<span style="color: rgb(229, 0, 18); font-family: 微软雅黑; font-size: 29px; line-height: 29px; text-align: center;">最新招聘信息</span></p>\r\n	<p style="margin: 0px; line-height: 43px; font-size: 26px; color: rgb(147, 147, 147); font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体;">\r\n		&nbsp;</p>\r\n	<p style="margin: 0px; line-height: 43px; color: rgb(147, 147, 147); font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体;">\r\n		<span style="font-size: 22px;">实习生</span></p>\r\n	<p style="margin: 0px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n		<span style="font-size: 22px;"><span style="font-family: arial;">Design Intern</span></span></p>\r\n	<p style="margin: 0px; font-size: 26px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n		<span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">部门:品牌设计部</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">|</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">招聘人数:</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(229, 0, 18);">3人</span></p>\r\n	<div style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 14px;">\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			<span style="color: rgb(102, 102, 102);">任职要求：</span></p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			<span style="color: rgb(102, 102, 102);">1.平面设计/视觉传达等相关专业的大二/三在校生（在校表现优异者可优先考虑 ）；<br />\r\n			2.基本掌握设计软件操作，能独立完成排版/字体设计/图片处理；<br />\r\n			3.热爱设计工作，能用心投身于自己的设计实践；</span></p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			&nbsp;</p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			&nbsp;</p>\r\n		<p style="margin: 0px; line-height: 43px; color: rgb(147, 147, 147);">\r\n			<span style="color: rgb(34, 34, 34); font-size: 22px;">实习生</span></p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n			<span style="color: rgb(34, 34, 34); font-size: 22px;"><span style="font-family: arial;">Design Intern</span></span></p>\r\n		<p style="margin: 0px; font-size: 26px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n			<span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">部门:品牌设计部</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">|</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">招聘人数:</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(229, 0, 18);">3人</span></p>\r\n		<div>\r\n			<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n				<span style="color: rgb(102, 102, 102);">任职要求：</span></p>\r\n			<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n				<span style="color: rgb(102, 102, 102);">1.平面设计/视觉传达等相关专业的大二/三在校生（在校表现优异者可优先考虑 ）；<br />\r\n				2.基本掌握设计软件操作，能独立完成排版/字体设计/图片处理；<br />\r\n				3.热爱设计工作，能用心投身于自己的设计实践；</span></p>\r\n			<div>\r\n				&nbsp;</div>\r\n		</div>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			&nbsp;</p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n			&nbsp;</p>\r\n		<p style="margin: 0px; line-height: 43px; color: rgb(147, 147, 147);">\r\n			<span style="color: rgb(34, 34, 34); font-size: 22px;">实习生</span></p>\r\n		<p style="margin: 0px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n			<span style="color: rgb(34, 34, 34); font-size: 22px;"><span style="font-family: arial;">Design Intern</span></span></p>\r\n		<p style="margin: 0px; font-size: 26px; color: rgb(67, 67, 67); font-family: myriadpro-regular_0;">\r\n			<span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">部门:品牌设计部</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">|</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(102, 102, 102);">招聘人数:</span><span style="font-family: &quot;microsoft yahei&quot;, &quot;helvetica neue&quot;, tahoma, arial, 微软雅黑, 宋体, 黑体; font-size: 15px; line-height: 34px; color: rgb(229, 0, 18);">3人</span></p>\r\n		<div>\r\n			<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n				<span style="color: rgb(102, 102, 102);">任职要求：</span></p>\r\n			<p style="margin: 0px; color: rgb(67, 67, 67);">\r\n				<span style="color: rgb(102, 102, 102);">1.平面设计/视觉传达等相关专业的大二/三在校生（在校表现优异者可优先考虑 ）；<br />\r\n				2.基本掌握设计软件操作，能独立完成排版/字体设计/图片处理；<br />\r\n				3.热爱设计工作，能用心投身于自己的设计实践；</span></p>\r\n			<div>\r\n				&nbsp;</div>\r\n		</div>\r\n	</div>\r\n</div>\r\n<br />\r\n', ''),
 (6, 0, 0, 58, '联系我们', '{cmspath}/lianxiwomen', 1, 'index.html', 1, 1, -1, 1, 0, 'default/contact.htm', '{style}/list_article.htm', '{style}/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/lianxiwomen', '', 0, 0, '', '&nbsp;', ''),
 (7, 0, 0, 60, '留言板', '{cmspath}/liuyanban', 1, 'index.html', 1, 1, -1, 1, 0, 'default/message.htm', '{style}/list_article.htm', '{style}/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/liuyanban', '', 0, 0, '', '&nbsp;', ''),
-(8, 1, 1, 50, '光亮跳泉', '{cmspath}/gongchenganli/guangliangtiaoquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '&nbsp;', ''),
-(9, 1, 1, 50, '波光喷泉', '{cmspath}/gongchenganli/boguangpenquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '', ''),
+(8, 1, 1, 50, '程控喷泉', '{cmspath}/gongchenganli/guangliangtiaoquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '&nbsp;', ''),
+(9, 1, 1, 50, '音乐喷泉', '{cmspath}/gongchenganli/boguangpenquan', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', '{style}/list_article.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/gongchenganli', '', 0, 0, '', '', ''),
 (10, 0, 0, 50, '产品中心', '{cmspath}/chanpinzhongxin', 1, 'index.html', 1, 1, -1, 0, 0, '{style}/index_article.htm', 'default/product.htm', 'default/anliinfo.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/chanpinzhongxin', '', 0, 0, '', '&nbsp;', ''),
-(11, 0, 0, 61, '轮播图', '{cmspath}/a/lunbotu', 1, 'index.html', 0, 17, -1, 0, 0, '{style}/index_ch17.htm', 'default/article.htm', 'default/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/a/lunbotu', '', 0, 0, '', '&nbsp;', '');
+(11, 0, 0, 61, '轮播图', '{cmspath}/a/lunbotu', 1, 'index.html', 0, 17, -1, 0, 0, '{style}/index_ch17.htm', 'default/article.htm', 'default/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/a/lunbotu', '', 0, 0, '', '&nbsp;', ''),
+(12, 0, 0, 66, '首页视频', '{cmspath}/a/shouyeshipin', 1, 'index.html', 1, 17, -1, 0, 0, '{style}/index_ch17.htm', 'default/article.htm', 'default/article_article.htm', '{typedir}/{Y}/{M}{D}/{aid}.html', '{typedir}/list_{tid}_{page}.html', 'default', '', '', '', 0, '{cmspath}/a/shouyeshipin', '', 0, 0, '', '&nbsp;', '');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_area`
+-- 表的结构 `hf_area`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_area` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_area` (
+  `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(20) NOT NULL DEFAULT '',
-  `reid` int(10) unsigned NOT NULL DEFAULT '0',
-  `disorder` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3118 ;
+  `reid` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `disorder` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_area`
+-- 转存表中的数据 `hf_area`
 --
 
-INSERT INTO `dede_area` (`id`, `name`, `reid`, `disorder`) VALUES
+INSERT INTO `hf_area` (`id`, `name`, `reid`, `disorder`) VALUES
 (1, '北京市', 0, 0),
 (102, '西城区', 1, 2),
 (126, '崇文区', 1, 0),
@@ -1042,14 +1022,14 @@ INSERT INTO `dede_area` (`id`, `name`, `reid`, `disorder`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_channeltype`
+-- 表的结构 `hf_channeltype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_channeltype` (
+CREATE TABLE `hf_channeltype` (
   `id` smallint(6) NOT NULL DEFAULT '0',
   `nid` varchar(20) NOT NULL DEFAULT '',
   `typename` varchar(30) NOT NULL DEFAULT '',
-  `maintable` varchar(50) NOT NULL DEFAULT 'dede_archives',
+  `maintable` varchar(50) NOT NULL DEFAULT 'hf_archives',
   `addtable` varchar(50) NOT NULL DEFAULT '',
   `addcon` varchar(30) NOT NULL DEFAULT '',
   `mancon` varchar(30) NOT NULL DEFAULT '',
@@ -1071,103 +1051,93 @@ CREATE TABLE IF NOT EXISTS `dede_channeltype` (
   `needpic` tinyint(1) NOT NULL DEFAULT '1',
   `titlename` varchar(20) NOT NULL DEFAULT '标题',
   `onlyone` smallint(6) NOT NULL DEFAULT '0',
-  `dfcid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `nid` (`nid`,`isshow`,`arcsta`,`sendrank`)
+  `dfcid` smallint(5) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_channeltype`
+-- 转存表中的数据 `hf_channeltype`
 --
 
-INSERT INTO `dede_channeltype` (`id`, `nid`, `typename`, `maintable`, `addtable`, `addcon`, `mancon`, `editcon`, `useraddcon`, `usermancon`, `usereditcon`, `fieldset`, `listfields`, `allfields`, `issystem`, `isshow`, `issend`, `arcsta`, `usertype`, `sendrank`, `isdefault`, `needdes`, `needpic`, `titlename`, `onlyone`, `dfcid`) VALUES
-(1, 'article', '普通文章', 'dede_archives', 'dede_addonarticle', 'article_add.php', 'content_list.php', 'article_edit.php', 'article_add.php', 'content_list.php', 'article_edit.php', '<field:body itemname="文章内容" autofield="0" notsend="0" type="htmltext" isnull="true" islist="1" default=""  maxlength="" page="split">	\n</field:body>	\n', '', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
-(2, 'image', '图片集', 'dede_archives', 'dede_addonimages', 'album_add.php', 'content_i_list.php', 'album_edit.php', 'album_add.php', 'content_list.php', 'album_edit.php', '<field:pagestyle itemname="页面风格" type="number" isnull="true" default="2" rename="" notsend="1" />	\n<field:imgurls itemname="图片集合" type="img" isnull="true" default="" rename="" page="split"/>	\n<field:body itemname="图集内容" autofield="0" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page=""></field:body>', '', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
-(3, 'soft', '软件', 'dede_archives', 'dede_addonsoft', 'soft_add.php', 'content_i_list.php', 'soft_edit.php', '', '', '', '<field:filetype islist="1" itemname="文件类型" type="text" isnull="true" default="" rename="" />	\n<field:language islist="1" itemname="语言" type="text" isnull="true" default="" rename="" />	\n<field:softtype islist="1" itemname="软件类型" type="text" isnull="true" default="" rename="" />	\n<field:accredit islist="1" itemname="授权方式" type="text" isnull="true" default="" rename="" />	\n<field:os islist="1" itemname="操作系统" type="text" isnull="true" default="" rename="" />	\n<field:softrank  islist="1" itemname="软件等级" type="int" isnull="true" default="3" rename="" function="GetRankStar(@me)" notsend="1"/>	\n<field:officialUrl  itemname="官方网址" type="text" isnull="true" default="" rename="" />	\n<field:officialDemo itemname="演示网址" type="text" isnull="true" default="" rename="" />	\n<field:softsize  itemname="软件大小" type="text" isnull="true" default="" rename="" />	\n<field:softlinks  itemname="软件地址" type="softlinks" isnull="true" default="" rename="" />	\n<field:introduce  itemname="详细介绍" type="htmltext" isnull="trnue" default="" rename="" />	\n<field:daccess islist="1" itemname="下载级别" type="int" isnull="true" default="0" rename="" function="" notsend="1"/>	\n<field:needmoney islist="1" itemname="需要金币" type="int" isnull="true" default="0" rename="" function="" notsend="1" />', 'filetype,language,softtype,os,accredit,softrank', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
-(-1, 'spec', '专题', 'dede_archives', 'dede_addonspec', 'spec_add.php', 'content_s_list.php', 'spec_edit.php', '', '', '', '<field:note type="specialtopic" isnull="true" default="" rename=""/>', '', '', 1, 1, 0, -1, '', 10, 0, 1, 1, '标题', 0, 0),
-(6, 'shop', '商品', 'dede_archives', 'dede_addonshop', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '<field:body itemname="详细介绍" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="" page="split">	\n</field:body>	\n<field:price itemname="市场价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:price>	\n<field:trueprice itemname="优惠价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:trueprice>	\n<field:brand itemname="品牌" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:brand>	\n<field:units itemname="计量单位" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:units>	\n\n	\n\n<field:vocation itemname="行业" autofield="1" notsend="0"type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:vocation>	\n\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:infotype>	\n\n<field:uptime itemname="上架时间" autofield="1" notsend="0" type="datetime" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:uptime>	\n', 'price,trueprice,brand,units', '', 0, 1, 1, -1, '', 10, 0, 1, 1, '商品名称', 0, 0),
-(-8, 'infos', '分类信息', 'dede_archives', 'dede_addoninfos', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', '<field:channel itemname="频道id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:channel>	\n<field:arcrank itemname="浏览权限" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="5" page=""></field:arcrank>	\n<field:mid itemname="会员id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:mid>	\n<field:click itemname="点击" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:click>	\n<field:title itemname="标题" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:title>	\n<field:senddate itemname="发布时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:senddate>	\n<field:flag itemname="推荐属性" autofield="0" notsend="0" type="checkbox" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:flag>	\n<field:litpic itemname="缩略图" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:litpic>	\n<field:userip itemname="会员IP" autofield="0" notsend="0" type="text" isnull="true" islist="0" default="0"  maxlength="15" page=""></field:userip>	\n<field:lastpost itemname="最后评论时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:lastpost>	\n<field:scores itemname="评论积分" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:scores>	\n<field:goodpost itemname="好评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:goodpost>	\n<field:badpost itemname="差评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:badpost>	\n<field:nativeplace itemname="地区" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:nativeplace>	\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:infotype>	\n<field:body itemname="信息内容" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:body>	\n<field:endtime itemname="截止日期" autofield="1" notsend="0" type="datetime" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:endtime>	\n<field:linkman itemname="联系人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:linkman>	\n<field:tel itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="50" page="">	\n</field:tel>	\n<field:email itemname="电子邮箱" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:email>	\n<field:address itemname="地址" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="100" page="">	\n</field:address>	\n', 'channel,arcrank,mid,click,title,senddate,flag,litpic,lastpost,scores,goodpost,badpost,nativeplace,infotype,endtime', '', -1, 1, 1, -1, '', 0, 0, 0, 1, '信息标题', 0, 0),
-(17, 'ch17', '轮播图', 'dede_archives', 'dede_addon17', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '\r\n<field:picklink itemname="图片链接地址" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">\r\n</field:picklink>\r\n', 'picklink', NULL, 0, 1, 0, -1, '', 0, 0, 1, 1, '标题', 0, 0);
+INSERT INTO `hf_channeltype` (`id`, `nid`, `typename`, `maintable`, `addtable`, `addcon`, `mancon`, `editcon`, `useraddcon`, `usermancon`, `usereditcon`, `fieldset`, `listfields`, `allfields`, `issystem`, `isshow`, `issend`, `arcsta`, `usertype`, `sendrank`, `isdefault`, `needdes`, `needpic`, `titlename`, `onlyone`, `dfcid`) VALUES
+(1, 'article', '普通文章', 'hf_archives', 'hf_addonarticle', 'article_add.php', 'content_list.php', 'article_edit.php', 'article_add.php', 'content_list.php', 'article_edit.php', '<field:body itemname="文章内容" autofield="0" notsend="0" type="htmltext" isnull="true" islist="1" default=""  maxlength="" page="split">	\n</field:body>	\n', '', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
+(2, 'image', '图片集', 'hf_archives', 'hf_addonimages', 'album_add.php', 'content_i_list.php', 'album_edit.php', 'album_add.php', 'content_list.php', 'album_edit.php', '<field:pagestyle itemname="页面风格" type="number" isnull="true" default="2" rename="" notsend="1" />	\n<field:imgurls itemname="图片集合" type="img" isnull="true" default="" rename="" page="split"/>	\n<field:body itemname="图集内容" autofield="0" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page=""></field:body>', '', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
+(3, 'soft', '软件', 'hf_archives', 'hf_addonsoft', 'soft_add.php', 'content_i_list.php', 'soft_edit.php', '', '', '', '<field:filetype islist="1" itemname="文件类型" type="text" isnull="true" default="" rename="" />	\n<field:language islist="1" itemname="语言" type="text" isnull="true" default="" rename="" />	\n<field:softtype islist="1" itemname="软件类型" type="text" isnull="true" default="" rename="" />	\n<field:accredit islist="1" itemname="授权方式" type="text" isnull="true" default="" rename="" />	\n<field:os islist="1" itemname="操作系统" type="text" isnull="true" default="" rename="" />	\n<field:softrank  islist="1" itemname="软件等级" type="int" isnull="true" default="3" rename="" function="GetRankStar(@me)" notsend="1"/>	\n<field:officialUrl  itemname="官方网址" type="text" isnull="true" default="" rename="" />	\n<field:officialDemo itemname="演示网址" type="text" isnull="true" default="" rename="" />	\n<field:softsize  itemname="软件大小" type="text" isnull="true" default="" rename="" />	\n<field:softlinks  itemname="软件地址" type="softlinks" isnull="true" default="" rename="" />	\n<field:introduce  itemname="详细介绍" type="htmltext" isnull="trnue" default="" rename="" />	\n<field:daccess islist="1" itemname="下载级别" type="int" isnull="true" default="0" rename="" function="" notsend="1"/>	\n<field:needmoney islist="1" itemname="需要金币" type="int" isnull="true" default="0" rename="" function="" notsend="1" />', 'filetype,language,softtype,os,accredit,softrank', '', 1, 1, 1, -1, '', 10, 0, 1, 1, '标题', 0, 0),
+(-1, 'spec', '专题', 'hf_archives', 'hf_addonspec', 'spec_add.php', 'content_s_list.php', 'spec_edit.php', '', '', '', '<field:note type="specialtopic" isnull="true" default="" rename=""/>', '', '', 1, 1, 0, -1, '', 10, 0, 1, 1, '标题', 0, 0),
+(6, 'shop', '商品', 'hf_archives', 'hf_addonshop', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '<field:body itemname="详细介绍" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="" page="split">	\n</field:body>	\n<field:price itemname="市场价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:price>	\n<field:trueprice itemname="优惠价" autofield="1" notsend="0" type="float" isnull="true" islist="1" default=""  maxlength="" page="">	\n</field:trueprice>	\n<field:brand itemname="品牌" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:brand>	\n<field:units itemname="计量单位" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:units>	\n\n	\n\n<field:vocation itemname="行业" autofield="1" notsend="0"type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:vocation>	\n\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:infotype>	\n\n<field:uptime itemname="上架时间" autofield="1" notsend="0" type="datetime" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:uptime>	\n', 'price,trueprice,brand,units', '', 0, 1, 1, -1, '', 10, 0, 1, 1, '商品名称', 0, 0),
+(-8, 'infos', '分类信息', 'hf_archives', 'hf_addoninfos', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', 'archives_sg_add.php', 'content_sg_list.php', 'archives_sg_edit.php', '<field:channel itemname="频道id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:channel>	\n<field:arcrank itemname="浏览权限" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="5" page=""></field:arcrank>	\n<field:mid itemname="会员id" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:mid>	\n<field:click itemname="点击" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:click>	\n<field:title itemname="标题" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:title>	\n<field:senddate itemname="发布时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:senddate>	\n<field:flag itemname="推荐属性" autofield="0" notsend="0" type="checkbox" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:flag>	\n<field:litpic itemname="缩略图" autofield="0" notsend="0" type="text" isnull="true" islist="1" default="0"  maxlength="60" page=""></field:litpic>	\n<field:userip itemname="会员IP" autofield="0" notsend="0" type="text" isnull="true" islist="0" default="0"  maxlength="15" page=""></field:userip>	\n<field:lastpost itemname="最后评论时间" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="10" page=""></field:lastpost>	\n<field:scores itemname="评论积分" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:scores>	\n<field:goodpost itemname="好评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:goodpost>	\n<field:badpost itemname="差评数" autofield="0" notsend="0" type="int" isnull="true" islist="1" default="0"  maxlength="8" page=""></field:badpost>	\n<field:nativeplace itemname="地区" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:nativeplace>	\n<field:infotype itemname="信息类型" autofield="1" notsend="0" type="stepselect" isnull="true" islist="1" default="0"  maxlength="250" page="">	\n</field:infotype>	\n<field:body itemname="信息内容" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default=""  maxlength="250" page="">	\n</field:body>	\n<field:endtime itemname="截止日期" autofield="1" notsend="0" type="datetime" isnull="true" islist="1" default=""  maxlength="250" page="">	\n</field:endtime>	\n<field:linkman itemname="联系人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:linkman>	\n<field:tel itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="50" page="">	\n</field:tel>	\n<field:email itemname="电子邮箱" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="50" page="">	\n</field:email>	\n<field:address itemname="地址" autofield="1" notsend="0" type="text" isnull="true" islist="0" default=""  maxlength="100" page="">	\n</field:address>	\n', 'channel,arcrank,mid,click,title,senddate,flag,litpic,lastpost,scores,goodpost,badpost,nativeplace,infotype,endtime', '', -1, 1, 1, -1, '', 0, 0, 0, 1, '信息标题', 0, 0),
+(17, 'ch17', '轮播图', 'hf_archives', 'hf_addon17', 'archives_add.php', 'content_list.php', 'archives_edit.php', 'archives_add.php', 'content_list.php', 'archives_edit.php', '<field:picklink itemname="图片链接地址" autofield="1" notsend="0" type="text" isnull="true" islist="1" default=""  maxlength="250" page="">\r\n</field:picklink>\r\n\r\n\r\n', 'picklink', NULL, 0, 1, 0, -1, '', 0, 0, 1, 1, '标题', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_co_htmls`
+-- 表的结构 `hf_co_htmls`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_co_htmls` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `nid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_co_htmls` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
+  `nid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `title` varchar(60) NOT NULL DEFAULT '',
   `litpic` varchar(100) NOT NULL DEFAULT '',
   `url` varchar(100) NOT NULL DEFAULT '',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `isdown` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `isdown` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `isexport` tinyint(1) NOT NULL DEFAULT '0',
-  `result` mediumtext,
-  PRIMARY KEY (`aid`),
-  KEY `nid` (`nid`),
-  KEY `typeid` (`typeid`,`title`,`url`,`dtime`,`isdown`,`isexport`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `dede_co_mediaurls`
---
-
-CREATE TABLE IF NOT EXISTS `dede_co_mediaurls` (
-  `nid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `hash` char(32) NOT NULL DEFAULT '',
-  `tofile` char(60) NOT NULL DEFAULT '',
-  KEY `hash` (`hash`)
+  `result` mediumtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_co_note`
+-- 表的结构 `hf_co_mediaurls`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_co_note` (
-  `nid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `channelid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `notename` varchar(50) NOT NULL DEFAULT '',
-  `sourcelang` varchar(10) NOT NULL DEFAULT 'gb2312',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  `cotime` int(10) unsigned NOT NULL DEFAULT '0',
-  `pnum` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `isok` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `usemore` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `listconfig` text,
-  `itemconfig` text,
-  PRIMARY KEY (`nid`),
-  KEY `isok` (`isok`,`channelid`,`cotime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+CREATE TABLE `hf_co_mediaurls` (
+  `nid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `hash` char(32) NOT NULL DEFAULT '',
+  `tofile` char(60) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_co_onepage`
+-- 表的结构 `hf_co_note`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_co_onepage` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_co_note` (
+  `nid` mediumint(8) UNSIGNED NOT NULL,
+  `channelid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `notename` varchar(50) NOT NULL DEFAULT '',
+  `sourcelang` varchar(10) NOT NULL DEFAULT 'gb2312',
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `cotime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `pnum` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `isok` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
+  `usemore` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
+  `listconfig` text,
+  `itemconfig` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hf_co_onepage`
+--
+
+CREATE TABLE `hf_co_onepage` (
+  `id` int(11) NOT NULL,
   `url` varchar(60) NOT NULL DEFAULT '',
   `title` varchar(60) NOT NULL DEFAULT '',
   `issource` smallint(6) NOT NULL DEFAULT '1',
   `lang` varchar(10) NOT NULL DEFAULT 'gb2312',
-  `rule` text,
-  PRIMARY KEY (`id`),
-  KEY `url` (`url`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+  `rule` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_co_onepage`
+-- 转存表中的数据 `hf_co_onepage`
 --
 
-INSERT INTO `dede_co_onepage` (`id`, `url`, `title`, `issource`, `lang`, `rule`) VALUES
+INSERT INTO `hf_co_onepage` (`id`, `url`, `title`, `issource`, `lang`, `rule`) VALUES
 (5, 'www.dedecms.com', '织梦网络', 1, 'gb2312', '<div class="content">{@body}<div class="cupage">'),
 (4, 'www.techweb.com.cn', 'Techweb', 1, 'gb2312', '<div class="content_txt">{@body}</div>	\n'),
 (6, 'tw.news.yahoo.com', '台湾雅虎', 1, 'big5', '<div id="ynwsartcontent">{@body}</div>	\n');
@@ -1175,153 +1145,142 @@ INSERT INTO `dede_co_onepage` (`id`, `url`, `title`, `issource`, `lang`, `rule`)
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_co_urls`
+-- 表的结构 `hf_co_urls`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_co_urls` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_co_urls` (
+  `id` int(10) UNSIGNED NOT NULL,
   `hash` varchar(32) NOT NULL DEFAULT '',
-  `nid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `nid` smallint(5) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_diyforms`
+-- 表的结构 `hf_diyforms`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_diyforms` (
-  `diyid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_diyforms` (
+  `diyid` int(10) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL DEFAULT '',
   `posttemplate` varchar(50) NOT NULL,
   `viewtemplate` varchar(50) NOT NULL,
   `listtemplate` varchar(50) NOT NULL,
   `table` varchar(50) NOT NULL DEFAULT '',
   `info` text,
-  `public` tinyint(1) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`diyid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `public` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_diyforms`
+-- 转存表中的数据 `hf_diyforms`
 --
 
-INSERT INTO `dede_diyforms` (`diyid`, `name`, `posttemplate`, `viewtemplate`, `listtemplate`, `table`, `info`, `public`) VALUES
-(1, '留言信息', 'post_diyform1.htm', 'view_diyform1.htm', 'list_diyform1.htm', 'dede_messageboard', '\n<field:username itemname="姓名" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:username>\r\n\n<field:usertele itemname="电话" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:usertele>\r\n\n<field:userqq itemname="QQ" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:userqq>\r\n\n<field:useremail itemname="邮箱" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:useremail>\r\n\n<field:useraddress itemname="联系地址" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:useraddress>\r\n\n<field:usercontent itemname="内容" autofield="1" type="multitext" isnull="true" default=""  maxlength="250" page="">\r\n</field:usercontent>\r\n', 1);
+INSERT INTO `hf_diyforms` (`diyid`, `name`, `posttemplate`, `viewtemplate`, `listtemplate`, `table`, `info`, `public`) VALUES
+(1, '留言信息', 'post_diyform1.htm', 'view_diyform1.htm', 'list_diyform1.htm', 'hf_messageboard', '\n<field:username itemname="姓名" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:username>\r\n\n<field:usertele itemname="电话" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:usertele>\r\n\n<field:userqq itemname="QQ" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:userqq>\r\n\n<field:useremail itemname="邮箱" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:useremail>\r\n\n<field:useraddress itemname="联系地址" autofield="1" type="text" isnull="true" default=""  maxlength="250" page="">\r\n</field:useraddress>\r\n\n<field:usercontent itemname="内容" autofield="1" type="multitext" isnull="true" default=""  maxlength="250" page="">\r\n</field:usercontent>\r\n', 1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_dl_log`
+-- 表的结构 `hf_dl_log`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_dl_log` (
-  `id` mediumint(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_dl_log` (
+  `id` mediumint(10) UNSIGNED NOT NULL,
   `ip` char(16) NOT NULL,
   `lang` char(6) NOT NULL,
   `dtype` varchar(10) NOT NULL,
-  `dltime` int(10) unsigned NOT NULL DEFAULT '0',
+  `dltime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `referrer` varchar(255) NOT NULL DEFAULT '',
-  `user_agent` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `dltime` (`dltime`),
-  KEY `dl_ip` (`ip`,`dltime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `dede_downloads`
---
-
-CREATE TABLE IF NOT EXISTS `dede_downloads` (
-  `hash` char(32) NOT NULL,
-  `id` int(10) unsigned NOT NULL DEFAULT '0',
-  `downloads` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`hash`)
+  `user_agent` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_erradd`
+-- 表的结构 `hf_downloads`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_erradd` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `aid` mediumint(8) unsigned NOT NULL,
-  `mid` mediumint(8) unsigned DEFAULT NULL,
+CREATE TABLE `hf_downloads` (
+  `hash` char(32) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `downloads` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hf_erradd`
+--
+
+CREATE TABLE `hf_erradd` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `aid` mediumint(8) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED DEFAULT NULL,
   `title` char(60) NOT NULL DEFAULT '',
   `type` smallint(6) NOT NULL DEFAULT '0',
   `errtxt` mediumtext,
   `oktxt` mediumtext,
-  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
-  KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `sendtime` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_feedback`
+-- 表的结构 `hf_feedback`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_feedback` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_feedback` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `username` char(20) NOT NULL DEFAULT '',
   `arctitle` varchar(60) NOT NULL DEFAULT '',
   `ip` char(15) NOT NULL DEFAULT '',
   `ischeck` smallint(6) NOT NULL DEFAULT '0',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `bad` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `good` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `bad` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `good` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `ftype` set('feedback','good','bad') NOT NULL DEFAULT 'feedback',
-  `face` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `msg` text,
-  PRIMARY KEY (`id`),
-  KEY `aid` (`aid`,`ischeck`,`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `face` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `msg` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_flink`
+-- 表的结构 `hf_flink`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_flink` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_flink` (
+  `id` smallint(5) UNSIGNED NOT NULL,
   `sortrank` smallint(6) NOT NULL DEFAULT '0',
   `url` char(60) NOT NULL DEFAULT '',
   `webname` char(30) NOT NULL DEFAULT '',
   `msg` char(200) NOT NULL DEFAULT '',
   `email` char(50) NOT NULL DEFAULT '',
   `logo` char(60) NOT NULL DEFAULT '',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `ischeck` smallint(6) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_flinktype`
+-- 表的结构 `hf_flinktype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_flinktype` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `typename` varchar(50) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+CREATE TABLE `hf_flinktype` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `typename` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_flinktype`
+-- 转存表中的数据 `hf_flinktype`
 --
 
-INSERT INTO `dede_flinktype` (`id`, `typename`) VALUES
+INSERT INTO `hf_flinktype` (`id`, `typename`) VALUES
 (1, '综合网站'),
 (2, '娱乐类'),
 (3, '教育类'),
@@ -1334,11 +1293,11 @@ INSERT INTO `dede_flinktype` (`id`, `typename`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_freelist`
+-- 表的结构 `hf_freelist`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_freelist` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_freelist` (
+  `aid` int(11) NOT NULL,
   `title` varchar(50) NOT NULL DEFAULT '',
   `namerule` varchar(50) NOT NULL DEFAULT '',
   `listdir` varchar(60) NOT NULL DEFAULT '',
@@ -1346,128 +1305,121 @@ CREATE TABLE IF NOT EXISTS `dede_freelist` (
   `nodefault` smallint(6) NOT NULL DEFAULT '0',
   `templet` varchar(50) NOT NULL DEFAULT '',
   `edtime` int(11) NOT NULL DEFAULT '0',
-  `maxpage` smallint(5) unsigned NOT NULL DEFAULT '100',
+  `maxpage` smallint(5) UNSIGNED NOT NULL DEFAULT '100',
   `click` int(11) NOT NULL DEFAULT '1',
   `listtag` mediumtext,
   `keywords` varchar(100) NOT NULL DEFAULT '',
-  `description` varchar(250) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+  `description` varchar(250) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_freelist`
+-- 转存表中的数据 `hf_freelist`
 --
 
-INSERT INTO `dede_freelist` (`aid`, `title`, `namerule`, `listdir`, `defaultpage`, `nodefault`, `templet`, `edtime`, `maxpage`, `click`, `listtag`, `keywords`, `description`) VALUES
+INSERT INTO `hf_freelist` (`aid`, `title`, `namerule`, `listdir`, `defaultpage`, `nodefault`, `templet`, `edtime`, `maxpage`, `click`, `listtag`, `keywords`, `description`) VALUES
 (1, '测试内容', '{listdir}/index_{listid}_{page}.html', '{cmspath}/freelist/', 'index.html', 1, '{style}/list_free.htm', 1289712633, 100, 0, '{dede:list  pagesize="30" col="1" titlelen="60" orderby="pubdate" orderway="desc"  typeid="1"  channel="1" }<li>[field:imglink/] [field:textlink/] <span class=info><small>日期：</small>[field:pubdate function="getdatemk(@me)"/] <small>点击：</small>[field:click/] <small>好评：</small>[field:scores/] </span>	\n<p class=intro>[field:description/]...</p></li>{/dede:list}', '阿三大厦大大', '阿三大厦大厦大撒'),
 (10, 'Google SiteMap 生成器', '{listdir}googlemap_{page}.xml', '{cmspath}', 'index.html', 1, '{style}/googlemap.htm', 1226884666, 100, 0, '{dede:list  pagesize="500" col="1" titlelen="60" orderby="pubdate" orderway="desc" 	\n channel="1"  keyword="" }<url>	\n   <loc>[field:arcurl function="Gmapurl(@me)"/]</loc> 	\n   <title>[field:title function="HtmlReplace(@me)"/]</title>	\n   <news:news>	\n  <news:keywords>[field:keywords/]</news:keywords>	\n <news:publication_date>[field:senddate function="strftime("%Y-%m-%d",@me)"/]</news:publication_date>	\n </news:news>	\n</url>{/dede:list}', '', '');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_homepageset`
+-- 表的结构 `hf_homepageset`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_homepageset` (
+CREATE TABLE `hf_homepageset` (
   `templet` char(50) NOT NULL DEFAULT '',
   `position` char(30) NOT NULL DEFAULT '',
   `showmod` tinyint(2) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_homepageset`
+-- 转存表中的数据 `hf_homepageset`
 --
 
-INSERT INTO `dede_homepageset` (`templet`, `position`, `showmod`) VALUES
+INSERT INTO `hf_homepageset` (`templet`, `position`, `showmod`) VALUES
 ('default/index.htm', '../index.html', 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_keywords`
+-- 表的结构 `hf_keywords`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_keywords` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_keywords` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
   `keyword` char(16) NOT NULL DEFAULT '',
-  `rank` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `rank` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `sta` smallint(6) NOT NULL DEFAULT '1',
-  `rpurl` char(60) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `keyword` (`keyword`,`rank`,`sta`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `rpurl` char(60) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_log`
+-- 表的结构 `hf_log`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_log` (
-  `lid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `adminid` smallint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_log` (
+  `lid` mediumint(8) UNSIGNED NOT NULL,
+  `adminid` smallint(8) UNSIGNED NOT NULL DEFAULT '0',
   `filename` char(60) NOT NULL DEFAULT '',
   `method` char(10) NOT NULL DEFAULT '',
   `query` char(200) NOT NULL DEFAULT '',
   `cip` char(15) NOT NULL DEFAULT '',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`lid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member`
+-- 表的结构 `hf_member`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member` (
-  `mid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member` (
+  `mid` mediumint(8) UNSIGNED NOT NULL,
   `mtype` varchar(20) NOT NULL DEFAULT '个人',
   `userid` char(20) NOT NULL DEFAULT '',
   `pwd` char(32) NOT NULL DEFAULT '',
   `uname` char(36) NOT NULL DEFAULT '',
   `sex` enum('男','女','保密') NOT NULL DEFAULT '保密',
-  `rank` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `rank` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `uptime` int(11) NOT NULL DEFAULT '0',
   `exptime` smallint(6) NOT NULL DEFAULT '0',
-  `money` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `money` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `email` char(50) NOT NULL DEFAULT '',
-  `scores` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `matt` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `matt` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `spacesta` smallint(6) NOT NULL DEFAULT '0',
   `face` char(50) NOT NULL DEFAULT '',
-  `safequestion` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `safequestion` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `safeanswer` char(30) NOT NULL DEFAULT '',
-  `jointime` int(10) unsigned NOT NULL DEFAULT '0',
+  `jointime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `joinip` char(16) NOT NULL DEFAULT '',
-  `logintime` int(10) unsigned NOT NULL DEFAULT '0',
+  `logintime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `loginip` char(16) NOT NULL DEFAULT '',
-  `checkmail` smallint(6) NOT NULL DEFAULT '-1',
-  PRIMARY KEY (`mid`),
-  KEY `userid` (`userid`,`sex`),
-  KEY `logintime` (`logintime`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `checkmail` smallint(6) NOT NULL DEFAULT '-1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member`
+-- 转存表中的数据 `hf_member`
 --
 
-INSERT INTO `dede_member` (`mid`, `mtype`, `userid`, `pwd`, `uname`, `sex`, `rank`, `uptime`, `exptime`, `money`, `email`, `scores`, `matt`, `spacesta`, `face`, `safequestion`, `safeanswer`, `jointime`, `joinip`, `logintime`, `loginip`, `checkmail`) VALUES
-(1, '个人', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', '男', 100, 0, 0, 0, '', 10000, 10, 0, '', 0, '', 1490278628, '', 1490582504, '127.0.0.1', -1);
+INSERT INTO `hf_member` (`mid`, `mtype`, `userid`, `pwd`, `uname`, `sex`, `rank`, `uptime`, `exptime`, `money`, `email`, `scores`, `matt`, `spacesta`, `face`, `safequestion`, `safeanswer`, `jointime`, `joinip`, `logintime`, `loginip`, `checkmail`) VALUES
+(1, '个人', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', '男', 100, 0, 0, 0, '', 10000, 10, 0, '', 0, '', 1490278628, '', 1490789474, '123.149.72.193', -1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_company`
+-- 表的结构 `hf_member_company`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_company` (
-  `mid` mediumint(8) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_company` (
+  `mid` mediumint(8) NOT NULL,
   `company` varchar(36) NOT NULL DEFAULT '',
   `product` varchar(50) NOT NULL DEFAULT '',
-  `place` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `vocation` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `cosize` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `place` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `vocation` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `cosize` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `tel` varchar(30) NOT NULL DEFAULT '',
   `fax` varchar(30) NOT NULL DEFAULT '',
   `linkman` varchar(20) NOT NULL DEFAULT '',
@@ -1475,97 +1427,90 @@ CREATE TABLE IF NOT EXISTS `dede_member_company` (
   `mobile` varchar(30) NOT NULL DEFAULT '',
   `email` varchar(50) NOT NULL DEFAULT '',
   `url` varchar(50) NOT NULL DEFAULT '',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  `checked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `checked` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `introduce` text,
-  `comface` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `comface` varchar(255) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_feed`
+-- 表的结构 `hf_member_feed`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_feed` (
-  `fid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` smallint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_feed` (
+  `fid` mediumint(8) UNSIGNED NOT NULL,
+  `mid` smallint(8) UNSIGNED NOT NULL DEFAULT '0',
   `userid` char(20) NOT NULL DEFAULT '',
   `uname` char(36) NOT NULL DEFAULT '',
   `type` char(20) CHARACTER SET gb2312 NOT NULL DEFAULT '0',
   `aid` mediumint(8) NOT NULL DEFAULT '0',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `title` char(253) NOT NULL,
   `note` char(200) NOT NULL DEFAULT '',
-  `ischeck` smallint(6) NOT NULL,
-  PRIMARY KEY (`fid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `ischeck` smallint(6) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_flink`
+-- 表的结构 `hf_member_flink`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_flink` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_flink` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `title` varchar(30) NOT NULL DEFAULT '',
-  `url` varchar(100) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `url` varchar(100) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_friends`
+-- 表的结构 `hf_member_friends`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_friends` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `fid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_friends` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `fid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `floginid` char(20) NOT NULL DEFAULT '',
   `funame` char(36) NOT NULL DEFAULT '',
   `mid` mediumint(8) NOT NULL DEFAULT '0',
-  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `addtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `ftype` tinyint(4) NOT NULL DEFAULT '0',
   `groupid` int(8) NOT NULL DEFAULT '1',
-  `description` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fid` (`fid`,`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `description` varchar(200) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_group`
+-- 表的结构 `hf_member_group`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_group` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_group` (
+  `id` int(10) NOT NULL,
   `groupname` varchar(50) NOT NULL,
-  `mid` int(8) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id` (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `mid` int(8) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_group`
+-- 转存表中的数据 `hf_member_group`
 --
 
-INSERT INTO `dede_member_group` (`id`, `groupname`, `mid`) VALUES
+INSERT INTO `hf_member_group` (`id`, `groupname`, `mid`) VALUES
 (1, '朋友', 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_guestbook`
+-- 表的结构 `hf_member_guestbook`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_guestbook` (
-  `aid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_guestbook` (
+  `aid` int(10) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `gid` varchar(20) NOT NULL DEFAULT '0',
   `title` varchar(60) NOT NULL DEFAULT '',
   `uname` varchar(50) NOT NULL DEFAULT '',
@@ -1573,63 +1518,58 @@ CREATE TABLE IF NOT EXISTS `dede_member_guestbook` (
   `qq` varchar(50) NOT NULL DEFAULT '',
   `tel` varchar(50) NOT NULL DEFAULT '',
   `ip` varchar(20) NOT NULL DEFAULT '',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `msg` text,
-  PRIMARY KEY (`aid`),
-  KEY `mid` (`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `msg` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_model`
+-- 表的结构 `hf_member_model`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_model` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_model` (
+  `id` int(10) NOT NULL,
   `name` varchar(20) NOT NULL,
   `table` varchar(30) NOT NULL,
   `description` varchar(50) NOT NULL,
   `state` int(2) NOT NULL DEFAULT '0',
   `issystem` int(2) NOT NULL DEFAULT '0',
-  `info` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `info` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_model`
+-- 转存表中的数据 `hf_member_model`
 --
 
-INSERT INTO `dede_member_model` (`id`, `name`, `table`, `description`, `state`, `issystem`, `info`) VALUES
-(1, '个人', 'dede_member_person', '个人会员模型', 1, 1, '	\n<field:onlynet itemname="联系方式限制" autofield="1" type="int" isnull="true" default="1"  maxlength="250" issearch="" isshow="" state="1">	\n</field:onlynet>	\n	\n<field:sex itemname="性别" autofield="1" type="radio" isnull="true" default="男,女,保密"  maxlength="250" issearch="" isshow="" state="1">	\n</field:sex>	\n	\n<field:uname itemname="昵称/公司名称" autofield="1" type="textchar" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:uname>	\n	\n<field:qq itemname="QQ" autofield="1" type="textchar" isnull="true" default=""  maxlength="12" issearch="" isshow="" state="1">	\n</field:qq>	\n	\n<field:msn itemname="MSN" autofield="1" type="textchar" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:msn>	\n	\n<field:tel itemname="电话号码" autofield="1" type="text" isnull="true" default=""  maxlength="15" issearch="" isshow="" state="1">	\n</field:tel>	\n	\n<field:mobile itemname="手机" autofield="1" type="text" isnull="true" default=""  maxlength="15" issearch="" isshow="" state="1">	\n</field:mobile>	\n	\n<field:place itemname="目前所在地" autofield="1" type="int" default="0"  maxlength="5" issearch="0" isshow="0" state="1">	\n</field:place>	\n	\n	\n<field:oldplace itemname="家乡所在地" autofield="1" type="int" default="0"  maxlength="5" issearch="0" isshow="0" state="1">	\n</field:oldplace>	\n	\n	\n<field:birthday itemname="生日" autofield="1" type="datetime" isnull="true" default=""  maxlength="250" issearch="" isshow="" state="1">	\n</field:birthday>	\n	\n<field:star itemname="星座" autofield="1" type="int" isnull="true" default="1"  maxlength="6" issearch="" isshow="" state="1">	\n</field:star>	\n	\n<field:income itemname="收入" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:income>	\n	\n<field:education itemname="学历" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:education>	\n	\n<field:height itemname="身高" autofield="1" type="int" isnull="true" default="160"  maxlength="5" issearch="" isshow="" state="1">	\n</field:height>	\n	\n<field:bodytype itemname="体重" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:bodytype>	\n	\n<field:blood itemname="血型" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:blood>	\n	\n<field:vocation itemname="职业" autofield="1" type="text" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:vocation>	\n	\n<field:smoke itemname="吸烟" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:smoke>	\n	\n<field:marital itemname="婚姻状况" autofield="1" type="text" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:marital>	\n	\n<field:house itemname="住房" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:house>	\n	\n<field:drink itemname="饮酒" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:drink>	\n	\n<field:datingtype itemname="交友" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:datingtype>	\n	\n<field:language itemname="语言" autofield="1" type="checkbox" isnull="true" default="普通话,上海话,广东话,英语,日语,韩语,法语,意大利语,德语,西班牙语,俄语,阿拉伯语"  maxlength="250" issearch="" isshow="" state="1">	\n</field:language>	\n	\n	\n<field:nature itemname="性格" autofield="1" type="checkbox" isnull="true" default="性格外向,性格内向,活泼开朗,豪放不羁,患得患失,冲动,幽默,稳重,轻浮,沉默寡言,多愁善感,时喜时悲,附庸风雅,能说会道,坚强,脆弱,幼稚,成熟,快言快语,损人利己,狡猾善变,交际广泛,优柔寡断,自私,真诚,独立,依赖,难以琢磨,悲观消极,郁郁寡欢,胆小怕事,乐观向上,任性,自负,自卑,拜金,温柔体贴,小心翼翼,暴力倾向,逆来顺受,不拘小节,暴躁,倔强,豪爽,害羞,婆婆妈妈,敢做敢当,助人为乐,耿直,虚伪,孤僻,老实,守旧,敏感,迟钝,婆婆妈妈,武断,果断,刻薄"  maxlength="250" issearch="" isshow="" state="1">	\n</field:nature>	\n	\n<field:lovemsg itemname="人生格言" autofield="1" type="text" isnull="true" default=""  maxlength="100" issearch="" isshow="" state="1">	\n</field:lovemsg>	\n	\n<field:address itemname="家庭住址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:address>	\n	\n<field:uptime itemname="更新时间" autofield="1" type="int" isnull="true" default=""  maxlength="10" issearch="" isshow="" state="1">	\n</field:uptime>	\n'),
-(2, '企业', 'dede_member_company', '公司企业会员模型', 1, 1, '	\n<field:company itemname="公司名称" autofield="1" type="text" isnull="true" default=""  maxlength="36" issearch="" isshow="" state="1">	\n</field:company>	\n	\n<field:product itemname="公司产品" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:product>	\n	\n<field:place itemname="所在地址" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:place>	\n	\n<field:vocation itemname="所属行业" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:vocation>	\n	\n<field:cosize itemname="公司规模" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:cosize>	\n	\n<field:tel itemname="电话号码" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:tel>	\n	\n<field:fax itemname="传真" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:fax>	\n	\n<field:linkman itemname="联系人" autofield="1" type="text" isnull="true" default=""  maxlength="20" issearch="" isshow="" state="1">	\n</field:linkman>	\n	\n<field:address itemname="详细地址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:address>	\n	\n<field:mobile itemname="手机" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:mobile>	\n	\n<field:email itemname="邮箱" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:email>	\n	\n<field:url itemname="地址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:url>	\n	\n<field:uptime itemname="更新时间" autofield="1" type="int" isnull="true" default="0"  maxlength="10" issearch="" isshow="" state="1">	\n</field:uptime>	\n	\n<field:checked itemname="是否审核" autofield="1" type="int" isnull="true" default="0"  maxlength="1" issearch="" isshow="" state="1">	\n</field:checked>	\n	\n<field:introduce itemname="公司简介" autofield="1" type="multitext" isnull="true" default=""  maxlength="250" issearch="" isshow="" state="1">	\n</field:introduce>	\n	\n<field:comface itemname="公司标志" autofield="1" type="text" isnull="true" default=""  maxlength="255" issearch="" isshow="" state="1">	\n</field:comface>	\n');
+INSERT INTO `hf_member_model` (`id`, `name`, `table`, `description`, `state`, `issystem`, `info`) VALUES
+(1, '个人', 'hf_member_person', '个人会员模型', 1, 1, '	\n<field:onlynet itemname="联系方式限制" autofield="1" type="int" isnull="true" default="1"  maxlength="250" issearch="" isshow="" state="1">	\n</field:onlynet>	\n	\n<field:sex itemname="性别" autofield="1" type="radio" isnull="true" default="男,女,保密"  maxlength="250" issearch="" isshow="" state="1">	\n</field:sex>	\n	\n<field:uname itemname="昵称/公司名称" autofield="1" type="textchar" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:uname>	\n	\n<field:qq itemname="QQ" autofield="1" type="textchar" isnull="true" default=""  maxlength="12" issearch="" isshow="" state="1">	\n</field:qq>	\n	\n<field:msn itemname="MSN" autofield="1" type="textchar" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:msn>	\n	\n<field:tel itemname="电话号码" autofield="1" type="text" isnull="true" default=""  maxlength="15" issearch="" isshow="" state="1">	\n</field:tel>	\n	\n<field:mobile itemname="手机" autofield="1" type="text" isnull="true" default=""  maxlength="15" issearch="" isshow="" state="1">	\n</field:mobile>	\n	\n<field:place itemname="目前所在地" autofield="1" type="int" default="0"  maxlength="5" issearch="0" isshow="0" state="1">	\n</field:place>	\n	\n	\n<field:oldplace itemname="家乡所在地" autofield="1" type="int" default="0"  maxlength="5" issearch="0" isshow="0" state="1">	\n</field:oldplace>	\n	\n	\n<field:birthday itemname="生日" autofield="1" type="datetime" isnull="true" default=""  maxlength="250" issearch="" isshow="" state="1">	\n</field:birthday>	\n	\n<field:star itemname="星座" autofield="1" type="int" isnull="true" default="1"  maxlength="6" issearch="" isshow="" state="1">	\n</field:star>	\n	\n<field:income itemname="收入" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:income>	\n	\n<field:education itemname="学历" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:education>	\n	\n<field:height itemname="身高" autofield="1" type="int" isnull="true" default="160"  maxlength="5" issearch="" isshow="" state="1">	\n</field:height>	\n	\n<field:bodytype itemname="体重" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:bodytype>	\n	\n<field:blood itemname="血型" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:blood>	\n	\n<field:vocation itemname="职业" autofield="1" type="text" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:vocation>	\n	\n<field:smoke itemname="吸烟" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:smoke>	\n	\n<field:marital itemname="婚姻状况" autofield="1" type="text" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:marital>	\n	\n<field:house itemname="住房" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:house>	\n	\n<field:drink itemname="饮酒" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:drink>	\n	\n<field:datingtype itemname="交友" autofield="1" type="int" isnull="true" default="0"  maxlength="6" issearch="" isshow="" state="1">	\n</field:datingtype>	\n	\n<field:language itemname="语言" autofield="1" type="checkbox" isnull="true" default="普通话,上海话,广东话,英语,日语,韩语,法语,意大利语,德语,西班牙语,俄语,阿拉伯语"  maxlength="250" issearch="" isshow="" state="1">	\n</field:language>	\n	\n	\n<field:nature itemname="性格" autofield="1" type="checkbox" isnull="true" default="性格外向,性格内向,活泼开朗,豪放不羁,患得患失,冲动,幽默,稳重,轻浮,沉默寡言,多愁善感,时喜时悲,附庸风雅,能说会道,坚强,脆弱,幼稚,成熟,快言快语,损人利己,狡猾善变,交际广泛,优柔寡断,自私,真诚,独立,依赖,难以琢磨,悲观消极,郁郁寡欢,胆小怕事,乐观向上,任性,自负,自卑,拜金,温柔体贴,小心翼翼,暴力倾向,逆来顺受,不拘小节,暴躁,倔强,豪爽,害羞,婆婆妈妈,敢做敢当,助人为乐,耿直,虚伪,孤僻,老实,守旧,敏感,迟钝,婆婆妈妈,武断,果断,刻薄"  maxlength="250" issearch="" isshow="" state="1">	\n</field:nature>	\n	\n<field:lovemsg itemname="人生格言" autofield="1" type="text" isnull="true" default=""  maxlength="100" issearch="" isshow="" state="1">	\n</field:lovemsg>	\n	\n<field:address itemname="家庭住址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:address>	\n	\n<field:uptime itemname="更新时间" autofield="1" type="int" isnull="true" default=""  maxlength="10" issearch="" isshow="" state="1">	\n</field:uptime>	\n'),
+(2, '企业', 'hf_member_company', '公司企业会员模型', 1, 1, '	\n<field:company itemname="公司名称" autofield="1" type="text" isnull="true" default=""  maxlength="36" issearch="" isshow="" state="1">	\n</field:company>	\n	\n<field:product itemname="公司产品" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:product>	\n	\n<field:place itemname="所在地址" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:place>	\n	\n<field:vocation itemname="所属行业" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:vocation>	\n	\n<field:cosize itemname="公司规模" autofield="1" type="int" isnull="true" default="0"  maxlength="5" issearch="" isshow="" state="1">	\n</field:cosize>	\n	\n<field:tel itemname="电话号码" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:tel>	\n	\n<field:fax itemname="传真" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:fax>	\n	\n<field:linkman itemname="联系人" autofield="1" type="text" isnull="true" default=""  maxlength="20" issearch="" isshow="" state="1">	\n</field:linkman>	\n	\n<field:address itemname="详细地址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:address>	\n	\n<field:mobile itemname="手机" autofield="1" type="text" isnull="true" default=""  maxlength="30" issearch="" isshow="" state="1">	\n</field:mobile>	\n	\n<field:email itemname="邮箱" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:email>	\n	\n<field:url itemname="地址" autofield="1" type="text" isnull="true" default=""  maxlength="50" issearch="" isshow="" state="1">	\n</field:url>	\n	\n<field:uptime itemname="更新时间" autofield="1" type="int" isnull="true" default="0"  maxlength="10" issearch="" isshow="" state="1">	\n</field:uptime>	\n	\n<field:checked itemname="是否审核" autofield="1" type="int" isnull="true" default="0"  maxlength="1" issearch="" isshow="" state="1">	\n</field:checked>	\n	\n<field:introduce itemname="公司简介" autofield="1" type="multitext" isnull="true" default=""  maxlength="250" issearch="" isshow="" state="1">	\n</field:introduce>	\n	\n<field:comface itemname="公司标志" autofield="1" type="text" isnull="true" default=""  maxlength="255" issearch="" isshow="" state="1">	\n</field:comface>	\n');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_msg`
+-- 表的结构 `hf_member_msg`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_msg` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_msg` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `userid` char(20) NOT NULL DEFAULT '',
   `ip` char(15) NOT NULL DEFAULT '',
   `ischeck` smallint(6) NOT NULL DEFAULT '0',
-  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `msg` text,
-  PRIMARY KEY (`id`),
-  KEY `id` (`ischeck`,`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `dtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `msg` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_operation`
+-- 表的结构 `hf_member_operation`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_operation` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_operation` (
+  `aid` int(11) NOT NULL,
   `buyid` varchar(80) NOT NULL DEFAULT '',
   `pname` varchar(50) NOT NULL DEFAULT '',
   `product` varchar(10) NOT NULL DEFAULT '',
@@ -1638,34 +1578,31 @@ CREATE TABLE IF NOT EXISTS `dede_member_operation` (
   `pid` int(11) NOT NULL DEFAULT '0',
   `mid` int(11) NOT NULL DEFAULT '0',
   `sta` int(11) NOT NULL DEFAULT '0',
-  `oldinfo` varchar(200) NOT NULL DEFAULT '',
-  PRIMARY KEY (`aid`),
-  KEY `buyid` (`buyid`),
-  KEY `pid` (`pid`,`mid`,`sta`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `oldinfo` varchar(200) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_person`
+-- 表的结构 `hf_member_person`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_person` (
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `onlynet` tinyint(1) unsigned NOT NULL DEFAULT '1',
+CREATE TABLE `hf_member_person` (
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `onlynet` tinyint(1) UNSIGNED NOT NULL DEFAULT '1',
   `sex` enum('男','女','保密') NOT NULL DEFAULT '男',
   `uname` char(30) NOT NULL DEFAULT '',
   `qq` char(12) NOT NULL DEFAULT '',
   `msn` char(50) NOT NULL DEFAULT '',
   `tel` varchar(15) NOT NULL DEFAULT '',
   `mobile` varchar(15) NOT NULL DEFAULT '',
-  `place` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `oldplace` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `place` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `oldplace` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `birthday` date NOT NULL DEFAULT '1980-01-01',
-  `star` smallint(6) unsigned NOT NULL DEFAULT '1',
+  `star` smallint(6) UNSIGNED NOT NULL DEFAULT '1',
   `income` smallint(6) NOT NULL DEFAULT '0',
   `education` smallint(6) NOT NULL DEFAULT '0',
-  `height` smallint(5) unsigned NOT NULL DEFAULT '160',
+  `height` smallint(5) UNSIGNED NOT NULL DEFAULT '160',
   `bodytype` smallint(6) NOT NULL DEFAULT '0',
   `blood` smallint(6) NOT NULL DEFAULT '0',
   `vocation` smallint(6) NOT NULL DEFAULT '0',
@@ -1678,215 +1615,201 @@ CREATE TABLE IF NOT EXISTS `dede_member_person` (
   `nature` set('性格外向','性格内向','活泼开朗','豪放不羁','患得患失','冲动','幽默','稳重','轻浮','沉默寡言','多愁善感','时喜时悲','附庸风雅','能说会道','坚强','脆弱','幼稚','成熟','快言快语','损人利己','狡猾善变','交际广泛','优柔寡断','自私','真诚','独立','依赖','难以琢磨','悲观消极','郁郁寡欢','胆小怕事','乐观向上','任性','自负','自卑','拜金','温柔体贴','小心翼翼','暴力倾向','逆来顺受','不拘小节','暴躁','倔强','豪爽','害羞','婆婆妈妈','敢做敢当','助人为乐','耿直','虚伪','孤僻','老实','守旧','敏感','迟钝','婆婆妈妈','武断','果断','刻薄') DEFAULT NULL,
   `lovemsg` varchar(100) NOT NULL DEFAULT '',
   `address` varchar(50) NOT NULL DEFAULT '',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`mid`)
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_person`
+-- 转存表中的数据 `hf_member_person`
 --
 
-INSERT INTO `dede_member_person` (`mid`, `onlynet`, `sex`, `uname`, `qq`, `msn`, `tel`, `mobile`, `place`, `oldplace`, `birthday`, `star`, `income`, `education`, `height`, `bodytype`, `blood`, `vocation`, `smoke`, `marital`, `house`, `drink`, `datingtype`, `language`, `nature`, `lovemsg`, `address`, `uptime`) VALUES
+INSERT INTO `hf_member_person` (`mid`, `onlynet`, `sex`, `uname`, `qq`, `msn`, `tel`, `mobile`, `place`, `oldplace`, `birthday`, `star`, `income`, `education`, `height`, `bodytype`, `blood`, `vocation`, `smoke`, `marital`, `house`, `drink`, `datingtype`, `language`, `nature`, `lovemsg`, `address`, `uptime`) VALUES
 (1, 1, '男', 'admin', '', '', '', '', 0, 0, '1980-01-01', 1, 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_pms`
+-- 表的结构 `hf_member_pms`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_pms` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_pms` (
+  `id` int(10) UNSIGNED NOT NULL,
   `floginid` varchar(20) NOT NULL DEFAULT '',
-  `fromid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `toid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `fromid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `toid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `tologinid` char(20) NOT NULL DEFAULT '',
   `folder` enum('inbox','outbox') DEFAULT 'inbox',
   `subject` varchar(60) NOT NULL DEFAULT '',
-  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `writetime` int(10) unsigned NOT NULL DEFAULT '0',
-  `hasview` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `sendtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `writetime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `hasview` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `isadmin` tinyint(1) NOT NULL DEFAULT '0',
-  `message` text,
-  PRIMARY KEY (`id`),
-  KEY `sendtime` (`sendtime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `message` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_snsmsg`
+-- 表的结构 `hf_member_snsmsg`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_snsmsg` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_snsmsg` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `userid` varchar(20) NOT NULL,
-  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `msg` varchar(250) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `sendtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `msg` varchar(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_space`
+-- 表的结构 `hf_member_space`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_space` (
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `pagesize` smallint(5) unsigned NOT NULL DEFAULT '10',
+CREATE TABLE `hf_member_space` (
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `pagesize` smallint(5) UNSIGNED NOT NULL DEFAULT '10',
   `matt` smallint(6) NOT NULL DEFAULT '0',
   `spacename` varchar(50) NOT NULL DEFAULT '',
   `spacelogo` varchar(50) NOT NULL DEFAULT '',
   `spacestyle` varchar(20) NOT NULL DEFAULT '',
   `sign` varchar(100) NOT NULL DEFAULT '没签名',
-  `spacenews` text,
-  PRIMARY KEY (`mid`)
+  `spacenews` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_space`
+-- 转存表中的数据 `hf_member_space`
 --
 
-INSERT INTO `dede_member_space` (`mid`, `pagesize`, `matt`, `spacename`, `spacelogo`, `spacestyle`, `sign`, `spacenews`) VALUES
+INSERT INTO `hf_member_space` (`mid`, `pagesize`, `matt`, `spacename`, `spacelogo`, `spacestyle`, `sign`, `spacenews`) VALUES
 (1, 10, 0, 'admin的空间', '', 'person', '', '');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_stow`
+-- 表的结构 `hf_member_stow`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_stow` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_stow` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `aid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `title` char(60) NOT NULL DEFAULT '',
-  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `type` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `uid` (`mid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `addtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `type` varchar(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_stowtype`
+-- 表的结构 `hf_member_stowtype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_stowtype` (
+CREATE TABLE `hf_member_stowtype` (
   `stowname` varchar(30) NOT NULL,
   `indexname` varchar(30) NOT NULL,
-  `indexurl` varchar(50) NOT NULL,
-  PRIMARY KEY (`stowname`)
+  `indexurl` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_stowtype`
+-- 转存表中的数据 `hf_member_stowtype`
 --
 
-INSERT INTO `dede_member_stowtype` (`stowname`, `indexname`, `indexurl`) VALUES
+INSERT INTO `hf_member_stowtype` (`stowname`, `indexname`, `indexurl`) VALUES
 ('sys', '系统收藏', 'archives_do.php'),
 ('book', '小说收藏', '/book/book.php?bid');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_tj`
+-- 表的结构 `hf_member_tj`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_tj` (
-  `mid` mediumint(8) NOT NULL AUTO_INCREMENT,
-  `article` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `album` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `archives` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `homecount` int(10) unsigned NOT NULL DEFAULT '0',
-  `pagecount` int(10) unsigned NOT NULL DEFAULT '0',
-  `feedback` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `friend` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `stow` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_tj` (
+  `mid` mediumint(8) NOT NULL,
+  `article` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `album` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `archives` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `homecount` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `pagecount` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `feedback` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `friend` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `stow` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `soft` int(10) NOT NULL DEFAULT '0',
   `info` int(10) NOT NULL DEFAULT '0',
-  `shop` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`mid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `shop` int(10) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_tj`
+-- 转存表中的数据 `hf_member_tj`
 --
 
-INSERT INTO `dede_member_tj` (`mid`, `article`, `album`, `archives`, `homecount`, `pagecount`, `feedback`, `friend`, `stow`, `soft`, `info`, `shop`) VALUES
-(1, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0);
+INSERT INTO `hf_member_tj` (`mid`, `article`, `album`, `archives`, `homecount`, `pagecount`, `feedback`, `friend`, `stow`, `soft`, `info`, `shop`) VALUES
+(1, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_type`
+-- 表的结构 `hf_member_type`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_type` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_member_type` (
+  `aid` int(11) NOT NULL,
   `rank` int(11) NOT NULL DEFAULT '0',
   `pname` varchar(50) NOT NULL DEFAULT '',
   `money` int(11) NOT NULL DEFAULT '0',
-  `exptime` int(11) NOT NULL DEFAULT '30',
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `exptime` int(11) NOT NULL DEFAULT '30'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_member_type`
+-- 转存表中的数据 `hf_member_type`
 --
 
-INSERT INTO `dede_member_type` (`aid`, `rank`, `pname`, `money`, `exptime`) VALUES
+INSERT INTO `hf_member_type` (`aid`, `rank`, `pname`, `money`, `exptime`) VALUES
 (1, 50, '中级会员半年', 100, 7);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_member_vhistory`
+-- 表的结构 `hf_member_vhistory`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_member_vhistory` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_member_vhistory` (
+  `id` int(10) NOT NULL,
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `loginid` char(20) NOT NULL DEFAULT '',
-  `vid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `vid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `vloginid` char(20) NOT NULL DEFAULT '',
-  `count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `count` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `vip` char(15) NOT NULL DEFAULT '',
-  `vtime` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `vtime` (`vtime`),
-  KEY `mid` (`mid`,`vid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `vtime` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_messageboard`
+-- 表的结构 `hf_messageboard`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_messageboard` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_messageboard` (
+  `id` int(10) UNSIGNED NOT NULL,
   `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
   `username` varchar(250) NOT NULL DEFAULT '',
   `usertele` varchar(250) NOT NULL DEFAULT '',
   `userqq` varchar(250) NOT NULL DEFAULT '',
   `useremail` varchar(250) NOT NULL DEFAULT '',
   `useraddress` varchar(250) NOT NULL DEFAULT '',
-  `usercontent` mediumtext,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+  `usercontent` mediumtext
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_moneycard_record`
+-- 表的结构 `hf_moneycard_record`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_moneycard_record` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_moneycard_record` (
+  `aid` int(11) NOT NULL,
   `ctid` int(11) NOT NULL DEFAULT '0',
   `cardid` varchar(50) NOT NULL DEFAULT '',
   `uid` int(11) NOT NULL DEFAULT '0',
@@ -1894,32 +1817,27 @@ CREATE TABLE IF NOT EXISTS `dede_moneycard_record` (
   `mtime` int(11) NOT NULL DEFAULT '0',
   `utime` int(11) NOT NULL DEFAULT '0',
   `money` int(11) NOT NULL DEFAULT '0',
-  `num` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`aid`),
-  KEY `ctid` (`ctid`),
-  KEY `cardid` (`cardid`),
-  KEY `uid` (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `num` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_moneycard_type`
+-- 表的结构 `hf_moneycard_type`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_moneycard_type` (
-  `tid` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_moneycard_type` (
+  `tid` int(11) NOT NULL,
   `num` int(11) NOT NULL DEFAULT '500',
   `money` int(11) NOT NULL DEFAULT '50',
-  `pname` varchar(50) NOT NULL DEFAULT '',
-  PRIMARY KEY (`tid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `pname` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_moneycard_type`
+-- 转存表中的数据 `hf_moneycard_type`
 --
 
-INSERT INTO `dede_moneycard_type` (`tid`, `num`, `money`, `pname`) VALUES
+INSERT INTO `hf_moneycard_type` (`tid`, `num`, `money`, `pname`) VALUES
 (1, 100, 30, '100点卡'),
 (2, 200, 55, '200点卡'),
 (3, 300, 75, '300点卡');
@@ -1927,109 +1845,107 @@ INSERT INTO `dede_moneycard_type` (`tid`, `num`, `money`, `pname`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_mtypes`
+-- 表的结构 `hf_mtypes`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_mtypes` (
-  `mtypeid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_mtypes` (
+  `mtypeid` mediumint(8) UNSIGNED NOT NULL,
   `mtypename` char(40) NOT NULL,
   `channelid` smallint(6) NOT NULL DEFAULT '1',
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`mtypeid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `dede_multiserv_config`
---
-
-CREATE TABLE IF NOT EXISTS `dede_multiserv_config` (
-  `remoteuploads` smallint(6) NOT NULL DEFAULT '0',
-  `remoteupUrl` text NOT NULL,
-  `rminfo` text,
-  `servinfo` mediumtext,
-  PRIMARY KEY (`remoteuploads`)
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_myad`
+-- 表的结构 `hf_multiserv_config`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_myad` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_multiserv_config` (
+  `remoteuploads` smallint(6) NOT NULL DEFAULT '0',
+  `remoteupUrl` text NOT NULL,
+  `rminfo` text,
+  `servinfo` mediumtext
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `hf_multiserv_config`
+--
+
+INSERT INTO `hf_multiserv_config` (`remoteuploads`, `remoteupUrl`, `rminfo`, `servinfo`) VALUES
+(0, 'http://img.dedecms.com', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hf_myad`
+--
+
+CREATE TABLE `hf_myad` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
   `clsid` smallint(5) NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `tagname` varchar(30) NOT NULL DEFAULT '',
   `adname` varchar(60) NOT NULL DEFAULT '',
   `timeset` smallint(6) NOT NULL DEFAULT '0',
-  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `starttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `endtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `normbody` text,
-  `expbody` text,
-  PRIMARY KEY (`aid`),
-  KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `expbody` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_myadtype`
+-- 表的结构 `hf_myadtype`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_myadtype` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `typename` varchar(50) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+CREATE TABLE `hf_myadtype` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `typename` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_mytag`
+-- 表的结构 `hf_mytag`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_mytag` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_mytag` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `tagname` varchar(30) NOT NULL DEFAULT '',
   `timeset` smallint(6) NOT NULL DEFAULT '0',
-  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `starttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `endtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `normbody` text,
-  `expbody` text,
-  PRIMARY KEY (`aid`),
-  KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `expbody` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_payment`
+-- 表的结构 `hf_payment`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_payment` (
-  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_payment` (
+  `id` tinyint(3) UNSIGNED NOT NULL,
   `code` varchar(20) NOT NULL DEFAULT '',
   `name` varchar(120) NOT NULL DEFAULT '',
   `fee` varchar(10) NOT NULL DEFAULT '0',
   `description` text NOT NULL,
-  `rank` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `rank` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
   `config` text NOT NULL,
-  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `cod` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `online` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `code` (`code`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+  `enabled` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
+  `cod` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
+  `online` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_payment`
+-- 转存表中的数据 `hf_payment`
 --
 
-INSERT INTO `dede_payment` (`id`, `code`, `name`, `fee`, `description`, `rank`, `config`, `enabled`, `cod`, `online`) VALUES
+INSERT INTO `hf_payment` (`id`, `code`, `name`, `fee`, `description`, `rank`, `config`, `enabled`, `cod`, `online`) VALUES
 (3, 'alipay', '支付宝', '2', '支付宝网站(www.alipay.com) 是国内先进的网上支付平台。<br/>DedeCMS联合支付宝推出支付宝接口。<br/><a href="https://www.alipay.com/himalayas/practicality_customer.htm?customer_external_id=C4335994340215837114&market_type=from_agent_contract&pro_codes=6ACD133C5F350958F7F62F29651356BB " target="_blank"><font color="red">立即在线申请</font></a>', 1, 'a:4:{s:14:"alipay_account";a:4:{s:5:"title";s:14:"支付宝用户账号";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:20:"yuan12345xin@163.com";}s:10:"alipay_key";a:4:{s:5:"title";s:14:"交易安全校验码";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:6:"dsfsdf";}s:14:"alipay_partner";a:4:{s:5:"title";s:12:"合作者身份ID";s:11:"description";s:0:"";s:4:"type";s:4:"text";s:5:"value";s:1:"1";}s:17:"alipay_pay_method";a:5:{s:5:"title";s:14:"支付宝账号类型";s:11:"description";s:52:"请选择您最后一次跟支付宝签订的协议里面说明的接口类型";s:4:"type";s:6:"select";s:5:"iterm";s:58:"0:使用标准双接口,1:使用担保交易接口,2:使用即时到帐交易接口";s:5:"value";s:1:"1";}}', 1, 0, 1),
 (2, 'bank', '银行汇款/转帐', '0', '银行名称	\n收款人信息：全称 ××× ；帐号或地址 ××× ；开户行 ×××。	\n注意事项：办理电汇时，请在电汇单“汇款用途”一栏处注明您的订单号。', 4, 'a:0:{}', 1, 1, 0),
 (1, 'cod', '货到付款', '0', '开通城市：×××	\n货到付款区域：×××', 3, 'a:0:{}', 1, 1, 0),
@@ -2038,25 +1954,24 @@ INSERT INTO `dede_payment` (`id`, `code`, `name`, `fee`, `description`, `rank`, 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_plus`
+-- 表的结构 `hf_plus`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_plus` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_plus` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
   `plusname` varchar(30) NOT NULL DEFAULT '',
   `menustring` varchar(200) NOT NULL DEFAULT '',
   `mainurl` varchar(50) NOT NULL DEFAULT '',
   `writer` varchar(30) NOT NULL DEFAULT '',
   `isshow` smallint(6) NOT NULL DEFAULT '1',
-  `filelist` text,
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
+  `filelist` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_plus`
+-- 转存表中的数据 `hf_plus`
 --
 
-INSERT INTO `dede_plus` (`aid`, `plusname`, `menustring`, `mainurl`, `writer`, `isshow`, `filelist`) VALUES
+INSERT INTO `hf_plus` (`aid`, `plusname`, `menustring`, `mainurl`, `writer`, `isshow`, `filelist`) VALUES
 (27, '友情链接模块', '<m:item name=''友情链接'' link=''friendlink_main.php'' rank=''plus_友情链接'' target=''main'' />', '', '织梦团队', 1, ''),
 (24, '文件管理器', '<m:item name=''文件管理器'' link=''file_manage_main.php'' rank=''plus_文件管理器'' target=''main'' />', '', '织梦团队', 1, ''),
 (23, '百度新闻', '<m:item name=''百度新闻'' link=''baidunews.php'' rank=''plus_百度新闻'' target=''main'' />', '', '织梦团队', 1, 'baidunews.php'),
@@ -2067,21 +1982,20 @@ INSERT INTO `dede_plus` (`aid`, `plusname`, `menustring`, `mainurl`, `writer`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_plus_mda_setting`
+-- 表的结构 `hf_plus_mda_setting`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_plus_mda_setting` (
+CREATE TABLE `hf_plus_mda_setting` (
   `skey` varchar(255) NOT NULL DEFAULT '',
   `svalue` text NOT NULL,
-  `stime` int(10) NOT NULL,
-  PRIMARY KEY (`skey`)
+  `stime` int(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_plus_mda_setting`
+-- 转存表中的数据 `hf_plus_mda_setting`
 --
 
-INSERT INTO `dede_plus_mda_setting` (`skey`, `svalue`, `stime`) VALUES
+INSERT INTO `hf_plus_mda_setting` (`skey`, `svalue`, `stime`) VALUES
 ('version', '0.0.1', 0),
 ('channel_uuid', '', 0),
 ('channel_secret', '', 0),
@@ -2090,94 +2004,90 @@ INSERT INTO `dede_plus_mda_setting` (`skey`, `svalue`, `stime`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_plus_seoinfo`
+-- 表的结构 `hf_plus_seoinfo`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_plus_seoinfo` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_plus_seoinfo` (
+  `id` int(11) NOT NULL,
   `create_time` int(11) DEFAULT NULL,
   `alexa_num` varchar(50) DEFAULT NULL,
   `alexa_area_num` varchar(50) DEFAULT NULL,
   `baidu_count` varchar(50) DEFAULT NULL,
   `sogou_count` varchar(50) DEFAULT NULL,
-  `haosou360_count` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+  `haosou360_count` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_plus_seoinfo`
+-- 转存表中的数据 `hf_plus_seoinfo`
 --
 
-INSERT INTO `dede_plus_seoinfo` (`id`, `create_time`, `alexa_num`, `alexa_area_num`, `baidu_count`, `sogou_count`, `haosou360_count`) VALUES
+INSERT INTO `hf_plus_seoinfo` (`id`, `create_time`, `alexa_num`, `alexa_area_num`, `baidu_count`, `sogou_count`, `haosou360_count`) VALUES
 (1, 1490278700, '7,527,262', '0', '0', '0', '0'),
 (2, 1490365951, '7,528,345', '0', '0', '0', '0'),
 (3, 1490460199, '7,535,011', '0', '0', '0', '0'),
-(4, 1490582485, '7,547,853', '0', '0', '0', '0');
+(4, 1490582485, '7,547,853', '0', '0', '0', '0'),
+(5, 1490604425, '7,547,853', '0', '0', '0', '0'),
+(6, 1490784531, '7,547,853', '0', '0', '0', '0');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_purview`
+-- 表的结构 `hf_purview`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_purview` (
+CREATE TABLE `hf_purview` (
   `mid` mediumint(8) DEFAULT '0',
   `typeid` smallint(5) DEFAULT '0',
   `rank` smallint(6) DEFAULT NULL,
   `pkey` varchar(30) CHARACTER SET latin1 NOT NULL,
-  `pvalue` text NOT NULL,
-  KEY `pkey` (`pkey`) USING BTREE
+  `pvalue` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_pwd_tmp`
+-- 表的结构 `hf_pwd_tmp`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_pwd_tmp` (
+CREATE TABLE `hf_pwd_tmp` (
   `mid` mediumint(8) NOT NULL,
   `membername` char(16) NOT NULL DEFAULT '',
   `pwd` char(32) NOT NULL DEFAULT '',
-  `mailtime` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`mid`)
+  `mailtime` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_ratings`
+-- 表的结构 `hf_ratings`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_ratings` (
+CREATE TABLE `hf_ratings` (
   `id` varchar(11) NOT NULL,
   `total_votes` int(11) NOT NULL DEFAULT '0',
   `total_value` int(11) NOT NULL DEFAULT '0',
-  `used_ips` longtext,
-  PRIMARY KEY (`id`)
+  `used_ips` longtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_scores`
+-- 表的结构 `hf_scores`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_scores` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_scores` (
+  `id` int(11) UNSIGNED NOT NULL,
   `titles` char(15) NOT NULL,
-  `icon` smallint(6) unsigned DEFAULT '0',
+  `icon` smallint(6) UNSIGNED DEFAULT '0',
   `integral` int(10) NOT NULL DEFAULT '0',
-  `isdefault` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `integral` (`integral`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+  `isdefault` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_scores`
+-- 转存表中的数据 `hf_scores`
 --
 
-INSERT INTO `dede_scores` (`id`, `titles`, `icon`, `integral`, `isdefault`) VALUES
+INSERT INTO `hf_scores` (`id`, `titles`, `icon`, `integral`, `isdefault`) VALUES
 (2, '列兵', 1, 0, 1),
 (3, '班长', 2, 1000, 1),
 (4, '少尉', 3, 2000, 1),
@@ -2194,43 +2104,41 @@ INSERT INTO `dede_scores` (`id`, `titles`, `icon`, `integral`, `isdefault`) VALU
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_search_cache`
+-- 表的结构 `hf_search_cache`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_search_cache` (
+CREATE TABLE `hf_search_cache` (
   `hash` char(32) NOT NULL,
-  `lasttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `rsnum` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `ids` mediumtext,
-  PRIMARY KEY (`hash`)
+  `lasttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `rsnum` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `ids` mediumtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_search_keywords`
+-- 表的结构 `hf_search_keywords`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_search_keywords` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_search_keywords` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
   `keyword` char(30) NOT NULL DEFAULT '',
   `spwords` char(50) NOT NULL DEFAULT '',
-  `count` mediumint(8) unsigned NOT NULL DEFAULT '1',
-  `result` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `lasttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `channelid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `count` mediumint(8) UNSIGNED NOT NULL DEFAULT '1',
+  `result` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `lasttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `channelid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sgpage`
+-- 表的结构 `hf_sgpage`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sgpage` (
-  `aid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_sgpage` (
+  `aid` smallint(5) UNSIGNED NOT NULL,
   `title` varchar(60) NOT NULL DEFAULT '',
   `ismake` smallint(6) NOT NULL DEFAULT '1',
   `filename` varchar(60) NOT NULL DEFAULT '',
@@ -2238,34 +2146,29 @@ CREATE TABLE IF NOT EXISTS `dede_sgpage` (
   `template` varchar(30) NOT NULL DEFAULT '',
   `likeid` varchar(20) NOT NULL DEFAULT '',
   `description` varchar(250) NOT NULL DEFAULT '',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  `body` mediumtext,
-  PRIMARY KEY (`aid`),
-  KEY `ismake` (`ismake`,`uptime`),
-  KEY `likeid` (`likeid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `body` mediumtext
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_shops_delivery`
+-- 表的结构 `hf_shops_delivery`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_shops_delivery` (
-  `pid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_shops_delivery` (
+  `pid` int(10) UNSIGNED NOT NULL,
   `dname` char(80) NOT NULL,
   `price` float(13,2) NOT NULL DEFAULT '0.00',
   `des` char(255) DEFAULT NULL,
-  `orders` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`pid`),
-  KEY `orders` (`orders`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+  `orders` int(10) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_shops_delivery`
+-- 转存表中的数据 `hf_shops_delivery`
 --
 
-INSERT INTO `dede_shops_delivery` (`pid`, `dname`, `price`, `des`, `orders`) VALUES
+INSERT INTO `hf_shops_delivery` (`pid`, `dname`, `price`, `des`, `orders`) VALUES
 (1, '送货上门', 10.21, '送货上门,领取商品时付费.', 0),
 (2, '特快专递（EMS）', 25.00, '特快专递（EMS）,要另收手续费.', 0),
 (3, '普通邮递', 5.00, '普通邮递', 0),
@@ -2274,10 +2177,10 @@ INSERT INTO `dede_shops_delivery` (`pid`, `dname`, `price`, `des`, `orders`) VAL
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_shops_orders`
+-- 表的结构 `hf_shops_orders`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_shops_orders` (
+CREATE TABLE `hf_shops_orders` (
   `oid` varchar(80) NOT NULL,
   `userid` int(10) NOT NULL,
   `pid` int(10) NOT NULL DEFAULT '0',
@@ -2288,36 +2191,31 @@ CREATE TABLE IF NOT EXISTS `dede_shops_orders` (
   `priceCount` float(13,2) NOT NULL,
   `state` tinyint(1) NOT NULL DEFAULT '0',
   `ip` char(15) NOT NULL DEFAULT '',
-  `stime` int(10) NOT NULL DEFAULT '0',
-  KEY `stime` (`stime`),
-  KEY `userid` (`userid`),
-  KEY `oid` (`oid`)
+  `stime` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_shops_products`
+-- 表的结构 `hf_shops_products`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_shops_products` (
+CREATE TABLE `hf_shops_products` (
   `aid` mediumint(8) NOT NULL DEFAULT '0',
   `oid` varchar(80) NOT NULL DEFAULT '',
   `userid` int(10) NOT NULL,
   `title` varchar(80) NOT NULL DEFAULT '',
   `price` float(13,2) NOT NULL DEFAULT '0.00',
-  `buynum` int(10) NOT NULL DEFAULT '9',
-  KEY `oid` (`oid`),
-  KEY `userid` (`userid`)
+  `buynum` int(10) NOT NULL DEFAULT '9'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_shops_userinfo`
+-- 表的结构 `hf_shops_userinfo`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_shops_userinfo` (
+CREATE TABLE `hf_shops_userinfo` (
   `userid` int(10) NOT NULL,
   `oid` varchar(80) NOT NULL DEFAULT '',
   `consignee` char(15) NOT NULL DEFAULT '',
@@ -2325,70 +2223,65 @@ CREATE TABLE IF NOT EXISTS `dede_shops_userinfo` (
   `zip` int(10) NOT NULL DEFAULT '0',
   `tel` varchar(255) NOT NULL DEFAULT '',
   `email` varchar(255) NOT NULL DEFAULT '',
-  `des` varchar(255) NOT NULL DEFAULT '',
-  KEY `oid` (`oid`),
-  KEY `userid` (`userid`)
+  `des` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_softconfig`
+-- 表的结构 `hf_softconfig`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_softconfig` (
+CREATE TABLE `hf_softconfig` (
   `downtype` smallint(6) NOT NULL DEFAULT '0',
   `ismoresite` smallint(6) NOT NULL DEFAULT '0',
   `gotojump` smallint(6) NOT NULL DEFAULT '0',
-  `islocal` smallint(5) unsigned NOT NULL DEFAULT '1',
+  `islocal` smallint(5) UNSIGNED NOT NULL DEFAULT '1',
   `sites` text,
   `downmsg` text,
-  `moresitedo` smallint(5) unsigned NOT NULL DEFAULT '1',
-  `dfrank` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `dfywboy` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `argrange` smallint(5) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`downtype`)
+  `moresitedo` smallint(5) UNSIGNED NOT NULL DEFAULT '1',
+  `dfrank` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `dfywboy` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `argrange` smallint(5) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_softconfig`
+-- 转存表中的数据 `hf_softconfig`
 --
 
-INSERT INTO `dede_softconfig` (`downtype`, `ismoresite`, `gotojump`, `islocal`, `sites`, `downmsg`, `moresitedo`, `dfrank`, `dfywboy`, `argrange`) VALUES
+INSERT INTO `hf_softconfig` (`downtype`, `ismoresite`, `gotojump`, `islocal`, `sites`, `downmsg`, `moresitedo`, `dfrank`, `dfywboy`, `argrange`) VALUES
 (0, 1, 1, 1, 'http://www.aaa.com | 镜像地址一	\nhttp://www.bbb.com | 镜像地址二	\nhttp://www.ccc.com | 镜像地址三	\n', '<p>?推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	\n?如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	\n?下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	\n?如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	\n?本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sphinx`
+-- 表的结构 `hf_sphinx`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sphinx` (
-  `countid` int(11) unsigned NOT NULL,
-  `maxaid` int(11) unsigned NOT NULL,
-  PRIMARY KEY (`countid`)
+CREATE TABLE `hf_sphinx` (
+  `countid` int(11) UNSIGNED NOT NULL,
+  `maxaid` int(11) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_stepselect`
+-- 表的结构 `hf_stepselect`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_stepselect` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_stepselect` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
   `itemname` char(30) DEFAULT NULL,
   `egroup` char(20) DEFAULT NULL,
-  `issign` tinyint(1) unsigned DEFAULT '0',
-  `issystem` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+  `issign` tinyint(1) UNSIGNED DEFAULT '0',
+  `issystem` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_stepselect`
+-- 转存表中的数据 `hf_stepselect`
 --
 
-INSERT INTO `dede_stepselect` (`id`, `itemname`, `egroup`, `issign`, `issystem`) VALUES
+INSERT INTO `hf_stepselect` (`id`, `itemname`, `egroup`, `issign`, `issystem`) VALUES
 (1, '血型', 'blood', 1, 1),
 (2, '体型', 'bodytype', 1, 1),
 (3, '公司规模', 'cosize', 1, 1),
@@ -2408,24 +2301,23 @@ INSERT INTO `dede_stepselect` (`id`, `itemname`, `egroup`, `issign`, `issystem`)
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sysconfig`
+-- 表的结构 `hf_sysconfig`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sysconfig` (
-  `aid` smallint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_sysconfig` (
+  `aid` smallint(8) UNSIGNED NOT NULL DEFAULT '0',
   `varname` varchar(20) NOT NULL DEFAULT '',
   `info` varchar(100) NOT NULL DEFAULT '',
   `groupid` smallint(6) NOT NULL DEFAULT '1',
   `type` varchar(10) NOT NULL DEFAULT 'string',
-  `value` text,
-  PRIMARY KEY (`varname`)
+  `value` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_sysconfig`
+-- 转存表中的数据 `hf_sysconfig`
 --
 
-INSERT INTO `dede_sysconfig` (`aid`, `varname`, `info`, `groupid`, `type`, `value`) VALUES
+INSERT INTO `hf_sysconfig` (`aid`, `varname`, `info`, `groupid`, `type`, `value`) VALUES
 (1, 'cfg_basehost', '站点根网址', 1, 'string', 'http://huifeng.abd.com'),
 (2, 'cfg_cmspath', 'DedeCMS安装目录', 2, 'string', ''),
 (3, 'cfg_cookie_encode', 'cookie加密码', 2, 'string', 'TuKGuCwinFdvC1c5s7RBmwQIsG3YqpXU'),
@@ -2452,7 +2344,7 @@ INSERT INTO `dede_sysconfig` (`aid`, `varname`, `info`, `groupid`, `type`, `valu
 (24, 'cfg_df_style', '模板默认风格', 1, 'string', 'default'),
 (25, 'cfg_multi_site', '(是/否)支持多站点，开启此项后附件、栏目连接、arclist内容启用绝对网址', 2, 'bool', 'N'),
 (58, 'cfg_rm_remote', '远程图片本地化', 7, 'bool', 'Y'),
-(27, 'cfg_dede_log', '(是/否)开启管理日志', 2, 'bool', 'N'),
+(27, 'cfg_hf_log', '(是/否)开启管理日志', 2, 'bool', 'N'),
 (28, 'cfg_powerby', '网站版权信息', 1, 'bstring', '© 2017 汇丰园林景观 版权所有'),
 (722, 'cfg_jump_once', '跳转网址是否直接跳转？（否则显示中转页）', 7, 'bool', 'Y'),
 (723, 'cfg_task_pwd', '系统计划任务客户端许可密码<br/>(需要客户端，通常不会太重要)', 7, 'string', ''),
@@ -2585,29 +2477,29 @@ INSERT INTO `dede_sysconfig` (`aid`, `varname`, `info`, `groupid`, `type`, `valu
 (763, 'cfg_contact', '联系人', 1, 'string', '安经理'),
 (764, 'cfg_company_address', '公司地址', 1, 'string', '河南省郑州市中州大道三全路交叉口'),
 (765, 'cfg_telephone', '联系手机', 1, 'string', '13303865533'),
-(766, 'cfg_company_email', '联系邮箱', 1, 'string', '');
+(766, 'cfg_company_email', '联系邮箱', 1, 'string', '1078208887@qq.com'),
+(767, 'cfg_contact_qq', '联系QQ', 1, 'string', '1078208887');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sys_enum`
+-- 表的结构 `hf_sys_enum`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sys_enum` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_sys_enum` (
+  `id` smallint(5) UNSIGNED NOT NULL,
   `ename` char(30) NOT NULL DEFAULT '',
   `evalue` char(20) NOT NULL DEFAULT '0',
   `egroup` char(20) NOT NULL DEFAULT '',
-  `disorder` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `issign` tinyint(1) unsigned NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20020 ;
+  `disorder` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `issign` tinyint(1) UNSIGNED NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_sys_enum`
+-- 转存表中的数据 `hf_sys_enum`
 --
 
-INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
+INSERT INTO `hf_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
 (139, 'cms制作', '503', 'vocation', 503, 0),
 (39, '租房', '1', 'house', 0, 1),
 (40, '一房以上', '2', 'house', 0, 1),
@@ -3495,8 +3387,7 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (19256, '白玉县', '12020.11', 'nativeplace', 12020, 2),
 (19255, '德格县', '12020.10', 'nativeplace', 12020, 2),
 (19254, '新龙县', '12020.9', 'nativeplace', 12021, 2),
-(19253, '甘孜县', '12020.8', 'nativeplace', 12021, 2);
-INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
+(19253, '甘孜县', '12020.8', 'nativeplace', 12021, 2),
 (19252, '炉霍县', '12020.7', 'nativeplace', 12021, 2),
 (19251, '道孚县', '12020.6', 'nativeplace', 12021, 2),
 (19250, '雅江县', '12020.5', 'nativeplace', 12021, 2),
@@ -3626,7 +3517,8 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (19126, '什邡市', '12005.5', 'nativeplace', 12006, 2),
 (19125, '广汉市', '12005.4', 'nativeplace', 12005, 2),
 (19124, '罗江县', '12005.3', 'nativeplace', 12005, 2),
-(19123, '中江县', '12005.2', 'nativeplace', 12005, 2),
+(19123, '中江县', '12005.2', 'nativeplace', 12005, 2);
+INSERT INTO `hf_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
 (19122, '旌阳区', '12005.1', 'nativeplace', 12005, 2),
 (19121, '德阳市', '12005', 'nativeplace', 12005, 1),
 (19120, '古蔺县', '12004.7', 'nativeplace', 12005, 2),
@@ -4391,8 +4283,7 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (18361, '叶　县', '8504.6', 'nativeplace', 8505, 2),
 (18360, '宝丰县', '8504.5', 'nativeplace', 8505, 2),
 (18359, '湛河区', '8504.4', 'nativeplace', 8504, 2),
-(18358, '石龙区', '8504.3', 'nativeplace', 8504, 2);
-INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
+(18358, '石龙区', '8504.3', 'nativeplace', 8504, 2),
 (18357, '卫东区', '8504.2', 'nativeplace', 8504, 2),
 (18356, '新华区', '8504.1', 'nativeplace', 8504, 2),
 (18355, '平顶山市', '8504', 'nativeplace', 8504, 1),
@@ -4650,7 +4541,8 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (18103, '全南县', '7507.10', 'nativeplace', 7507, 2),
 (18102, '定南县', '7507.9', 'nativeplace', 7508, 2),
 (18101, '龙南县', '7507.8', 'nativeplace', 7508, 2),
-(18100, '安远县', '7507.7', 'nativeplace', 7508, 2),
+(18100, '安远县', '7507.7', 'nativeplace', 7508, 2);
+INSERT INTO `hf_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
 (18099, '崇义县', '7507.6', 'nativeplace', 7508, 2),
 (18098, '上犹县', '7507.5', 'nativeplace', 7508, 2),
 (18097, '大余县', '7507.4', 'nativeplace', 7507, 2),
@@ -5314,8 +5206,7 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (17439, '延边朝鲜族自治州', '4009', 'nativeplace', 4009, 1),
 (17438, '大安市', '4008.5', 'nativeplace', 4009, 2),
 (17437, '洮南市', '4008.4', 'nativeplace', 4008, 2),
-(17436, '通榆县', '4008.3', 'nativeplace', 4008, 2);
-INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
+(17436, '通榆县', '4008.3', 'nativeplace', 4008, 2),
 (17435, '镇赉县', '4008.2', 'nativeplace', 4008, 2),
 (17434, '洮北区', '4008.1', 'nativeplace', 4008, 2),
 (17433, '白城市', '4008', 'nativeplace', 4008, 1),
@@ -5688,7 +5579,8 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 (17066, '陵川县', '2505.4', 'nativeplace', 2505, 2),
 (17065, '阳城县', '2505.3', 'nativeplace', 2505, 2),
 (17064, '沁水县', '2505.2', 'nativeplace', 2505, 2),
-(17063, '城　区', '2505.1', 'nativeplace', 2505, 2),
+(17063, '城　区', '2505.1', 'nativeplace', 2505, 2);
+INSERT INTO `hf_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `issign`) VALUES
 (17062, '晋城市', '2505', 'nativeplace', 2505, 1),
 (17061, '潞城市', '2504.13', 'nativeplace', 2504, 2),
 (17060, '沁源县', '2504.12', 'nativeplace', 2504, 2),
@@ -5962,25 +5854,24 @@ INSERT INTO `dede_sys_enum` (`id`, `ename`, `evalue`, `egroup`, `disorder`, `iss
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sys_module`
+-- 表的结构 `hf_sys_module`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sys_module` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_sys_module` (
+  `id` int(11) NOT NULL,
   `hashcode` char(32) NOT NULL DEFAULT '',
   `modname` varchar(30) NOT NULL DEFAULT '',
   `indexname` varchar(20) NOT NULL DEFAULT '',
   `indexurl` varchar(30) NOT NULL DEFAULT '',
   `ismember` tinyint(4) NOT NULL DEFAULT '1',
-  `menustring` text,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+  `menustring` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_sys_module`
+-- 转存表中的数据 `hf_sys_module`
 --
 
-INSERT INTO `dede_sys_module` (`id`, `hashcode`, `modname`, `indexname`, `indexurl`, `ismember`, `menustring`) VALUES
+INSERT INTO `hf_sys_module` (`id`, `hashcode`, `modname`, `indexname`, `indexurl`, `ismember`, `menustring`) VALUES
 (1, '0cce60bc0238aa03804682c801584991', '百度新闻', '', '', 0, ''),
 (2, '1f35620fb42d452fa2bdc1dee1690f92', '文件管理器', '', '', 0, ''),
 (4, 'b437d85a7a7bc778c9c79b5ec36ab9aa', '友情链接', '', '', 0, ''),
@@ -5991,174 +5882,1058 @@ INSERT INTO `dede_sys_module` (`id`, `hashcode`, `modname`, `indexname`, `indexu
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sys_set`
+-- 表的结构 `hf_sys_set`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sys_set` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_sys_set` (
+  `id` smallint(5) UNSIGNED NOT NULL,
   `sname` char(20) NOT NULL DEFAULT '',
-  `items` text,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `items` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_sys_set`
+-- 转存表中的数据 `hf_sys_set`
 --
 
-INSERT INTO `dede_sys_set` (`id`, `sname`, `items`) VALUES
+INSERT INTO `hf_sys_set` (`id`, `sname`, `items`) VALUES
 (1, 'nature', '性格外向,性格内向,活泼开朗,沉默寡言,幽默,稳重,轻浮,冲动,坚强,脆弱,幼稚,成熟,能说会道,自私,真诚,独立,依赖,任性,自负,自卑,温柔体贴,神经质,拜金,小心翼翼,暴躁,倔强,逆来顺受,不拘小节,婆婆妈妈,交际广泛,豪爽,害羞,狡猾善变,耿直,虚伪,乐观向上,悲观消极,郁郁寡欢,孤僻,难以琢磨,胆小怕事,敢做敢当,助人为乐,老实,守旧,敏感,迟钝,武断,果断,优柔寡断,暴力倾向,刻薄,损人利己,附庸风雅,时喜时悲,患得患失,快言快语,豪放不羁,多愁善感,循规蹈矩'),
 (2, 'language', '普通话,上海话,广东话,英语,日语,韩语,法语,意大利语,德语,西班牙语,俄语,阿拉伯语');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_sys_task`
+-- 表的结构 `hf_sys_task`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_sys_task` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_sys_task` (
+  `id` int(10) UNSIGNED NOT NULL,
   `taskname` varchar(50) NOT NULL,
   `dourl` varchar(100) NOT NULL,
-  `islock` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `runtype` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `islock` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
+  `runtype` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `runtime` varchar(10) DEFAULT '0000',
-  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `freq` tinyint(2) unsigned NOT NULL DEFAULT '0',
-  `lastrun` int(10) unsigned NOT NULL DEFAULT '0',
+  `starttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `endtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `freq` tinyint(2) UNSIGNED NOT NULL DEFAULT '0',
+  `lastrun` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `description` varchar(250) NOT NULL,
   `parameter` text,
-  `settime` int(10) unsigned NOT NULL DEFAULT '0',
-  `sta` enum('运行','成功','失败') DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `dede_tagindex`
---
-
-CREATE TABLE IF NOT EXISTS `dede_tagindex` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `tag` char(12) NOT NULL DEFAULT '',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `count` int(10) unsigned NOT NULL DEFAULT '0',
-  `total` int(10) unsigned NOT NULL DEFAULT '0',
-  `weekcc` int(10) unsigned NOT NULL DEFAULT '0',
-  `monthcc` int(10) unsigned NOT NULL DEFAULT '0',
-  `weekup` int(10) unsigned NOT NULL DEFAULT '0',
-  `monthup` int(10) unsigned NOT NULL DEFAULT '0',
-  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `dede_taglist`
---
-
-CREATE TABLE IF NOT EXISTS `dede_taglist` (
-  `tid` int(10) unsigned NOT NULL DEFAULT '0',
-  `aid` int(10) unsigned NOT NULL DEFAULT '0',
-  `arcrank` smallint(6) NOT NULL DEFAULT '0',
-  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `tag` varchar(12) NOT NULL DEFAULT '',
-  PRIMARY KEY (`tid`,`aid`)
+  `settime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `sta` enum('运行','成功','失败') DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_uploads`
+-- 表的结构 `hf_tagindex`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_uploads` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `arcid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_tagindex` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `tag` char(12) NOT NULL DEFAULT '',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `count` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `total` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `weekcc` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `monthcc` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `weekup` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `monthup` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `addtime` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hf_taglist`
+--
+
+CREATE TABLE `hf_taglist` (
+  `tid` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `aid` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `typeid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
+  `tag` varchar(12) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hf_uploads`
+--
+
+CREATE TABLE `hf_uploads` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
+  `arcid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `title` char(60) NOT NULL DEFAULT '',
   `url` char(80) NOT NULL DEFAULT '',
   `mediatype` smallint(6) NOT NULL DEFAULT '1',
   `width` char(10) NOT NULL DEFAULT '',
   `height` char(10) NOT NULL DEFAULT '',
   `playtime` char(10) NOT NULL DEFAULT '',
-  `filesize` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`aid`),
-  KEY `memberid` (`mid`),
-  KEY `arcid` (`arcid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+  `filesize` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `mid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_uploads`
+-- 转存表中的数据 `hf_uploads`
 --
 
-INSERT INTO `dede_uploads` (`aid`, `arcid`, `title`, `url`, `mediatype`, `width`, `height`, `playtime`, `filesize`, `uptime`, `mid`) VALUES
+INSERT INTO `hf_uploads` (`aid`, `arcid`, `title`, `url`, `mediatype`, `width`, `height`, `playtime`, `filesize`, `uptime`, `mid`) VALUES
 (1, 0, '170325/1-1F3251FPCa.jpg', '/uploads/allimg/170325/1-1F3251FPCa.jpg', 1, '474', '374', '0', 24436, 1490432886, 1),
-(2, 2, '波光喷泉', '/uploads/allimg/170325/1-1F3251G05Q91.jpg', 1, '536', '444', '0', 303598, 1490433058, 1),
+(17, 0, '170329/1-1F329191IK51.jpg', '/uploads/indeximg/170329/170329/1-1F329191IK51.jpg', 1, '690', '461', '0', 67014, 1490786257, 1),
 (3, 0, '1-1F32G106020-L.jpg', '/uploads/allimg/170327/1-1F32G106020-L.jpg', 1, '0', '0', '0', 479675, 1490583962, 1),
 (4, 0, '1-1F32G106370-L.jpg', '/uploads/allimg/170327/1-1F32G106370-L.jpg', 1, '0', '0', '0', 479675, 1490583997, 1),
 (5, 10, 'banner2', '/uploads/allimg/170327/1-1F32G110390-L.jpg', 1, '0', '0', '0', 453904, 1490584239, 1),
-(6, 0, '1-1F32G116100-L.jpg', '/uploads/allimg/170327/1-1F32G116100-L.jpg', 1, '0', '0', '0', 453904, 1490584570, 1);
+(6, 0, '1-1F32G116100-L.jpg', '/uploads/allimg/170327/1-1F32G116100-L.jpg', 1, '0', '0', '0', 453904, 1490584570, 1),
+(7, 9, 'banner1', '/uploads/170327/1-1F32GF4541H.png', 1, '2639', '583', '0', 1059647, 1490605494, 1),
+(8, 10, 'banner2', '/uploads/170327/1-1F32GF610446.png', 1, '1900', '420', '0', 484347, 1490605570, 1),
+(9, 10, 'banner2', '/uploads/170327/1-1F32GFG2a1.png', 1, '1900', '420', '0', 484347, 1490605632, 1),
+(10, 0, '1-1F32GFU70-L.png', '/uploads/allimg/170327/1-1F32GFU70-L.png', 1, '0', '0', '0', 1755470, 1490605737, 1),
+(11, 13, 'banner3', '/uploads/allimg/170327/1-1F32GF9440-L.png', 1, '0', '0', '0', 1755470, 1490605784, 1),
+(18, 2, '程控喷泉', '/uploads/indeximg/170329/1-1F329191913408.jpg', 1, '690', '461', '0', 67014, 1490786353, 1),
+(16, 0, '170329/1-1F329191H2F2.jpg', '/uploads/indeximg/170329/1-1F329191H2F2.jpg', 1, '797', '600', '0', 61523, 1490786242, 1),
+(15, 0, 'ckpq', '/uploads/allimg/170329/1_1913574611.jpg', 1, '1000', '752', '', 107574, 1490786037, 1),
+(19, 14, '音乐喷泉2', '/uploads/indeximg/170329/1-1F32919395bX.jpg', 1, '793', '394', '0', 101760, 1490787599, 1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_verifies`
+-- 表的结构 `hf_verifies`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_verifies` (
+CREATE TABLE `hf_verifies` (
   `nameid` char(32) NOT NULL DEFAULT '',
   `cthash` varchar(32) NOT NULL DEFAULT '',
   `method` enum('local','official') NOT NULL DEFAULT 'official',
-  `filename` varchar(254) NOT NULL DEFAULT '',
-  PRIMARY KEY (`nameid`)
+  `filename` varchar(254) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_vote`
+-- 表的结构 `hf_vote`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_vote` (
-  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hf_vote` (
+  `aid` mediumint(8) UNSIGNED NOT NULL,
   `votename` varchar(50) NOT NULL DEFAULT '',
-  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
-  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `totalcount` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `starttime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `endtime` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `totalcount` mediumint(8) UNSIGNED NOT NULL DEFAULT '0',
   `ismore` tinyint(6) NOT NULL DEFAULT '0',
   `isallow` tinyint(6) NOT NULL DEFAULT '0',
   `view` tinyint(6) NOT NULL DEFAULT '0',
-  `spec` int(20) unsigned NOT NULL DEFAULT '0',
+  `spec` int(20) UNSIGNED NOT NULL DEFAULT '0',
   `isenable` tinyint(6) NOT NULL DEFAULT '0',
-  `votenote` text,
-  PRIMARY KEY (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `votenote` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `dede_vote`
+-- 转存表中的数据 `hf_vote`
 --
 
-INSERT INTO `dede_vote` (`aid`, `votename`, `starttime`, `endtime`, `totalcount`, `ismore`, `isallow`, `view`, `spec`, `isenable`, `votenote`) VALUES
+INSERT INTO `hf_vote` (`aid`, `votename`, `starttime`, `endtime`, `totalcount`, `ismore`, `isallow`, `view`, `spec`, `isenable`, `votenote`) VALUES
 (1, '你是从哪儿得知本站的？', 1266336000, 1584547200, 0, 0, 1, 1, 0, 0, '<v:note id="1" count="1">朋友介绍</v:note>rn<v:note id="2" count="0">门户网站的搜索引擎</v:note>rn<v:note id="3" count="2">Google或百度搜索</v:note>rn<v:note id="4" count="2">别的网站上的链接</v:note>rn<v:note id="5" count="1">其它途径</v:note>rn');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `dede_vote_member`
+-- 表的结构 `hf_vote_member`
 --
 
-CREATE TABLE IF NOT EXISTS `dede_vote_member` (
-  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `voteid` int(10) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `hf_vote_member` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `voteid` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `userid` varchar(50) NOT NULL DEFAULT '',
-  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `uptime` int(10) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `hf_addon17`
+--
+ALTER TABLE `hf_addon17`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `typeid` (`typeid`);
+
+--
+-- Indexes for table `hf_addonarticle`
+--
+ALTER TABLE `hf_addonarticle`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `typeid` (`typeid`);
+
+--
+-- Indexes for table `hf_addonimages`
+--
+ALTER TABLE `hf_addonimages`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `imagesMain` (`typeid`);
+
+--
+-- Indexes for table `hf_addoninfos`
+--
+ALTER TABLE `hf_addoninfos`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `typeid` (`typeid`,`nativeplace`,`infotype`),
+  ADD KEY `channel` (`channel`,`arcrank`,`mid`,`click`,`title`,`litpic`,`senddate`,`flag`,`endtime`);
+
+--
+-- Indexes for table `hf_addonshop`
+--
+ALTER TABLE `hf_addonshop`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `typeid` (`typeid`);
+
+--
+-- Indexes for table `hf_addonsoft`
+--
+ALTER TABLE `hf_addonsoft`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `softMain` (`typeid`);
+
+--
+-- Indexes for table `hf_addonspec`
+--
+ALTER TABLE `hf_addonspec`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `typeid` (`typeid`);
+
+--
+-- Indexes for table `hf_admin`
+--
+ALTER TABLE `hf_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_admintype`
+--
+ALTER TABLE `hf_admintype`
+  ADD PRIMARY KEY (`rank`);
+
+--
+-- Indexes for table `hf_advancedsearch`
+--
+ALTER TABLE `hf_advancedsearch`
+  ADD UNIQUE KEY `mid` (`mid`);
+
+--
+-- Indexes for table `hf_arcatt`
+--
+ALTER TABLE `hf_arcatt`
+  ADD PRIMARY KEY (`att`);
+
+--
+-- Indexes for table `hf_arccache`
+--
+ALTER TABLE `hf_arccache`
+  ADD PRIMARY KEY (`md5hash`);
+
+--
+-- Indexes for table `hf_archives`
+--
+ALTER TABLE `hf_archives`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `sortrank` (`sortrank`),
+  ADD KEY `mainindex` (`arcrank`,`typeid`,`channel`,`flag`,`mid`),
+  ADD KEY `lastpost` (`lastpost`,`scores`,`goodpost`,`badpost`,`notpost`);
+
+--
+-- Indexes for table `hf_arcmulti`
+--
+ALTER TABLE `hf_arcmulti`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_arcrank`
+--
+ALTER TABLE `hf_arcrank`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_arctiny`
+--
+ALTER TABLE `hf_arctiny`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `sortrank` (`sortrank`),
+  ADD KEY `idx_typeid_arcrank_sortrank` (`typeid`,`arcrank`,`sortrank`);
+
+--
+-- Indexes for table `hf_arctype`
+--
+ALTER TABLE `hf_arctype`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
+  ADD KEY `sortrank` (`sortrank`);
+
+--
+-- Indexes for table `hf_area`
+--
+ALTER TABLE `hf_area`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_channeltype`
+--
+ALTER TABLE `hf_channeltype`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nid` (`nid`,`isshow`,`arcsta`,`sendrank`);
+
+--
+-- Indexes for table `hf_co_htmls`
+--
+ALTER TABLE `hf_co_htmls`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `nid` (`nid`),
+  ADD KEY `typeid` (`typeid`,`title`,`url`,`dtime`,`isdown`,`isexport`);
+
+--
+-- Indexes for table `hf_co_mediaurls`
+--
+ALTER TABLE `hf_co_mediaurls`
+  ADD KEY `hash` (`hash`);
+
+--
+-- Indexes for table `hf_co_note`
+--
+ALTER TABLE `hf_co_note`
+  ADD PRIMARY KEY (`nid`),
+  ADD KEY `isok` (`isok`,`channelid`,`cotime`);
+
+--
+-- Indexes for table `hf_co_onepage`
+--
+ALTER TABLE `hf_co_onepage`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `url` (`url`);
+
+--
+-- Indexes for table `hf_co_urls`
+--
+ALTER TABLE `hf_co_urls`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_diyforms`
+--
+ALTER TABLE `hf_diyforms`
+  ADD PRIMARY KEY (`diyid`);
+
+--
+-- Indexes for table `hf_dl_log`
+--
+ALTER TABLE `hf_dl_log`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `dltime` (`dltime`),
+  ADD KEY `dl_ip` (`ip`,`dltime`);
+
+--
+-- Indexes for table `hf_downloads`
+--
+ALTER TABLE `hf_downloads`
+  ADD PRIMARY KEY (`hash`);
+
+--
+-- Indexes for table `hf_erradd`
+--
+ALTER TABLE `hf_erradd`
+  ADD KEY `id` (`id`);
+
+--
+-- Indexes for table `hf_feedback`
+--
+ALTER TABLE `hf_feedback`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `aid` (`aid`,`ischeck`,`mid`);
+
+--
+-- Indexes for table `hf_flink`
+--
+ALTER TABLE `hf_flink`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_flinktype`
+--
+ALTER TABLE `hf_flinktype`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_freelist`
+--
+ALTER TABLE `hf_freelist`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_keywords`
+--
+ALTER TABLE `hf_keywords`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `keyword` (`keyword`,`rank`,`sta`);
+
+--
+-- Indexes for table `hf_log`
+--
+ALTER TABLE `hf_log`
+  ADD PRIMARY KEY (`lid`);
+
+--
+-- Indexes for table `hf_member`
+--
+ALTER TABLE `hf_member`
+  ADD PRIMARY KEY (`mid`),
+  ADD KEY `userid` (`userid`,`sex`),
+  ADD KEY `logintime` (`logintime`);
+
+--
+-- Indexes for table `hf_member_company`
+--
+ALTER TABLE `hf_member_company`
+  ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `hf_member_feed`
+--
+ALTER TABLE `hf_member_feed`
+  ADD PRIMARY KEY (`fid`);
+
+--
+-- Indexes for table `hf_member_flink`
+--
+ALTER TABLE `hf_member_flink`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_member_friends`
+--
+ALTER TABLE `hf_member_friends`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fid` (`fid`,`mid`);
+
+--
+-- Indexes for table `hf_member_group`
+--
+ALTER TABLE `hf_member_group`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id` (`id`);
+
+--
+-- Indexes for table `hf_member_guestbook`
+--
+ALTER TABLE `hf_member_guestbook`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `mid` (`mid`);
+
+--
+-- Indexes for table `hf_member_model`
+--
+ALTER TABLE `hf_member_model`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_member_msg`
+--
+ALTER TABLE `hf_member_msg`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id` (`ischeck`,`mid`);
+
+--
+-- Indexes for table `hf_member_operation`
+--
+ALTER TABLE `hf_member_operation`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `buyid` (`buyid`),
+  ADD KEY `pid` (`pid`,`mid`,`sta`);
+
+--
+-- Indexes for table `hf_member_person`
+--
+ALTER TABLE `hf_member_person`
+  ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `hf_member_pms`
+--
+ALTER TABLE `hf_member_pms`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `sendtime` (`sendtime`);
+
+--
+-- Indexes for table `hf_member_snsmsg`
+--
+ALTER TABLE `hf_member_snsmsg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_member_space`
+--
+ALTER TABLE `hf_member_space`
+  ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `hf_member_stow`
+--
+ALTER TABLE `hf_member_stow`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `uid` (`mid`);
+
+--
+-- Indexes for table `hf_member_stowtype`
+--
+ALTER TABLE `hf_member_stowtype`
+  ADD PRIMARY KEY (`stowname`);
+
+--
+-- Indexes for table `hf_member_tj`
+--
+ALTER TABLE `hf_member_tj`
+  ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `hf_member_type`
+--
+ALTER TABLE `hf_member_type`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_member_vhistory`
+--
+ALTER TABLE `hf_member_vhistory`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `vtime` (`vtime`),
+  ADD KEY `mid` (`mid`,`vid`);
+
+--
+-- Indexes for table `hf_messageboard`
+--
+ALTER TABLE `hf_messageboard`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_moneycard_record`
+--
+ALTER TABLE `hf_moneycard_record`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `ctid` (`ctid`),
+  ADD KEY `cardid` (`cardid`),
+  ADD KEY `uid` (`uid`);
+
+--
+-- Indexes for table `hf_moneycard_type`
+--
+ALTER TABLE `hf_moneycard_type`
+  ADD PRIMARY KEY (`tid`);
+
+--
+-- Indexes for table `hf_mtypes`
+--
+ALTER TABLE `hf_mtypes`
+  ADD PRIMARY KEY (`mtypeid`);
+
+--
+-- Indexes for table `hf_multiserv_config`
+--
+ALTER TABLE `hf_multiserv_config`
+  ADD PRIMARY KEY (`remoteuploads`);
+
+--
+-- Indexes for table `hf_myad`
+--
+ALTER TABLE `hf_myad`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`);
+
+--
+-- Indexes for table `hf_myadtype`
+--
+ALTER TABLE `hf_myadtype`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_mytag`
+--
+ALTER TABLE `hf_mytag`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`);
+
+--
+-- Indexes for table `hf_payment`
+--
+ALTER TABLE `hf_payment`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `code` (`code`);
+
+--
+-- Indexes for table `hf_plus`
+--
+ALTER TABLE `hf_plus`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_plus_mda_setting`
+--
+ALTER TABLE `hf_plus_mda_setting`
+  ADD PRIMARY KEY (`skey`);
+
+--
+-- Indexes for table `hf_plus_seoinfo`
+--
+ALTER TABLE `hf_plus_seoinfo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_purview`
+--
+ALTER TABLE `hf_purview`
+  ADD KEY `pkey` (`pkey`) USING BTREE;
+
+--
+-- Indexes for table `hf_pwd_tmp`
+--
+ALTER TABLE `hf_pwd_tmp`
+  ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `hf_ratings`
+--
+ALTER TABLE `hf_ratings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_scores`
+--
+ALTER TABLE `hf_scores`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `integral` (`integral`);
+
+--
+-- Indexes for table `hf_search_cache`
+--
+ALTER TABLE `hf_search_cache`
+  ADD PRIMARY KEY (`hash`);
+
+--
+-- Indexes for table `hf_search_keywords`
+--
+ALTER TABLE `hf_search_keywords`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_sgpage`
+--
+ALTER TABLE `hf_sgpage`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `ismake` (`ismake`,`uptime`),
+  ADD KEY `likeid` (`likeid`);
+
+--
+-- Indexes for table `hf_shops_delivery`
+--
+ALTER TABLE `hf_shops_delivery`
+  ADD PRIMARY KEY (`pid`),
+  ADD KEY `orders` (`orders`);
+
+--
+-- Indexes for table `hf_shops_orders`
+--
+ALTER TABLE `hf_shops_orders`
+  ADD KEY `stime` (`stime`),
+  ADD KEY `userid` (`userid`),
+  ADD KEY `oid` (`oid`);
+
+--
+-- Indexes for table `hf_shops_products`
+--
+ALTER TABLE `hf_shops_products`
+  ADD KEY `oid` (`oid`),
+  ADD KEY `userid` (`userid`);
+
+--
+-- Indexes for table `hf_shops_userinfo`
+--
+ALTER TABLE `hf_shops_userinfo`
+  ADD KEY `oid` (`oid`),
+  ADD KEY `userid` (`userid`);
+
+--
+-- Indexes for table `hf_softconfig`
+--
+ALTER TABLE `hf_softconfig`
+  ADD PRIMARY KEY (`downtype`);
+
+--
+-- Indexes for table `hf_sphinx`
+--
+ALTER TABLE `hf_sphinx`
+  ADD PRIMARY KEY (`countid`);
+
+--
+-- Indexes for table `hf_stepselect`
+--
+ALTER TABLE `hf_stepselect`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_sysconfig`
+--
+ALTER TABLE `hf_sysconfig`
+  ADD PRIMARY KEY (`varname`);
+
+--
+-- Indexes for table `hf_sys_enum`
+--
+ALTER TABLE `hf_sys_enum`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_sys_module`
+--
+ALTER TABLE `hf_sys_module`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_sys_set`
+--
+ALTER TABLE `hf_sys_set`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_sys_task`
+--
+ALTER TABLE `hf_sys_task`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_tagindex`
+--
+ALTER TABLE `hf_tagindex`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hf_taglist`
+--
+ALTER TABLE `hf_taglist`
+  ADD PRIMARY KEY (`tid`,`aid`);
+
+--
+-- Indexes for table `hf_uploads`
+--
+ALTER TABLE `hf_uploads`
+  ADD PRIMARY KEY (`aid`),
+  ADD KEY `memberid` (`mid`),
+  ADD KEY `arcid` (`arcid`);
+
+--
+-- Indexes for table `hf_verifies`
+--
+ALTER TABLE `hf_verifies`
+  ADD PRIMARY KEY (`nameid`);
+
+--
+-- Indexes for table `hf_vote`
+--
+ALTER TABLE `hf_vote`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `hf_vote_member`
+--
+ALTER TABLE `hf_vote_member`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- 在导出的表使用AUTO_INCREMENT
+--
+
+--
+-- 使用表AUTO_INCREMENT `hf_arcmulti`
+--
+ALTER TABLE `hf_arcmulti`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_arcrank`
+--
+ALTER TABLE `hf_arcrank`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- 使用表AUTO_INCREMENT `hf_arctiny`
+--
+ALTER TABLE `hf_arctiny`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+--
+-- 使用表AUTO_INCREMENT `hf_arctype`
+--
+ALTER TABLE `hf_arctype`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- 使用表AUTO_INCREMENT `hf_area`
+--
+ALTER TABLE `hf_area`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3118;
+--
+-- 使用表AUTO_INCREMENT `hf_co_htmls`
+--
+ALTER TABLE `hf_co_htmls`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_co_note`
+--
+ALTER TABLE `hf_co_note`
+  MODIFY `nid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_co_onepage`
+--
+ALTER TABLE `hf_co_onepage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- 使用表AUTO_INCREMENT `hf_co_urls`
+--
+ALTER TABLE `hf_co_urls`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_diyforms`
+--
+ALTER TABLE `hf_diyforms`
+  MODIFY `diyid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_dl_log`
+--
+ALTER TABLE `hf_dl_log`
+  MODIFY `id` mediumint(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_erradd`
+--
+ALTER TABLE `hf_erradd`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_feedback`
+--
+ALTER TABLE `hf_feedback`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_flink`
+--
+ALTER TABLE `hf_flink`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- 使用表AUTO_INCREMENT `hf_flinktype`
+--
+ALTER TABLE `hf_flinktype`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- 使用表AUTO_INCREMENT `hf_freelist`
+--
+ALTER TABLE `hf_freelist`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- 使用表AUTO_INCREMENT `hf_keywords`
+--
+ALTER TABLE `hf_keywords`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_log`
+--
+ALTER TABLE `hf_log`
+  MODIFY `lid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member`
+--
+ALTER TABLE `hf_member`
+  MODIFY `mid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_member_company`
+--
+ALTER TABLE `hf_member_company`
+  MODIFY `mid` mediumint(8) NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_feed`
+--
+ALTER TABLE `hf_member_feed`
+  MODIFY `fid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_flink`
+--
+ALTER TABLE `hf_member_flink`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_friends`
+--
+ALTER TABLE `hf_member_friends`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_group`
+--
+ALTER TABLE `hf_member_group`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_member_guestbook`
+--
+ALTER TABLE `hf_member_guestbook`
+  MODIFY `aid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_model`
+--
+ALTER TABLE `hf_member_model`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- 使用表AUTO_INCREMENT `hf_member_msg`
+--
+ALTER TABLE `hf_member_msg`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_operation`
+--
+ALTER TABLE `hf_member_operation`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_pms`
+--
+ALTER TABLE `hf_member_pms`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_snsmsg`
+--
+ALTER TABLE `hf_member_snsmsg`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_stow`
+--
+ALTER TABLE `hf_member_stow`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_member_tj`
+--
+ALTER TABLE `hf_member_tj`
+  MODIFY `mid` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_member_type`
+--
+ALTER TABLE `hf_member_type`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_member_vhistory`
+--
+ALTER TABLE `hf_member_vhistory`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_messageboard`
+--
+ALTER TABLE `hf_messageboard`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- 使用表AUTO_INCREMENT `hf_moneycard_record`
+--
+ALTER TABLE `hf_moneycard_record`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_moneycard_type`
+--
+ALTER TABLE `hf_moneycard_type`
+  MODIFY `tid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- 使用表AUTO_INCREMENT `hf_mtypes`
+--
+ALTER TABLE `hf_mtypes`
+  MODIFY `mtypeid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_myad`
+--
+ALTER TABLE `hf_myad`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_myadtype`
+--
+ALTER TABLE `hf_myadtype`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_mytag`
+--
+ALTER TABLE `hf_mytag`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_payment`
+--
+ALTER TABLE `hf_payment`
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- 使用表AUTO_INCREMENT `hf_plus`
+--
+ALTER TABLE `hf_plus`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+--
+-- 使用表AUTO_INCREMENT `hf_plus_seoinfo`
+--
+ALTER TABLE `hf_plus_seoinfo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- 使用表AUTO_INCREMENT `hf_scores`
+--
+ALTER TABLE `hf_scores`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+--
+-- 使用表AUTO_INCREMENT `hf_search_keywords`
+--
+ALTER TABLE `hf_search_keywords`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_sgpage`
+--
+ALTER TABLE `hf_sgpage`
+  MODIFY `aid` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_shops_delivery`
+--
+ALTER TABLE `hf_shops_delivery`
+  MODIFY `pid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- 使用表AUTO_INCREMENT `hf_stepselect`
+--
+ALTER TABLE `hf_stepselect`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+--
+-- 使用表AUTO_INCREMENT `hf_sys_enum`
+--
+ALTER TABLE `hf_sys_enum`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20020;
+--
+-- 使用表AUTO_INCREMENT `hf_sys_module`
+--
+ALTER TABLE `hf_sys_module`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- 使用表AUTO_INCREMENT `hf_sys_set`
+--
+ALTER TABLE `hf_sys_set`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- 使用表AUTO_INCREMENT `hf_sys_task`
+--
+ALTER TABLE `hf_sys_task`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_tagindex`
+--
+ALTER TABLE `hf_tagindex`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- 使用表AUTO_INCREMENT `hf_uploads`
+--
+ALTER TABLE `hf_uploads`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+--
+-- 使用表AUTO_INCREMENT `hf_vote`
+--
+ALTER TABLE `hf_vote`
+  MODIFY `aid` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- 使用表AUTO_INCREMENT `hf_vote_member`
+--
+ALTER TABLE `hf_vote_member`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
